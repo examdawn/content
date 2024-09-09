@@ -18,3 +18,11 @@ What is this site?
 multi
 code
 ```
+
+# BCA Students
+
+## A simple Website for students to host study materials and useful reference content
+
+Content available for:
+- BCA
+    - [3rd Semester](NEP2020/2024/BCA/3rdsem/index.md)
