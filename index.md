@@ -7,4 +7,4 @@ Content available for:
     - [3rd Semester](NEP2020/2024/BCA/3rdsem/index.md)
 
 ## Contribution Guidelines
-[Follow these guidelines while contributing!](Guidelines/Contribution.md)
+[Follow these guidelines while contributing!](.github/CONTRIBUTING.md)
