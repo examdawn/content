@@ -9,4 +9,4 @@ Subjects:
 - Hindi
 - Additional English
 - General English
-- Social Media and Marketing
+- [Social Media and Marketing(SMM)](smm/index.html)
