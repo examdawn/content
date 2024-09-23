@@ -73,11 +73,12 @@ SELECT AVG(price) avg_amount FROM inventory;
 
 ```MySQL
 SELECT SUM(price) total_amount FROM inventory;
+```
+
 | total_amount  |
 |---------------|
 | 150000.00     |
 
-```
 - ✅ Showing rows 0 - 0 (1 total, Query took 0.0001 seconds.)
 
 
