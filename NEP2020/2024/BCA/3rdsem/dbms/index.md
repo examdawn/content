@@ -9,5 +9,9 @@ Units:
 - Unit 4: Data Normalization
 - Unit 5: Query Processing Transaction Management
 
+Others:
+- [Lab Records](lab/index.md)
+
+
 Source:
 [Syllabus for NEP 2020](https://drive.google.com/file/d/1fArLbfdmMvhREDAw85i2_LrAMqCVwdG_/view)
