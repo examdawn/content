@@ -38,7 +38,6 @@ SELECT COUNT(*) number_of_items from inventory;
 | number_of_items |
 |-----------------|
 | 2               |
-|                 |
 
 - ✅ Your SQL query has been executed successfully.
 
@@ -50,7 +49,7 @@ SELECT MAX(price) maximum_price FROM inventory;
 | maximum_price |
 |---------------|
 | 100000.00     |
-|               |
+
 - ✅ Showing rows 0 - 0 (1 total, Query took 0.0002 seconds.)
 
 
@@ -60,7 +59,7 @@ SELECT MIN(price) minimum_price FROM inventory;
 | minimum_price |
 |---------------|
 | 50000.00      |
-|               |
+
 - ✅ Showing rows 0 - 0 (1 total, Query took 0.0002 seconds.)
 
 ```MySQL
@@ -69,7 +68,7 @@ SELECT AVG(price) avg_amount FROM inventory;
 | avg_amount    |
 |---------------|
 | 75000.000000  |
-|               |
+
 - ✅ Showing rows 0 - 0 (1 total, Query took 0.0001 seconds.)
 
 ```MySQL
@@ -77,7 +76,7 @@ SELECT SUM(price) total_amount FROM inventory;
 | total_amount  |
 |---------------|
 | 150000.00     |
-|               |
+
 ```
 - ✅ Showing rows 0 - 0 (1 total, Query took 0.0001 seconds.)
 
