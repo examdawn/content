@@ -3,7 +3,10 @@
 ## Section A
 
 ### 1. What do you mean by social media?
+social media is a platform which provides an opportunity for any one to interact with each other as for real world example, which also helps in making news friends or you could interact with strangers and it 
+ also provides new opportunity for any fields in case like dvelopment of new products,start-ups,adverstising,sponsorship opportunity (like sponsoring or reviewing products)
 
+ Examples: Twitter, Instagram, Reddit, Quora, Pinterest, etc
 ### 2. What is goal setting in social media?
 
 ### 3. What is social advertising?
