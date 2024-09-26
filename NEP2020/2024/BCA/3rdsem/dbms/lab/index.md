@@ -336,10 +336,40 @@ SELECT * FROM teacher WHERE deptid IN(SELECT deptid FROM department WHERE teache
 
 ## Program 6: Implement Join Operations in SQL.
 ### Create a table EMPLOYEE with the following attributes(Emp_id, Emp_name,Edept_id).
+```MySQL
+CREATE TABLE employee(emp_id int PRIMARY KEY, emp_name varchar(20), edept_id int);
+```
 ### Insert three tuples in the table EMPLOYEE.
+```MySQL
+INSERT INTO employee VALUES(1001, 'charles', 10), (1002, 'abdul', 30), (1003, 'rohan', 30);
+```
 ### Create a table DEPARTMENT with the following attributes(Dept_id,Dept_name).
+```MySQL
+CREATE TABLE department(dept_id int PRIMARY KEY, dept_name varchar(20));
+```
 ### Enter Four tuples in the table DEPARTMENT.
+```MySQL
+INSERT INTO department VALUES(10, 'accounts'), (20, 'design'), (40, 'testing'), (50, 'purchase');
+```
 ### Perform join Operations using the table EMPLOYEE and DEPARTMENT.
+Inner Join:
+```MySQL
+SELECT emp_id, emp_name, edept_id, dept_name FROM employee INNER JOIN department ON employee.edept_id=department.dept_id;
+```
+
+Left Outer Join: 
+```MySQL
+SELECT emp_id, emp_name, edept_id, dept_name FROM employee LEFT JOIN department ON employee.edept_id=department.dept_id;
+```
+
+Right Outer Join:
+```MySQL
+SELECT emp_id, emp_name, edept_id, dept_name FROM employee RIGHT JOIN department ON employee.edept_id=department.dept_id;
+```
+Full Join: 
+```MySQL
+SELECT emp_id, emp_name, edept_id, dept_name FROM employee LEFT JOIN department ON employee.edept_id=department.dept_id UNION SELECT emp_id, emp_name, edept_id, dept_name FROM employee RIGHT JOIN department ON employee.edept_id=department.dept_id;
+```
 
 ## Program 7: Create a view for a particular table.
 ### Create a table TRAIN (Train_no,Train_Nmae,Source,Destination).
