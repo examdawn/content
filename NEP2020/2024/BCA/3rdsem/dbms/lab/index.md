@@ -280,11 +280,25 @@ INSERT INTO purchase VALUES("L102", "desktop", 100000);
 
 ### Create a user with (User name: customer,Password:sales).
 
-TODO: later
-MariaDB is managed by HestiaCP so I don't want to give perms since it is a security risk. I've requested @jack-pots to help out with this
+```MySQL
+CREATE USER 'customer'@'localhost' IDENTIFIED BY 'sales';
+```
+
+- ✅ Query OK, 0 rows affected (0.16 sec)
 
 ### Perform DCL command operations using the table PURCHASE.
+
+```MySQL
+GRANT ALL ON souhrud_practical.* TO 'customer'@'localhost';
+```
+
+- ✅ Query OK, 0 rows affected (0.12 sec)
+
 ### Perform TCL command operations using the table PURCHASE.
+
+```MySQL
+
+```
 
 ## Program 5: Implement the Nested Queries.
 ### Create a table TEACHER with the following attributes(Tid,Tanme,Deptid).
