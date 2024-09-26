@@ -1,5 +1,7 @@
 # Lab Practicals
 
+Tested on 10.6.18-MariaDB-0ubuntu0.22.04.1 except Question 4 which will be written with MySQL 8.0.37 in mind
+
 ## Program 1: Execute Single line Query and Group Functions.
 ###	Create a table INVENTORY with the following attributes(Item_No,Item_Name,Price).
 ```MySQL
@@ -245,6 +247,97 @@ SELECT * FROM student002;
 |-------------|--------|--------|--------|--------|-------|---------|
 | S102        | abdul  |   100  |    99  |   100  |   299 |    99.67|
 
+## Program 4: Execute DCL and TCL Commands.
+### Connect the database using the command line window.
+```MySQL
+USE souhrud_practical;
+```
+- ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0001 seconds.)
+
+### Create a table PURCHASE with the following attributes (Item_No, Item_Name,Price).
+
+```MySQL
+CREATE TABLE purchase(item_no varchar(4), item_name varchar(20), price decimal(10,2));
+```
+- ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0085 seconds.)
+
+
+### Insert two tuples in the PURCHASE.
+
+```MySQL
+INSERT INTO purchase VALUES("L101", "laptop", 50000);
+```
+
+- ✅ 1 row inserted. (Query took 0.0011 seconds.)
+
+```MySQL
+INSERT INTO purchase VALUES("L102", "desktop", 100000);
+```
+
+- ✅ 1 row inserted. (Query took 0.0011 seconds.)
+
+### Create a user with (User name: customer,Password:sales).
+
+TODO: later
+MariaDB is managed by HestiaCP so I don't want to give perms since it is a security risk. I've requested @jack-pots to help out with this
+
+### Perform DCL command operations using the table PURCHASE.
+### Perform TCL command operations using the table PURCHASE.
+
+## Program 5: Implement the Nested Queries.
+### Create a table TEACHER with the following attributes(Tid,Tanme,Deptid).
+
+### Insert three tuples in the table TEACHER.
+
+### Create a table DEPARTMENT with the following attributes(Deptid,Dname).
+
+### Insert three tuples into the DEPARTMENT Table.
+
+### Perform nested queries using the table TEACHER and DEPARTMENT.
+
+## Program 6: Implement Join Operations in SQL.
+### Create a table EMPLOYEE with the following attributes(Emp_id, Emp_name,Edept_id).
+### Insert three tuples in the table EMPLOYEE.
+### Create a table DEPARTMENT with the following attributes(Dept_id,Dept_name).
+### Enter Four tuples in the table DEPARTMENT.
+### Perform join Operations using the table EMPLOYEE and DEPARTMENT.
+
+## Program 7: Create a view for a particular table.
+### Create a table TRAIN (Train_no,Train_Nmae,Source,Destination).
+### Insert three tuples in the table TRAIN.
+### Display all the tuples from the table TRAIN.
+### Perform view operations using the table TRAIN.
+
+## Program 8: Implement Locks for a particular table.
+### Connect the database using the command line window.
+### Create table CAR with the following attributes(Model_No, Brand,Price).
+### Insert five tuples in the table CAR.
+### Create a user with (User name: Owner, Password:car) and grant the select, update permission.
+### Implement the Locks using the table CAR.
+
+## Program 9: Write PL/SQL Procedure for an application using exception handling.
+### Create a table BANK with the following attributes(Acno, Name,Balance).
+### Insert five tuples in the table BANK.
+### Display all the tables from the table BANK.
+### Perform exception handling using the table BANK.
+
+## Program 10: Write PL/SQL procedure for an application using a cursor.
+### Create a table BANK with the following attributes(Acno, Name,Balance).
+### Insert five tuples in the table BANK.
+### Display all the tuples from the table BANK.
+### Display all the tuples from the table BANK using cursor.
+
+## Program 11: Write a PL/SQL procedure for an application using functions.
+### Create a table LAPTOP with the following attributes(Model_No,Company_Name, Price).
+### Insert five tuples in the table LAPTOP.
+### Display all the tuples in the table LAPTOP.
+### Find the maximum price in the table LAPTOP using the function.
+
+## Program 12: Write a PL/SQL procedure for an application using a package.
+### Create a table LIBRARY with the following attributes(Book_id, Book_name, B_price).
+### Insert three tuples in the table LIBRARY.
+### Display all the tuples from the table LIBRARY.
+### Create a package using the table LIBRARY.
 
 ## Source:
 - General Questions were found in Syllabus
