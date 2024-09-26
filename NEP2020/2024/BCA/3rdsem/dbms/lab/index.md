@@ -373,10 +373,40 @@ SELECT emp_id, emp_name, edept_id, dept_name FROM employee LEFT JOIN department 
 
 ## Program 7: Create a view for a particular table.
 ### Create a table TRAIN (Train_no,Train_Nmae,Source,Destination).
+```MySQL
+CREATE TABLE train(train_no int PRIMARY KEY, train_name varchar(20), source varchar(20), destination varchar(20)); 
+```
 ### Insert three tuples in the table TRAIN.
+```MySQL
+INSERT INTO train VALUES (50001, 'malgudi exp', 'bengaluru', 'mysuru'), (50002,'karnataka exp','bengaluru','new delhi'), (50003,'shatabdi exp','bengaluru','chennai'); 
+```
 ### Display all the tuples from the table TRAIN.
+```MySQL
+SELECT * FROM train; 
+```
 ### Perform view operations using the table TRAIN.
-
+```MySQL
+CREATE VIEW display_view AS SELECT * FROM train; 
+```
+Display Train View
+```MySQL
+ SELECT * FROM display_view;
+```
+```MySQL
+INSERT INTO display_view VALUES(50004,'kochuveli exp', NULL, NULL); 
+```
+Display Train View after Operation
+```MySQL
+SELECT * FROM display_view; 
+```
+Add data to 50004 train
+```MySQL
+UPDATE train set source='bengaluru', destination='kochuveli' WHERE train_no=50004; 
+```
+Output the result
+```MySQL
+SELECT * FROM display_view;
+``` 
 ## Program 8: Implement Locks for a particular table.
 ### Connect the database using the command line window.
 ### Create table CAR with the following attributes(Model_No, Brand,Price).
