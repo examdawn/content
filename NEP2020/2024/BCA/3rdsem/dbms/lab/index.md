@@ -2,6 +2,8 @@
 
 Tested on 10.6.18-MariaDB-0ubuntu0.22.04.1 except Question 4 which will be written with MySQL 8.0.37 in mind
 
+Upto Question 5, output is given so students are not stuck staring at a brick wall of CLI
+
 ## Program 1: Execute Single line Query and Group Functions.
 ###	Create a table INVENTORY with the following attributes(Item_No,Item_Name,Price).
 ```MySQL
@@ -287,13 +289,50 @@ MariaDB is managed by HestiaCP so I don't want to give perms since it is a secur
 ## Program 5: Implement the Nested Queries.
 ### Create a table TEACHER with the following attributes(Tid,Tanme,Deptid).
 
-### Insert three tuples in the table TEACHER.
+```MySQL
+CREATE TABLE teacher(tid int(4) PRIMARY KEY, tname varchar(20), deptid varchar(3));
+```
+
+### Insert two tuples in the table TEACHER.
+```MySQL
+INSERT INTO teacher VALUES(1001, 'charles', 'D11');
+```
+
+```MySQL
+INSERT INTO teacher VALUES(1002, 'abdul', 'D12');
+```
+
+Now, output it
+```MySQL
+select * from teacher;
+```
 
 ### Create a table DEPARTMENT with the following attributes(Deptid,Dname).
 
+```MySQL
+CREATE TABLE department(deptid varchar(10), dname varchar(20));
+```
+
+Check the attributes
+```MySQL
+DESC department;
+```
+
 ### Insert three tuples into the DEPARTMENT Table.
 
+```MySQL
+INSERT INTO department VALUES('D11','computer science'),('D15','physics'),('D13', 'maths');
+```
+Now, check the output:
+```MySQL
+SELECT * FROM department;
+```
+
 ### Perform nested queries using the table TEACHER and DEPARTMENT.
+
+```MySQL
+SELECT * FROM teacher WHERE deptid IN(SELECT deptid FROM department WHERE teacher.deptid=department.deptid);
+```
 
 ## Program 6: Implement Join Operations in SQL.
 ### Create a table EMPLOYEE with the following attributes(Emp_id, Emp_name,Edept_id).
