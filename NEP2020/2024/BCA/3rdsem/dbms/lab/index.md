@@ -485,6 +485,10 @@ SELECT * FROM bank;
 ```
 ### Display all the tuples from the table BANK using cursor.
 ```PL/SQL
+SET SERVEROUTPUT ON;
+```
+
+```PL/SQL
 DECLARE
 cacno bank.acno%type;
 cname bank.name%type;
@@ -506,10 +510,43 @@ END;
 ```
 ## Program 11: Write a PL/SQL procedure for an application using functions.
 ### Create a table LAPTOP with the following attributes(Model_No,Company_Name, Price).
-### Insert five tuples in the table LAPTOP.
-### Display all the tuples in the table LAPTOP.
-### Find the maximum price in the table LAPTOP using the function.
+```PL/SQL
+CREATE TABLE laptop(model_no varchar(5), company_name varchar(20), price decimal(10,2));
+```
+### Insert two tuples in the table LAPTOP.
+```PL/SQL
+INSERT INTO laptop VALUES('L1001', 'dell', 50000); 
+INSERT INTO laptop VALUES('L1002', 'hp', 40000);
+```
 
+### Display all the tuples in the table LAPTOP.
+```PL/SQL
+SELECT * FROM laptop;
+```
+### Find the maximum price in the table LAPTOP using the function.
+```PL/SQL
+SET SERVEROUTPUT ON;
+```
+
+```PL/SQL
+create or replace function maximum
+return decimal IS
+maxprice number(10,2):=0;
+begin
+select max(price)into maxprice from laptop;
+return maxprice;
+end;
+/
+```
+```PL/SQL
+declare 
+n number(10,2);
+begin
+n:=maximum();
+dbms_output.put_line('maximum price='||n);
+end;
+/
+```
 ## Program 12: Write a PL/SQL procedure for an application using a package.
 ### Create a table LIBRARY with the following attributes(Book_id, Book_name, B_price).
 ### Insert three tuples in the table LIBRARY.
