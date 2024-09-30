@@ -432,24 +432,24 @@ SELECT * FROM display_view;
 
 ## Program 9: Write PL/SQL Procedure for an application using exception handling.
 ### Create a table BANK with the following attributes(Acno, Name,Balance).
-```MySQL
+```PL/SQL
 CREATE TABLE bank(acno int primary key, name varchar(20), balance decimal(10,2));
 ```
 ### Insert two tuples in the table BANK.
-```MySQL
+```PL/SQL
 INSERT INTO bank VALUES(0001, 'Souhrud', 20);
 INSERT INTO bank VALUES(0002, 'Joel', 30);
 ```
 ### Display all the tables from the table BANK.
-```MySQL
+```PL/SQL
 SELECT * FROM bank;
 ```
 ### Perform exception handling using the table BANK.
-```MySQL
+```PL/SQL
 SET SERVEROUTPUT ON;
 ```
 
-```MySQL
+```PL/SQL
 DECLARE
   cacno bank.acno%TYPE;
   cname bank.name%TYPE;
@@ -471,10 +471,39 @@ END;
 
 ## Program 10: Write PL/SQL procedure for an application using a cursor.
 ### Create a table BANK with the following attributes(Acno, Name,Balance).
-### Insert five tuples in the table BANK.
+```PL/SQL
+CREATE TABLE bank(acno int primary key, name varchar(20), balance decimal(10,2));
+```
+### Insert two tuples in the table BANK.
+```PL/SQL
+INSERT INTO bank VALUES(0001, 'Souhrud', 20);
+INSERT INTO bank VALUES(0002, 'Joel', 30);
+```
 ### Display all the tuples from the table BANK.
+```PL/SQL
+SELECT * FROM bank;
+```
 ### Display all the tuples from the table BANK using cursor.
-
+```PL/SQL
+DECLARE
+cacno bank.acno%type;
+cname bank.name%type;
+cbalance bank.balance%type;
+CURSOR cbank is
+SELECT acno,name,balance FROM bank;
+BEGIN
+dbms_output.put_line('Account no.   '||'Name    '||'Balance');
+dbms_output.put_line('==================================');
+OPEN cbank;
+LOOP
+FETCH cbank into cacno,cname,cbalance;
+EXIT WHEN cbank%notfound;
+dbms_output.put_line(cacno||'  '||cname||'    '||cbalance);
+END LOOP;
+CLOSE cbank;
+END;
+/
+```
 ## Program 11: Write a PL/SQL procedure for an application using functions.
 ### Create a table LAPTOP with the following attributes(Model_No,Company_Name, Price).
 ### Insert five tuples in the table LAPTOP.
