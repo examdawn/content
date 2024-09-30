@@ -4,6 +4,8 @@ Tested on 10.6.18-MariaDB-0ubuntu0.22.04.1 except Question 4 which will be writt
 
 Upto Question 5, output is given so students are not stuck staring at a brick wall of CLI
 
+Question 9 onwards, we are using Oracle Databases since we need to use PL/SQL. I know,  I feel the same way😿
+
 ## Program 1: Execute Single line Query and Group Functions.
 ###	Create a table INVENTORY with the following attributes(Item_No,Item_Name,Price).
 ```MySQL
@@ -430,9 +432,42 @@ SELECT * FROM display_view;
 
 ## Program 9: Write PL/SQL Procedure for an application using exception handling.
 ### Create a table BANK with the following attributes(Acno, Name,Balance).
-### Insert five tuples in the table BANK.
+```MySQL
+CREATE TABLE bank(acno int primary key, name varchar(20), balance decimal(10,2));
+```
+### Insert two tuples in the table BANK.
+```MySQL
+INSERT INTO bank VALUES(0001, 'Souhrud', 20);
+INSERT INTO bank VALUES(0002, 'Joel', 30);
+```
 ### Display all the tables from the table BANK.
+```MySQL
+SELECT * FROM bank;
+```
 ### Perform exception handling using the table BANK.
+```MySQL
+SET SERVEROUTPUT ON;
+```
+
+```MySQL
+DECLARE
+  cacno bank.acno%TYPE;
+  cname bank.name%TYPE;
+  cbalance bank.balance%TYPE;	
+BEGIN
+  SELECT acno, name, balance INTO cacno, cname, cbalance 
+  FROM bank 
+  WHERE acno = 0001;
+  
+  DBMS_OUTPUT.PUT_LINE(REPLACE(cacno || '    ' || cname || '   ' || cbalance, CHR(10), ''));
+EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    DBMS_OUTPUT.PUT_LINE('no such customer');
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Error');
+END;
+/
+```
 
 ## Program 10: Write PL/SQL procedure for an application using a cursor.
 ### Create a table BANK with the following attributes(Acno, Name,Balance).
