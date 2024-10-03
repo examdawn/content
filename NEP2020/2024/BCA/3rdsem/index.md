@@ -3,8 +3,8 @@
 Subjects:
 
 - [Database Management System(DBMS)](dbms/index.md)
-- C# and DotNet Tools
-- Computer Communications and Networks(CCN)
+- [C# and DotNet Tools(cs)](cs/index.md)
+- [Computer Communications and Networks(CCN)](ccn/index.md)
 - Kannada
 - Hindi
 - Additional English
