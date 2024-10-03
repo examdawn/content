@@ -11,6 +11,7 @@ Units:
 
 Others:
 - [Lab Records](lab/index.md)
+- [Notes From Faculty](https://drive.google.com/drive/folders/19VKBV4FqY4L7BGtOIqXFprrs2iZIWfjl?usp=sharing)
 
 
 Source:
