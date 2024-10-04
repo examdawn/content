@@ -15,6 +15,9 @@ For example, this helps in making new friends and interacting with strangers. It
 ### 4. What is social media analytics?
 
 ### 5. What do you mean by social technologies?
+Social technology refers to tools and platforms that enable online communication, connection and collaboration. 
+
+- Examples: Google Analytics, Youtube Studio, etc.
 
 ### 6. What do you mean by cyber bullying?
 
