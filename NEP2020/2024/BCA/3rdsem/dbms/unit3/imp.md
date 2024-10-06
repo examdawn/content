@@ -258,22 +258,24 @@ Consider two tables: `employees` and `departments`.
 | 2   | IT            |
 | 3   | Marketing     |
 
-1. **Inner Join**: This join returns rows that have matching values in both tables.  
+1. **Natural Join (⨝)**: This join automatically matches columns with the same name and data type in both tables. You don't need to specify any condition. In this example, it would automatically join on the `dept_id` column, as it's present in both tables.
 
-Example: 
+Notation:
+R ⨝ S 
+
+
+Example:
 ```MySQL
-SELECT employees.name, departments.dept_name FROM employees INNER JOIN departments ON employees.dept_id = departments.id;
+SELECT employees.name, departments.dept_name FROM employees NATURAL JOIN departments;
 ```
 
 Result:
 
-| name    | dept_name |
-| ------- | --------- |
-| Alice   | HR        |
-| Bob     | IT        |
-| David   | HR        |
-
-
+| id  | name    | dept_name |
+| --- | ------- | --------- |
+| 1   | Alice   | HR        |
+| 2   | Bob     | IT        |
+| 4   | David   | HR        |
 
 2. **Left Join (Left Outer Join)**  (⟕): This join returns all rows from the left table (employees), and the matching rows from the right table (departments). If there’s no match, `NULL` is returned for columns from the right table.
 
@@ -335,6 +337,21 @@ Result:
 | Charlie | NULL      |
 | David   | HR        |
 | NULL    | Marketing |
+
+5. **Inner Join**: This join returns rows that have matching values in both tables.  
+
+Example: 
+```MySQL
+SELECT employees.name, departments.dept_name FROM employees INNER JOIN departments ON employees.dept_id = departments.id;
+```
+
+Result:
+
+| name    | dept_name |
+| ------- | --------- |
+| Alice   | HR        |
+| Bob     | IT        |
+| David   | HR        |
 
 
 ## Source:
