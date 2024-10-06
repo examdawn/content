@@ -29,10 +29,24 @@ A DBMS makes the following tasks a lot simpler:
 - Concurrent Data Access
     - DBMS provides a concurrent access mechanism that allows multiple users to access the same data simultaneously.
     - DBMSs use locking mechanisms to ensure that multiple users can access the same data without causing conflicts or data corruption.
-[GeeksForGeeks](https://www.geeksforgeeks.org/need-for-dbms/)
-### Q4. Defined data model.
 
+[GeeksForGeeks](https://www.geeksforgeeks.org/need-for-dbms/)
+### Q4. Define data model.
+A Data Model is a blueprint-like representation of the data so that we can visualize and understand it.
+
+[AWS](https://aws.amazon.com/what-is/data-modeling/#:~:text=Data%20modeling%20is%20the%20process,store%20and%20analyze%20the%20data.)
 ### Q5. Explain relational model.
+A relational data model is where we use Tables to describe how our data is stored in a Relational Databases. Rows are called Tuples and Columns are called Attributes.  
+
+| **Student ID** | **Name** | **Age** | **Field** |
+| --- | --- | --- | --- |
+| 1 | John Smith | 20 | Computer Science |
+| 2 | Jane Doe | 21 | Biology |
+| 3 | Bob Johnson | 19 | Mathematics |
+
+Here, Student ID, Name, Age and Field come under Attributes(columns) and the Tuples(rows) hold student data corresponding to the attributes. 
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/relational-model-in-dbms/)
 
 ### Q6. Explain Hierarchal model.
 
