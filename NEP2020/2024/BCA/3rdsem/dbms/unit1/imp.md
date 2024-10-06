@@ -4,10 +4,32 @@
 
 ### Q1. define database.
 
+A database is a collection of data that is structured and easy to access, manage and update. This can be anything like text, numbers, videos, images, files, and more.
+
 ### Q2. Define DBMS
 
-### Q3. Why do we need TBMS?
+A DBMS(Database Management System) is a software used to manage data in a database. This allows us to store, modify, update and delete data from a database.
 
+Examples: MySQL, Oracle SQL, MongoDB, PostgreSQL, etc
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/dbms/)
+
+### Q3. Why do we need DBMS?
+
+A DBMS makes the following tasks a lot simpler:
+- Data Organization and Management
+    - A well-designed database schema enables faster access to information, reducing the time required to find relevant data. 
+    - A DBMS also provides features like indexing and searching, which make it easier to locate specific data within the database. 
+- Data Security and Privacy
+    - They offer authentication and authorization features that control access to the database. 
+    - DBMSs also provide encryption capabilities to protect sensitive data from unauthorized access. 
+- Data Integrity and Consistency
+    - DBMSs provide mechanisms that ensure the accuracy and consistency of data. 
+    - These mechanisms include constraints, triggers, and stored procedures that enforce data integrity rules
+- Concurrent Data Access
+    - DBMS provides a concurrent access mechanism that allows multiple users to access the same data simultaneously.
+    - DBMSs use locking mechanisms to ensure that multiple users can access the same data without causing conflicts or data corruption.
+[GeeksForGeeks](https://www.geeksforgeeks.org/need-for-dbms/)
 ### Q4. Defined data model.
 
 ### Q5. Explain relational model.
