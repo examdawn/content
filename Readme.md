@@ -8,3 +8,6 @@ Content available for:
 
 ## Contribution Guidelines
 [Follow these guidelines while contributing!](.github/CONTRIBUTING.md)
+
+## Copyright and More
+For initiating takedowns, please read [the takedown page](takedown.md)
