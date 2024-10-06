@@ -30,11 +30,9 @@ A.
 - University
 - Library
 
-A. University 
-    ![University](assets/university.svg)
+A. University: [Image](assets/university.svg)
 
-Library
-    ![Library](assets/library.svg)
+Library: [Image](assets/library.svg)
 
 ### Q11. What are Relationship types, set and degrees of relation?
 A. 
