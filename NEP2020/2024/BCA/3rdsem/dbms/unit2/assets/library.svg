@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 700"
+   version="1.1"
+   id="svg51"
+   sodipodi:docname="library.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs51" />
+  <sodipodi:namedview
+     id="namedview51"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.5125"
+     inkscape:cx="400"
+     inkscape:cy="350.2439"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="1358"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg51" />
+  <!-- Strong Entities -->
+  <rect
+     x="50"
+     y="250"
+     width="120"
+     height="60"
+     fill="#90EE90"
+     stroke="green"
+     stroke-width="2"
+     id="rect1" />
+  <text
+     x="110"
+     y="285"
+     text-anchor="middle"
+     id="text1">Member</text>
+  <rect
+     x="350"
+     y="250"
+     width="120"
+     height="60"
+     fill="#90EE90"
+     stroke="green"
+     stroke-width="2"
+     id="rect2" />
+  <text
+     x="410"
+     y="285"
+     text-anchor="middle"
+     id="text2">Book</text>
+  <rect
+     x="650"
+     y="250"
+     width="120"
+     height="60"
+     fill="#90EE90"
+     stroke="green"
+     stroke-width="2"
+     id="rect3" />
+  <text
+     x="710"
+     y="285"
+     text-anchor="middle"
+     id="text3">Library</text>
+  <!-- Weak Entity -->
+  <rect
+     x="195"
+     y="445"
+     width="130"
+     height="70"
+     stroke="green"
+     stroke-width="1"
+     fill="#90EE90"
+     id="rect4" />
+  <rect
+     x="200"
+     y="450"
+     width="120"
+     height="60"
+     stroke="green"
+     stroke-width="1"
+     fill="#90EE90"
+     id="rect5" />
+  <text
+     x="260"
+     y="485"
+     text-anchor="middle"
+     id="text5">Loan</text>
+  <!-- Relationships (proper diamonds) -->
+  <g
+     transform="translate(245,280) rotate(45)"
+     id="g6">
+    <rect
+       x="-20"
+       y="-20"
+       width="40"
+       height="40"
+       fill="#B19CD9"
+       stroke="purple"
+       id="rect6" />
+  </g>
+  <text
+     x="245"
+     y="285"
+     text-anchor="middle"
+     id="text6">Borrows</text>
+  <g
+     transform="translate(545,280) rotate(45)"
+     id="g7">
+    <rect
+       x="-20"
+       y="-20"
+       width="40"
+       height="40"
+       fill="#B19CD9"
+       stroke="purple"
+       id="rect7" />
+  </g>
+  <text
+     x="545"
+     y="285"
+     text-anchor="middle"
+     id="text7">Owned By</text>
+  <!-- Identifying Relationship for Weak Entity -->
+  <g
+     transform="translate(160,380) rotate(45)"
+     id="g8">
+    <rect
+       x="-20"
+       y="-20"
+       width="40"
+       height="40"
+       fill="#B19CD9"
+       stroke="purple"
+       stroke-width="2"
+       id="rect8" />
+  </g>
+  <text
+     x="160"
+     y="385"
+     text-anchor="middle"
+     id="text8">Has</text>
+  <!-- Attributes for Member -->
+  <ellipse
+     cx="36.097561"
+     y="120"
+     rx="40"
+     ry="20"
+     fill="#ffb6c1"
+     stroke="#ff0000"
+     id="ellipse8"
+     cy="152.19513" />
+  <text
+     x="30"
+     y="155"
+     text-anchor="middle"
+     text-decoration="underline"
+     id="text9">MemberID</text>
+  <ellipse
+     cx="100"
+     cy="120"
+     rx="40"
+     ry="20"
+     fill="#FFB6C1"
+     stroke="red"
+     id="ellipse9" />
+  <text
+     x="100"
+     y="125"
+     text-anchor="middle"
+     id="text10">Name</text>
+  <ellipse
+     cx="170"
+     cy="150"
+     rx="45"
+     ry="20"
+     stroke="red"
+     fill="#FFB6C1"
+     id="ellipse10" 
+	 stroke-dasharray="5,5"/>
+  <text
+     x="170"
+     y="155"
+     text-anchor="middle"
+     id="text11">Age</text>
+  <!-- Attributes for Book -->
+  <ellipse
+     cx="350"
+     cy="150"
+     rx="40"
+     ry="20"
+     fill="#FFB6C1"
+     stroke="red"
+     id="ellipse11" />
+  <text
+     x="350"
+     y="155"
+     text-anchor="middle"
+     text-decoration="underline"
+     id="text12">ISBN</text>
+  <ellipse
+     cx="430"
+     cy="150"
+     rx="40"
+     ry="20"
+     fill="#FFB6C1"
+     stroke="red"
+     id="ellipse12" />
+  <text
+     x="430"
+     y="155"
+     text-anchor="middle"
+     id="text13">Title</text>
+  <ellipse
+     cx="510"
+     cy="150"
+     rx="40"
+     ry="20"
+     fill="#FFB6C1"
+     stroke="red"
+     id="ellipse13" />
+  <text
+     x="510"
+     y="155"
+     text-anchor="middle"
+     id="text14">Author</text>
+  <!-- Attributes for Library -->
+  <ellipse
+     cx="650"
+     cy="150"
+     rx="40"
+     ry="20"
+     fill="#FFB6C1"
+     stroke="red"
+     id="ellipse14" />
+  <text
+     x="650"
+     y="155"
+     text-anchor="middle"
+     text-decoration="underline"
+     id="text15">LibraryID</text>
+  <!-- Composite attribute for Address -->
+  <ellipse
+     cx="730"
+     cy="130"
+     rx="40"
+     ry="20"
+     fill="#FFB6C1"
+     stroke="red"
+     id="ellipse15" />
+  <text
+     x="730"
+     y="135"
+     text-anchor="middle"
+     id="text16">Address</text>
+  <ellipse
+     cx="690"
+     cy="90"
+     rx="40"
+     ry="20"
+     fill="#FFB6C1"
+     stroke="red"
+     id="ellipse16" />
+  <text
+     x="690"
+     y="95"
+     text-anchor="middle"
+     id="text17">Street</text>
+  <ellipse
+     cx="770"
+     cy="90"
+     rx="40"
+     ry="20"
+     fill="#FFB6C1"
+     stroke="red"
+     id="ellipse17" />
+  <text
+     x="770"
+     y="95"
+     text-anchor="middle"
+     id="text18">City</text>
+  <!-- Connecting lines -->
+  <!-- Entity relationship lines -->
+  <line
+     x1="170"
+     y1="280"
+     x2="220"
+     y2="280"
+     stroke="black"
+     id="line18" />
+  <line
+     x1="270"
+     y1="280"
+     x2="350"
+     y2="280"
+     stroke="black"
+     id="line19" />
+  <line
+     x1="470"
+     y1="280"
+     x2="520"
+     y2="280"
+     stroke="black"
+     id="line20" />
+  <line
+     x1="570"
+     y1="280"
+     x2="650"
+     y2="280"
+     stroke="black"
+     id="line21" />
+  <!-- Weak entity relationship lines (double line) -->
+  <line
+     x1="110"
+     y1="310"
+     x2="145"
+     y2="365"
+     stroke="black"
+     id="line22" />
+  <line
+     x1="115"
+     y1="310"
+     x2="150"
+     y2="365"
+     stroke="black"
+     id="line23" />
+  <line
+     x1="175"
+     y1="395"
+     x2="200"
+     y2="450"
+     stroke="black"
+     id="line24" />
+  <!-- Attribute connecting lines -->
+  <line
+     x1="30"
+     y1="170"
+     x2="70"
+     y2="250"
+     stroke="black"
+     id="line25" />
+  <line
+     x1="100"
+     y1="140"
+     x2="90"
+     y2="250"
+     stroke="black"
+     id="line26" />
+  <line
+     x1="170"
+     y1="170"
+     x2="130"
+     y2="250"
+     stroke="black"
+     id="line27" />
+  <line
+     x1="350"
+     y1="170"
+     x2="380"
+     y2="250"
+     stroke="black"
+     id="line28" />
+  <line
+     x1="430"
+     y1="170"
+     x2="410"
+     y2="250"
+     stroke="black"
+     id="line29" />
+  <line
+     x1="510"
+     y1="170"
+     x2="440"
+     y2="250"
+     stroke="black"
+     id="line30" />
+  <line
+     x1="650"
+     y1="170"
+     x2="680"
+     y2="250"
+     stroke="black"
+     id="line31" />
+  <line
+     x1="730"
+     y1="150"
+     x2="710"
+     y2="250"
+     stroke="black"
+     id="line32" />
+  <!-- Composite attribute lines -->
+  <line
+     x1="690"
+     y1="110"
+     x2="720"
+     y2="130"
+     stroke="black"
+     id="line33" />
+  <line
+     x1="770"
+     y1="110"
+     x2="740"
+     y2="130"
+     stroke="black"
+     id="line34" />
+  <!-- Cardinality -->
+  <text
+     x="180"
+     y="270"
+     text-anchor="middle"
+     id="text34">1</text>
+  <text
+     x="310"
+     y="270"
+     text-anchor="middle"
+     id="text35">n</text>
+  <text
+     x="490"
+     y="270"
+     text-anchor="middle"
+     id="text36">1</text>
+  <text
+     x="630"
+     y="270"
+     text-anchor="middle"
+     id="text37">n</text>
+  <!-- Legend -->
+  <g
+     transform="translate(30,580)"
+     id="g51">
+    <text
+       x="0"
+       y="0"
+       font-size="12"
+       font-weight="bold"
+       id="text38">Legend:</text>
+    <!-- Row 1 -->
+    <rect
+       x="0"
+       y="10"
+       width="60"
+       height="30"
+       fill="#90EE90"
+       stroke="green"
+       stroke-width="2"
+       id="rect38" />
+    <text
+       x="70"
+       y="30"
+       font-size="10"
+       id="text39">Strong Entity</text>
+    <rect
+       x="200"
+       y="10"
+       width="65"
+       height="35"
+       stroke="green"
+       stroke-width="1"
+       fill="#90EE90"
+       id="rect39" />
+    <rect
+       x="202.5"
+       y="12.5"
+       width="60"
+       height="30"
+       stroke="green"
+       stroke-width="1"
+       fill="#90EE90"
+       id="rect40" />
+    <text
+       x="275"
+       y="30"
+       font-size="10"
+       id="text40">Weak Entity</text>
+    <g
+       transform="translate(400,25) rotate(45)"
+       id="g41">
+      <rect
+         x="-15"
+         y="-15"
+         width="30"
+         height="30"
+         fill="#B19CD9"
+         stroke="purple"
+         id="rect41" />
+    </g>
+    <text
+       x="440"
+       y="30"
+       font-size="10"
+       id="text41">Relationship</text>
+    <ellipse
+       cx="570"
+       cy="25"
+       rx="30"
+       ry="15"
+       fill="#FFB6C1"
+       stroke="red"
+       id="ellipse41" />
+    <text
+       x="630"
+       y="30"
+       font-size="10"
+       id="text42">Attribute</text>
+    <!-- Row 2 -->
+    <ellipse
+       cx="30"
+       cy="70"
+       rx="30"
+       ry="15"
+       fill="#FFB6C1"
+       stroke="red"
+       id="ellipse42" />
+    <text
+       x="30"
+       y="75"
+       text-anchor="middle"
+       text-decoration="underline"
+       id="text43">Key</text>
+    <text
+       x="90"
+       y="75"
+       font-size="10"
+       id="text44">Key Attribute</text>
+    <ellipse
+       cx="200"
+       cy="70"
+       rx="35"
+       ry="17"
+       stroke="red"
+       fill="#FFB6C1"
+       id="ellipse44" />
+    <ellipse
+       cx="200"
+       cy="70"
+       rx="30"
+       ry="12"
+       stroke="red"
+       fill="#FFB6C1"
+       id="ellipse45" />
+    <text
+       x="200"
+       y="75"
+       text-anchor="middle"
+       id="text45">Multi</text>
+    <text
+       x="240"
+       y="75"
+       font-size="10"
+       id="text46">Multivalued Attribute</text>
+    <ellipse
+       cx="400"
+       cy="70"
+       rx="30"
+       ry="15"
+       fill="#FFB6C1"
+       stroke="red"
+       stroke-dasharray="5,5"
+       id="ellipse46" />
+    <text
+       x="400"
+       y="75"
+       text-anchor="middle"
+       id="text47">Derived</text>
+    <text
+       x="440"
+       y="75"
+       font-size="10"
+       id="text48">Derived Attribute</text>
+    <ellipse
+       cx="580"
+       cy="60"
+       rx="30"
+       ry="15"
+       fill="#FFB6C1"
+       stroke="red"
+       id="ellipse48" />
+    <text
+       x="580"
+       y="65"
+       text-anchor="middle"
+       id="text49">Composite</text>
+    <ellipse
+       cx="560"
+       cy="85"
+       rx="20"
+       ry="10"
+       fill="#FFB6C1"
+       stroke="red"
+       id="ellipse49" />
+    <ellipse
+       cx="600"
+       cy="85"
+       rx="20"
+       ry="10"
+       fill="#FFB6C1"
+       stroke="red"
+       id="ellipse50" />
+    <line
+       x1="560"
+       y1="75"
+       x2="580"
+       y2="60"
+       stroke="black"
+       id="line50" />
+    <line
+       x1="600"
+       y1="75"
+       x2="580"
+       y2="60"
+       stroke="black"
+       id="line51" />
+    <text
+       x="630"
+       y="75"
+       font-size="10"
+       id="text51">Composite Attribute</text>
+  </g>
+</svg>

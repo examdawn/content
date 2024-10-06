@@ -2,19 +2,19 @@
 
 ## Important Questions
 
-### Define entity and entity type.
+### Q1. Define entity and entity type.
 A. 
-### What is an entity set?
+### Q2. What is an entity set?
 A. 
-### What is an attribute?
+### Q3. What is an attribute?
 A. 
-### What is the difference between prime and non-prime attributes?
+### Q4. What is the difference between prime and non-prime attributes?
 A. 
-### Explain a strong and weak entity set with an example.
+### Q5. Explain a strong and weak entity set with an example.
 A. 
-### Explain the type of attributes.
+### Q6. Explain the type of attributes.
 A. 
-### Define the following with examples:
+### Q7. Define the following with examples:
 - Super key
 - candidate key 
 - primary key 
@@ -22,19 +22,23 @@ A.
 - composite key
 
 A. 
-### What are the symbols used in ER diagrams?
+### Q8. What are the symbols used in ER diagrams?
 A. 
-### What is the notation of the ER diagram? Give an example.
+### Q9. What is the notation of the ER diagram? Give an example.
 A. 
-### Draw and ER diagram of these three with notation and symbols:
+### Q10. Draw and ER diagram of these three with notation and symbols:
 - University
 - Library
-- Airline Reservation
 
+A. University 
+    ![University](assets/university.svg)
+
+Library
+    ![Library](assets/library.svg)
+
+### Q11. What are Relationship types, set and degrees of relation?
 A. 
-### What are Relationship types, set and degrees of relation?
-A. 
-### What is a relationship? Give an example of 1 to 1 and 1 to many.
+### Q12. What is a relationship? Give an example of 1 to 1 and 1 to many.
 A. 
 
 ## Source:
