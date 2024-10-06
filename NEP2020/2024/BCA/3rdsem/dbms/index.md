@@ -6,6 +6,7 @@ Units:
 - Unit 2: Entity-Relationship Models
     - [Important Questions](unit2/imp.md)
 - Unit 3: Relational Data Model
+    - [Important Questions](unit3/imp.md)
 - Unit 4: Data Normalization
 - Unit 5: Query Processing Transaction Management
 
