@@ -138,20 +138,147 @@ It has 4 types based on what it does:
 
 [Scalar](https://www.scaler.com/topics/database-languages-in-dbms/)
 ### Q12. What are the properties of database?
+- **Data Independence**: Separation of data storage from application programs, allowing changes without affecting functionality.
+
+- **Data Integrity**: The data should be correct and without any inconsistencies. To ensure data integrity, the database system uses data validation procedures that define acceptable input range for each field in the record.
+
+- **Data Redundancy and Inconsistency**: Reduces duplicate data and ensures efficient storage.
+
+- **Data Sharing and Security**: Facilitates sharing of data among multiple users and applications. It should be accessible to authorized users only.
+
 
 ### Q13. Explain different types of database users.
+1. **Database Administrators (DBA)**: Responsible for implementing and managing the database system, including:
+   - Defining and modifying schema.
+   - Managing storage structure and access methods.
+   - Creating security measures and user privileges.
+   - Defining integrity constraints.
+   - Establishing backup and recovery policies.
+
+2. **Database Designers**: Design the database structure, including tables, indexes, views, and stored procedures, determining how data is stored and related.
+
+3. **End Users**: Access the database for querying and reporting, categorized as:
+   - **Casual Users**: Access the database occasionally for different information.
+   - **Naive Users**: Unsophisticated users who interact via application interfaces without database knowledge.
+   - **Sophisticated Users**: Familiar with databases, write SQL queries for their needs.
+   - **Stand-alone Users**: Maintain personal databases using ready-made software.
 
 ### Q14. What are the disadvantages of database?
+1. **Increased Cost**:
+   - **Hardware and Software**: DBMS requires high-speed processors and large memory, leading to significant costs for hardware and software. Maintenance and licensing add to these expenses.
+   - **Staff Training**: Hiring and training educated staff (DBAs, programmers) increases costs, as does outsourcing to software houses.
+   - **Data Conversion**: Transitioning existing data to a DBMS involves high expenses for hiring designers and developers.
+
+2. **Complexity**: DBMS functionality requires in-depth knowledge from developers, DBAs, and end-users. Lack of expertise can lead to data loss and poor design decisions, making management challenging.
+
+3. **Currency Maintenance**: Keeping the system updated for efficiency is crucial. Regular updates and security measures incur additional training costs.
+
+4. **Performance**: DBMS may perform poorly for small organizations compared to traditional file systems, leading to slower application speeds and reduced usability.
+
+5. **Frequent Upgrade/Replacement Cycles**: New functionality and software upgrades often require hardware updates, making it difficult for users to adapt to constant changes and incurring training costs.
+
+6. **Complex Design**: Database design is intricate, time-consuming, and requires significant effort.
+
+7. **Damaged Parts**: Corruption in one part of the database can affect the entire system.
+
+8. **Compatibility**: DBMS software may not integrate well with other systems, complicating application development.
+
+9. **Security**: Vulnerabilities can arise if the DBMS is not properly configured, risking data loss or theft.
+
+10. **Data Isolation**: Scattered data across various files complicates the retrieval of relevant information.
+
+11. **Difficulty in Accessing Data**: Conventional file-processing systems may lack the necessary application programs for specific queries, leading to inefficiencies.
+
+12. **Data Redundancy and Inconsistency**: Multiple versions of the same data in different files can lead to inconsistencies and higher storage costs.
+
+13. **Integrity Problems**: Enforcing consistency constraints can be challenging, especially when multiple data items are involved, complicating program updates.
+
+[GeeksforGeeks](https://www.geeksforgeeks.org/disadvantages-of-dbms/)
+
 
 ### Q15. Explain different people in DBMS.
+Refer Answer 13.
 
 ### Q17. Explain different types of schemas.
 
+1. **Physical Database Schema**:
+   - Defines how data is physically stored in storage systems, including files and indices.
+   - Involves the actual code and syntax for creating the database structure.
+   - The Database Administrator determines where and how to store data in storage blocks.
+
+2. **Logical Database Schema**:
+   - Describes logical constraints, tables, views, entity relationships, and integrity constraints.
+   - Illustrates how data is organized in tables and the connections between attributes.
+   - Maintains relationships using ER modeling and enforces integrity constraints for data quality.
+
+3. **View Database Schema**:
+   - Represents the interaction design between end-users and the database.
+   - Allows users to interact with the database through an interface without needing to understand the underlying data storage mechanisms.
+
+[GeeksforGeeks](https://www.geeksforgeeks.org/database-schemas/)
+
 ### Q18. Explain different types of DBMS architectures.
+1. **Client-Server Architecture**:
+The design of a DBMS depends on its architecture. It can be centralized or decentralized or hierarchical. Database architecture is logically divided into two types. They are:
+   - **Two-tier Client/Server Architecture**:
+     - Consists of a user interface program and application programs on the client side.
+     - Uses ODBC (Open Database Connectivity) to connect client programs to the DBMS.
+     - Requests are sent from the application layer to the database layer, and results are returned to the application layer.
+
+   - **Three-tier Client/Server Architecture**:
+     - Separates tiers based on user complexity and data usage.
+     - Most widely used architecture for designing a DBMS.
+
+2. **Centralized DBMS Architecture**:
+   - Features a database stored and maintained in a single location (e.g., a server or mainframe).
+   - Commonly used by organizations or institutions, such as businesses and universities.
+
 
 ### Q19. What is database Representation? Explain different types with examples
+Database representation refers to how data is structured, organized, and stored in a database. Different types of representations help in modeling and accessing data effectively. Here are the main types:
+
+1. **Flat File Representation**:
+   - Data is stored in a single table or file, with records arranged in rows and fields in columns.
+   - **Example**: A CSV file containing student records with fields like Name, Age, and Grade.
+
+2. **Hierarchical Representation**:
+   - Organizes data in a tree-like structure where each record has a single parent and can have multiple children.
+   - **Example**: An organizational chart where a manager has multiple employees reporting to them.
+
+3. **Network Representation**:
+   - Similar to hierarchical but allows multiple parent-child relationships, forming a graph structure.
+   - **Example**: A social network where users can have multiple friends and connections.
+
+4. **Relational Representation**:
+   - Data is organized into tables (relations) with rows (records) and columns (attributes). Relationships between tables are established through foreign keys.
+   - **Example**: A database with a "Students" table and a "Courses" table, linked by a Course ID.
+
+5. **Object-oriented Representation**:
+   - Data is represented as objects, similar to programming languages, encapsulating both data and behavior.
+   - **Example**: An object representing a car that includes properties like make, model, and methods for starting or stopping.
+
+6. **Document Representation**:
+   - Data is stored in semi-structured formats, often using JSON or XML, suitable for hierarchical data.
+   - **Example**: A JSON document representing a blog post with fields like title, author, and content.
+
+7. **Graph Representation**:
+   - Data is represented as nodes and edges, allowing complex relationships and queries.
+   - **Example**: A graph database representing a network of cities connected by roads, where cities are nodes and roads are edges.
 
 ### Q20. What is the difference between logical and physical data independence? Explain briefly.
+**Logical Data Independence**:
+- Refers to the capacity to change the logical schema without altering the external schema or application programs.
+- Changes may include adding new fields or tables.
+- Allows users to interact with data without needing to modify their applications when the logical structure changes.
+
+**Physical Data Independence**:
+- Refers to the ability to change the physical schema without affecting the logical schema.
+- Changes may involve altering storage devices, file formats, or indexing methods.
+- Ensures that the logical structure remains stable even if the physical storage changes.
+
+### Summary
+- **Logical Independence**: Changes in the logical structure don't affect user applications.
+- **Physical Independence**: Changes in physical storage don't affect the logical structure.
 
 ## Source:
 - Questions: Dictated in class
