@@ -125,9 +125,11 @@ Table 3:
 
 
 ### Q8. What are the symbols used in ER diagrams?
-A. 
+A. check Q9
 ### Q9. What is the notation of the ER diagram? Give an example.
-A. 
+A. Refer to:
+- [EDrawMax](https://www.edrawmax.com/article/er-diagram-symbols-and-notations.html)
+- [Simplilearn](https://www.simplilearn.com/tutorials/sql-tutorial/er-diagram-in-dbms)
 ### Q10. Draw and ER diagram of these three with notation and symbols:
 - University
 - Library
@@ -138,8 +140,66 @@ Library: [Image](assets/library.svg)
 
 ### Q11. What are Relationship types, set and degrees of relation?
 A. 
+Relationship type: 
+- The type of relationship between entities, such as the relationship between a student and a class, or between a salary slip and an employee 
+
+Relationship set: 
+- A set of relationships of a specific type 
+
+Degree of relationship: 
+- The number of entities involved in a relationship 
+
+Cardinality: 
+- The number of tuples or rows in a table 
 ### Q12. What is a relationship? Give an example of 1 to 1 and 1 to many.
-A. 
+A. In a DBMS, a relationship is a connection between two or more entity sets that share common attributes. Relationships are used to establish links between entities and to define how they interact with each other.
+
+There are three main types of relationships:
+- One-to-One (1:1)
+- One-to-Many (1:N)
+- Many-to-Many (M:N)
+
+#### One-to-One (1:1) Relationship
+
+In a 1:1 relationship, each entity in one entity set is related to only one entity in another entity set.
+
+Suppose we have two entity sets: Employee and Employee Details. Each employee has only one set of details, and each set of details belongs to only one employee.
+
+| **Employee ID** | **Name** | **Department** |
+| --- | --- | --- |
+| 101 | John Smith | Sales |
+| 102 | Jane Doe | Marketing |
+| 103 | Bob Johnson | IT |
+
+| **Employee ID** | **Address** | **Phone Number** |
+| --- | --- | --- |
+| 101 | 123 Main St | 123-456-7890 |
+| 102 | 456 Elm St | 987-654-3210 |
+| 103 | 789 Oak St | 555-123-4567 |
+
+In this example, the Employee ID attribute in the Employee entity set is related to the Employee ID attribute in the Employee Details entity set. This is a 1:1 relationship because each employee has only one set of details, and each set of details belongs to only one employee.
+
+#### One-to-Many (1:N) Relationship
+
+In a 1:N relationship, each entity in one entity set is related to multiple entities in another entity set.
+
+Suppose we have two entity sets: Customer and Order. Each customer can place multiple orders, but each order belongs to only one customer.
+
+| **Customer ID** | **Name** | **Address** |
+| --- | --- | --- |
+| 101 | John Smith | 123 Main St |
+| 102 | Jane Doe | 456 Elm St |
+| 103 | Bob Johnson | 789 Oak St |
+
+| **Order ID** | **Customer ID** | **Order Date** |
+| --- | --- | --- |
+| 1 | 101 | 2022-01-01 |
+| 2 | 101 | 2022-01-15 |
+| 3 | 102 | 2022-02-01 |
+| 4 | 103 | 2022-03-01 |
+| 5 | 101 | 2022-04-01 |
+
+In this example, the Customer ID attribute in the Customer entity set is related to the Customer ID attribute in the Order entity set. This is a 1:N relationship because each customer can place multiple orders, but each order belongs to only one customer.
 
 ## Source:
 - Questions: Dictated in class
