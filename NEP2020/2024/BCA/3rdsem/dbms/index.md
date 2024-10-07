@@ -13,7 +13,7 @@ Units:
 Others:
 - [Lab Records](lab/index.md)
 - [Notes From Faculty](https://drive.google.com/drive/folders/19VKBV4FqY4L7BGtOIqXFprrs2iZIWfjl?usp=sharing)
-
+- [Assignments](assignments/index.md) 
 
 Source:
 [Syllabus for NEP 2020](https://drive.google.com/file/d/1fArLbfdmMvhREDAw85i2_LrAMqCVwdG_/view)
