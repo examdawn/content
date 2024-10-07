@@ -16,10 +16,12 @@ A network topology describes how these components are arranged in relation to ea
 Point to point connects two nodes, in which one is the sender and the other one is the receiver. 
 
 Point-to-Point provides high bandwidth.
+
 ![Point to Point topology](https://media.geeksforgeeks.org/wp-content/uploads/20240614235231/Point-to-point-topology.png)
 
 #### Mesh Topology 
 In a mesh topology, every device is connected to another device via a particular channel.
+
 ![Mesh Topology](https://media.geeksforgeeks.org/wp-content/uploads/1-75.png)
 
 Advantages of Mesh Topology:
@@ -120,6 +122,7 @@ Hybrid Topology is used when the nodes are free to take any form.
 It means these can be individuals such as Ring or Star topology or can be a combination of various types of topologies seen above. Each individual topology uses the protocol that has been shown earlier. 
 
 ![Hybrid Topology](https://media.geeksforgeeks.org/wp-content/uploads/20240615002149/Hybrid-Topology.png)
+
  Advantages of Hybrid Topology:
 - This topology is very flexible .
 - The size of the network can be easily expanded by adding new devices.
@@ -137,16 +140,16 @@ Disadvantages of Hybrid Topology:
 - MAN
 - WAN
 
-### q3. Explain OSI model with a neat diagram 
+### Q3. Explain OSI model with a neat diagram 
 
 ### Q4. Write a note on TCP/IP
 ### Q5. Explain application of computer networks in detail 
 ### Q6. What is communication?
 ### Q7. What is a network?
-### 8. Wat is a computer network?
-### 10. What is the physical layer?
-### 11. Explain layers of TCP/ip model
-### 12. What are the Advantages and disadvantages of topology 
+### Q8. Wat is a computer network?
+### Q10. What is the physical layer?
+### Q11. Explain layers of TCP/ip model
+### Q12. What are the Advantages and disadvantages of topology 
 Answered in Q1
 
 ## Source:
