@@ -10,7 +10,7 @@ Nodes include devices like routers, switchers, repeaters, and computers.
 
 A network topology describes how these components are arranged in relation to each other and how data moves through the network.
 
-![IBM Topology types]
+![IBM Topology types](https://www.ibm.com/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/a5/2d/network-topology.component.complex-narrative-xl.ts=1723571456852.png/content/adobe-cms/us/en/topics/network-topology/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/complex_narrative_1220059888/items/content_group/image)
 
 #### Point to Point Topology 
 Point to point connects two nodes, in which one is the sender and the other one is the receiver. 
