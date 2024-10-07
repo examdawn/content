@@ -257,6 +257,25 @@ The physical Layer is the bottom-most layer in the Open System Interconnection (
 
 It deals with switches and cables that connect the computers together. We can observe various topologies here like BUS topology, MESH topology, Star topology, etc
 ### Q9. Explain layers of TCP/ip model
+TCP/IP Model has the following layers:
+- Appliation Layer
+- Transport Layer
+    - The TCP/IP transport layer protocols exchange data receipt acknowledgments and retransmit missing packets to ensure that packets arrive in order and without error
+    - **TCP**: Applications can interact with one another using TCP as though they were physically connected by a circuit
+    - **UDP**: The datagram delivery service is provided by UDP, the other transport layer protocol. 
+    - TCP ensures that data is delivered reliably, while UDP does not(so it is faster). 
+    - TCP retransmits lost or damaged packets, while UDP drops them and moves on
+- Network Layer
+    - This layer parallels the functions of OSI’s Network layer. 
+    - It defines the protocols which are responsible for the logical transmission of data over the entire network
+    - The main protocols residing at this layer are as follows:
+        - **IP**: IP stands for Internet Protocol and it is responsible for delivering packets from the source host to th**e d**estination host by looking at the IP addresses in the packet headers. 
+        - **ICMP**: ICMP stands for Internet Control Message Protocol used to manage errors and provide information ab**out** IP networks.
+        - **ARP**: ARP stands for Address Resolution Protocol. Its job is to find the hardware address of a host from a known IP address
+- Network Access Layer
+    - This layer is responsible for generating the data and requesting connections
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/tcp-ip-model/)
 ### Q10. What are the Advantages and disadvantages of topology 
 Answered in Q1
 
