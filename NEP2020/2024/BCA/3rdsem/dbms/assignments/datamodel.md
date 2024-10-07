@@ -42,18 +42,6 @@ graph TD
 ### Network Data Model
 A network data model organizes data into a graph structure, with each node representing a record or a group of records, and edges representing relationships between them.
 
-**Users**
-
-* User 1
-	+ Friends: User 2, User 3
-	+ Interests: Music, Movies
-* User 2
-	+ Friends: User 1, User 4
-	+ Interests: Sports, Books
-* User 3
-	+ Friends: User 1, User 5
-	+ Interests: Travel, Food
-
 
 - [ThoughtSpot](https://www.thoughtspot.com/data-trends/data-modeling/types-of-data-models)
 
