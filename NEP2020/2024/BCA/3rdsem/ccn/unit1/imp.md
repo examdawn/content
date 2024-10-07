@@ -140,8 +140,74 @@ Disadvantages of Hybrid Topology:
 - MAN
 - WAN
 
+#### LAN (Local Area Network)
+A LAN is a computer network that spans a small geographical area, typically within a building or campus. It connects devices such as computers, printers, and servers, allowing them to communicate and share resources.
+
+![LAN](https://img-en.fs.com/community/upload/wangEditor/202001/15/_1579075677_TYmQ3uvwdF.png)
+
+#### MAN (Metropolitan Area Network)
+A MAN is a computer network that covers a larger geographical area than a LAN, typically a metropolitan area or city. It is used to connect multiple LANs and provide internet access, telecommunication services, and other applications.
+
+![MAN](https://img-en.fs.com/community/upload/wangEditor/202001/15/_1579075695_JM6oSiDcas.png)
+
+#### WAN (Wide Area Network)
+A WAN is a computer network that covers a large geographical area, often spanning multiple cities, states, or even countries. It is used to connect multiple LANs and MANs, providing long-distance communication and data transfer services.
+
+![WAN](https://img-en.fs.com/community/upload/wangEditor/202001/15/_1579075710_nI7IT274ex.png)
+
+[FS Community](https://community.fs.com/article/lan-vs-man-vs-wan-whats-the-difference.html)
 ### Q3. Explain OSI model with a neat diagram 
 
+![Diagram on OSI Model](https://cf-assets.www.cloudflare.com/slt3lc6tev37/6ZH2Etm3LlFHTgmkjLmkxp/59ff240fb3ebdc7794ffaa6e1d69b7c2/osi_model_7_layers.png)
+
+The OSI Model provides a standard for different computer systems to be able to communicate with each other.
+
+The OSI Model can be seen as a universal language for computer networking. It is based on the concept of splitting up a communication system into seven abstract layers, each one stacked upon the last.
+
+Although the modern Internet does not strictly follow the OSI Model (it more closely follows the simpler Internet protocol suite), the OSI Model is still very useful.
+
+It is made up of 7 layers:
+- Application Layer
+- Presentation Layer
+- Session Layer
+- Transport layer
+- Network layer
+- Data link layer
+- Physical layer
+#### What are the 7 layers of the OSI Model?
+The seven abstraction layers of the OSI model can be defined as follows, from top to bottom:
+- Application Layer
+    - This is the only layer that directly interacts with data from the user. 
+    - The application layer is responsible for the protocols and data manipulation that the software relies on to present data to the user.
+    ![Application Layer](https://cf-assets.www.cloudflare.com/slt3lc6tev37/2rcDKpr4WLqoyAZ7GDKkyJ/7cab96402de7ac5465b86e617da3da4e/osi_model_application_layer_7.png)
+- The presentation layer
+    - This layer is primarily responsible for preparing data so that it can be used by the application layer
+    - The presentation layer is responsible for translation, encryption, and compression of data.
+    ![Presentation Layer](https://cf-assets.www.cloudflare.com/slt3lc6tev37/19L86neKKT8srUkOSe4rf7/ff4c91c94a1790651df7b48433913f59/osi_model_presentation_layer_6.png)
+- The session layer
+    - This is the layer responsible for opening and closing communication between the two devices. 
+    - The time between when the communication is opened and closed is known as the session. 
+    - The session layer ensures that the session stays open long enough to transfer all the data being exchanged, and then promptly closes the session in order to avoid wasting resources.
+    ![Session Layer](https://cf-assets.www.cloudflare.com/slt3lc6tev37/29mRrgK22AqJVlg2MMlD86/34d8f4071b6cc0d3b03c93f55e4d89b7/osi_model_session_layer_5.png)
+- The transport layer
+    - is responsible for end-to-end communication between the two devices. 
+    - This includes taking data from the session layer and breaking it up into chunks called segments before sending it to the network layer. 
+    - The transport layer on the receiving device is responsible for reassembling the segments into data the session layer can consume.
+    ![Transport Layer](https://cf-assets.www.cloudflare.com/slt3lc6tev37/3OlO75NcADGL3SmEADFDqd/723b8c7639c4e2e6b4febcbe7fd36e0e/osi_model_transport_layer_4.png)
+- The network layer
+    - The network layer is responsible for facilitating data transfer between two different networks. 
+    - The network layer breaks up segments from the transport layer into smaller units on the sender’s device(called packets), and reassembling these packets on the receiving device. 
+    ![Network Layer](https://cf-assets.www.cloudflare.com/slt3lc6tev37/3g2Hv0frHsql5SFauJL5EG/d8cede7b6a780e63413bd86de9eee7f9/osi_model_network_layer_3.png)
+- The data link layer
+    - The data link layer is very similar to the network layer, except the data link layer facilitates data transfer between two devices on the same network. 
+    - The data link layer takes packets from the network layer and breaks them into smaller pieces called frames
+    ![Data Link Layer](https://cf-assets.www.cloudflare.com/slt3lc6tev37/3TLHavXiotb9ayyZFKECf3/9456d1c431cd71ceea7f4b407f076f11/data_link_layer_osi_model.png)
+- The physical layer
+    - The physical layer includes the physical equipment involved in the data transfer, such as the cables and switches. 
+    - This is also the layer where the data gets converted into a bit stream, which is a string of 1s and 0s. 
+    ![Physical Layer](https://cf-assets.www.cloudflare.com/slt3lc6tev37/1HQ1W5P4XAinIdM37DTu4U/900ccdceda346baf03ce8b9f977d2974/osi_model_physical_layer_1.png)
+
+[Cloudflare](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/)
 ### Q4. Write a note on TCP/IP
 ### Q5. Explain application of computer networks in detail 
 ### Q6. What is communication?
