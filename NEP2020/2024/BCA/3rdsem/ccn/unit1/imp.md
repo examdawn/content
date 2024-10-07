@@ -209,13 +209,55 @@ The seven abstraction layers of the OSI model can be defined as follows, from to
 
 [Cloudflare](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/)
 ### Q4. Write a note on TCP/IP
+TCP/IP Model stands for Transmission Control Protocol/Internet Protocol, which are the core protocols of the Internet. 
+
+This model defines how data is transmitted over networks, ensuring reliable communication between devices.
+
+It consists of four layers: 
+- **the Link Layer**
+    - Defines how data is sent over a physical network
+- **the Internet Layer**
+    - Routes packets between networks using IP
+- **the Transport Layer**
+    - Provides reliable data transfer between devices using TCP or UDP
+- **the Application Layer**
+    - Supports protocols and functions for email, file transfer, web browsing, games, etc
+
+![Comparison Between TCP/IP and OSI Models](https://media.geeksforgeeks.org/wp-content/uploads/20230417045622/OSI-vs-TCP-vs-Hybrid-2.webp)
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/tcp-ip-model/)
 ### Q5. Explain application of computer networks in detail 
+Here are some applications of Computer Networks:
+#### Communication and Information Sharing
+
+* **Email**: Send and receive emails over the internet
+* **Instant Messaging**: Real-time communication using platforms like WhatsApp, Slack, etc.
+* **File Sharing**: Share files and documents between devices and users
+* **Resource Sharing**: Share hardware resources like printers, scanners, and servers
+
+#### Remote Work, Education, and Entertainment
+
+* **Telecommuting**: Work from home or remote locations using virtual private networks (VPNs)
+* **Online Courses**: Take online courses and access educational resources
+* **Online Gaming**: Play online games with users from around the world
+* **Streaming Services**: Stream music, videos, and movies using services like Netflix, Hulu, etc.
+
+#### Commerce, Healthcare, and Security
+
+* **E-commerce**: Buy and sell products online using e-commerce websites
+* **Online Banking**: Conduct online banking and financial transactions
+* **Telemedicine**: Consult doctors and access medical services remotely
+* **Network Security**: Protect computer networks from cyber threats and attacks
 ### Q6. What is communication?
-### Q7. What is a network?
-### Q8. Wat is a computer network?
-### Q10. What is the physical layer?
-### Q11. Explain layers of TCP/ip model
-### Q12. What are the Advantages and disadvantages of topology 
+Communication is when 2 or more parties share data between each other.
+### Q7. Wat is a computer network?
+A computer network is when multiple computers are linked to each other to share resources, exchange files, or allow communication.
+### Q8. What is the physical layer?
+The physical Layer is the bottom-most layer in the Open System Interconnection (OSI) Model.
+
+It deals with switches and cables that connect the computers together. We can observe various topologies here like BUS topology, MESH topology, Star topology, etc
+### Q9. Explain layers of TCP/ip model
+### Q10. What are the Advantages and disadvantages of topology 
 Answered in Q1
 
 ## Source:
