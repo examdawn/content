@@ -309,10 +309,14 @@ GRANT ALL ON souhrud_practical.* TO 'customer'@'localhost';
 CREATE TABLE teacher(tid int(4) PRIMARY KEY, tname varchar(20), deptid varchar(3));
 ```
 
+- ✅ Query OK, 0 rows affected, 1 warning (0.03 sec)
+
 ### Insert two tuples in the table TEACHER.
 ```MySQL
 INSERT INTO teacher VALUES(1001, 'charles', 'D11');
 ```
+
+- ✅ Query OK, 1 row affected (0.01 sec)
 
 ```MySQL
 INSERT INTO teacher VALUES(1002, 'abdul', 'D12');
@@ -322,7 +326,12 @@ Now, output it
 ```MySQL
 select * from teacher;
 ```
+| tid  | tname   | deptid |
+|------|---------|--------|
+| 1001 | charles | D11    |
+| 1002 | abdul   | D12    |
 
+- ✅ 2 rows in set (0.00 sec)
 ### Create a table DEPARTMENT with the following attributes(Deptid,Dname).
 
 ```MySQL
