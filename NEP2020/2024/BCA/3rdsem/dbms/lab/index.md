@@ -6,11 +6,13 @@ Question 9 onwards, we are using Oracle Databases since we need to use PL/SQL. I
 
 ## Program 1: Execute Single line Query and Group Functions.
 ###	Create a table INVENTORY with the following attributes(Item_No,Item_Name,Price).
+
 ```MySQL
 CREATE TABLE inventory(item_no varchar(10) PRIMARY KEY, item_name varchar(20), price decimal(10,2));
 ```
 
 - ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0015 seconds.)
+
 ###	Insert five tuples in the table INVENTORY. 
 (Doing only 2, same concept)
 
@@ -20,7 +22,6 @@ INSERT INTO inventory VALUES('L101', 'Laptop', 50000);
 
 - ✅  1 row inserted. (Query took 0.0003 seconds.)
 
-
 ``` MySQL
 INSERT INTO inventory VALUES('L102', 'Computer', 100000);
 ```
@@ -28,6 +29,7 @@ INSERT INTO inventory VALUES('L102', 'Computer', 100000);
 - ✅ 1 row inserted. (Query took 0.0002 seconds.)
 
 ###	Display all the tuples from the INVENTORY Table.
+
 ```MySQL
 SELECT * FROM inventory;
 ```
@@ -35,6 +37,7 @@ SELECT * FROM inventory;
 - ✅ Showing rows 0 - 1 (2 total, Query took 0.0002 seconds.)
 
 ###	Perform single line query operations using group functions.
+
 ```MySQL
 SELECT COUNT(*) number_of_items from inventory;
 ```
@@ -45,7 +48,6 @@ SELECT COUNT(*) number_of_items from inventory;
 
 - ✅ Your SQL query has been executed successfully.
 
-
 ```MySQL
 SELECT MAX(price) maximum_price FROM inventory;
 ```
@@ -55,7 +57,6 @@ SELECT MAX(price) maximum_price FROM inventory;
 | 100000.00     |
 
 - ✅ Showing rows 0 - 0 (1 total, Query took 0.0002 seconds.)
-
 
 ```MySQL
 SELECT MIN(price) minimum_price FROM inventory;
@@ -85,9 +86,9 @@ SELECT SUM(price) total_amount FROM inventory;
 
 - ✅ Showing rows 0 - 0 (1 total, Query took 0.0001 seconds.)
 
+
 ## Program 2: Execute DDL Commands.
 ### Create table STUDENT with the following attributes(Register_no, Name, Mark_1,Mark_2,Mark_3).
-
 
 ```MySQL
 CREATE TABLE student(register_no varchar(10) PRIMARY KEY, name varchar(20), mark_1 int, mark_2 int, mark_3 int);
@@ -98,8 +99,8 @@ CREATE TABLE student(register_no varchar(10) PRIMARY KEY, name varchar(20), mark
 ```MySQL
 DESC student;
 ```
-- ✅ Your SQL query has been executed successfully.
 
+- ✅ Your SQL query has been executed successfully.
 
 | Field       | Type        | Null | Key | Default | Extra |
 |-------------|-------------|------|-----|---------|-------|
@@ -109,19 +110,19 @@ DESC student;
 | mark_2      | int(11)     | YES  |     | NULL    |       |
 | mark_3      | int(11)     | YES  |     | NULL    |       |
 
-
-
 ### Add new columns(Total, Average) to the table STUDENT.
+
 ```MySQL
 ALTER TABLE student add(total int, average decimal(7,2));
 ```
-- ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0003 seconds.)
 
+- ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0003 seconds.)
 
 ```MySQL
 desc student;
 ```
-Your SQL query has been executed successfully.
+
+- ✅ Your SQL query has been executed successfully.
 
 | Field       | Type         | Null | Key | Default | Extra |
 |-------------|--------------|------|-----|---------|-------|
@@ -133,8 +134,8 @@ Your SQL query has been executed successfully.
 | total       | int(11)      | YES  |     | NULL    |       |
 | average     | decimal(7,2) | YES  |     | NULL    |       |
 
-
 ### Rename the table STUDENT to  STUDENT_T1.
+
 ```MySQL
 RENAME TABLE student to student_t1;
 ```
@@ -142,6 +143,7 @@ RENAME TABLE student to student_t1;
 - ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0004 seconds.)
 
 ### Truncate the table STUDENT_T1.
+
 ```MySQL
 TRUNCATE TABLE student_t1;
 ```
@@ -149,11 +151,13 @@ TRUNCATE TABLE student_t1;
 - ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0003 seconds.)
 
 ### Drop the table STUDENT_T1.
+
 ```MySQL
 DROP TABLE student_t1;
 ```
 
 - ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0003 seconds.)
+
 
 ## Program 3: Execute DML Commands.
 ### Create table STUDENT with the following attributes(Register_No, Name, Mark_1, Mark_2, Mark_3,Total,Average).
@@ -163,8 +167,6 @@ CREATE TABLE student002(register_no varchar(10) PRIMARY KEY, name varchar(20), m
 ```
 
 - ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0004 seconds.)
-
-
 
 ```MySQL
 DESC student002;
@@ -182,14 +184,13 @@ DESC student002;
 | total       | int(11)      | YES  |     | NULL    |       |
 | average     | decimal(7,2) | YES  |     | NULL    |       |
 
-
 ### Insert five tuples in the table STUDENT.(Make sure average and total fields are NULL).
 (Doing only 2, same concept)
+
 ```MySQL
 INSERT INTO student002 VALUES('S101', 'charles', 99, 100, 95, null, null);
 ```
 - ✅ 1 row inserted. (Query took 0.0008 seconds.)
-
 
 ```MySQL
 INSERT INTO student002 VALUES('S102', 'abdul', 100, 99, 100, null, null);
@@ -197,8 +198,8 @@ INSERT INTO student002 VALUES('S102', 'abdul', 100, 99, 100, null, null);
 
 - ✅ 1 row inserted. (Query took 0.0001 seconds.)
 
-
 ### Display all the tuples from the table STUDENT.
+
 ```MySQL
 SELECT * FROM student002;
 ```
@@ -210,7 +211,6 @@ SELECT * FROM student002;
 | S101        | charles | 99     | 100    | 95     | NULL  | NULL    |
 | S102        | abdul   | 100    | 99     | 100    | NULL  | NULL    |
 
-
 ### Find the Total and AVERAGE AND UPDATE TO THE TABLE student.
 - Total=(Mark_1 + Mark_2 + Mark_3)
 - Average=(Mark_1+Mark_2+Mark_3)/3.
@@ -220,7 +220,6 @@ UPDATE student002 SET total=(mark_1+mark_2+mark_3),average=(mark_1+mark_2+mark_3
 ```
 
 - ✅ 2 rows affected. (Query took 0.0003 seconds.)
-
 
 ```MySQL
 SELECT * FROM student002;
@@ -234,6 +233,7 @@ SELECT * FROM student002;
 | S102        | abdul  |   100  |    99  |   100  |   299 |    99.67|
 
 ### Delete a tuple from the table STUDENT.
+
 ```MySQL
 DELETE FROM student002 WHERE register_no='S101';
 ```
@@ -249,11 +249,14 @@ SELECT * FROM student002;
 |-------------|--------|--------|--------|--------|-------|---------|
 | S102        | abdul  |   100  |    99  |   100  |   299 |    99.67|
 
+
 ## Program 4: Execute DCL and TCL Commands.
 ### Connect the database using the command line window.
+
 ```MySQL
 USE souhrud_practical;
 ```
+
 - ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0001 seconds.)
 
 ### Create a table PURCHASE with the following attributes (Item_No, Item_Name,Price).
@@ -262,7 +265,6 @@ USE souhrud_practical;
 CREATE TABLE purchase(item_no varchar(4), item_name varchar(20), price decimal(10,2));
 ```
 - ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0085 seconds.)
-
 
 ### Insert two tuples in the PURCHASE.
 
@@ -305,6 +307,7 @@ CREATE TABLE teacher(tid int(4) PRIMARY KEY, tname varchar(20), deptid varchar(3
 - ✅ Query OK, 0 rows affected, 1 warning (0.03 sec)
 
 ### Insert two tuples in the table TEACHER.
+
 ```MySQL
 INSERT INTO teacher VALUES(1001, 'charles', 'D11');
 ```
@@ -329,7 +332,6 @@ select * from teacher;
 | 1001 | charles | D11    |
 | 1002 | abdul   | D12    |
 
-
 ### Create a table DEPARTMENT with the following attributes(Deptid,Dname).
 
 ```MySQL
@@ -344,7 +346,6 @@ DESC department;
 ```
 
 - ✅ 2 rows in set (0.17 sec)
-
 
 ### Insert three tuples into the DEPARTMENT Table.
 
@@ -368,7 +369,6 @@ SELECT * FROM department;
 | D15    | physics          |
 | D13    | maths            |
 
-
 ### Perform nested queries using the table TEACHER and DEPARTMENT.
 
 ```MySQL
@@ -381,8 +381,10 @@ SELECT * FROM teacher WHERE deptid IN(SELECT deptid FROM department WHERE teache
 |------|---------|--------|
 | 1001 | charles | D11    |
 
+
 ## Program 6: Implement Join Operations in SQL.
 ### Create a table EMPLOYEE with the following attributes(Emp_id, Emp_name,Edept_id).
+
 ```MySQL
 CREATE TABLE employee(emp_id int PRIMARY KEY, emp_name varchar(20), edept_id int);
 ```
@@ -390,6 +392,7 @@ CREATE TABLE employee(emp_id int PRIMARY KEY, emp_name varchar(20), edept_id int
 - ✅ Query OK, 0 rows affected (0.14 sec)
 
 ### Insert three tuples in the table EMPLOYEE.
+
 ```MySQL
 INSERT INTO employee VALUES(1001, 'charles', 10), (1002, 'abdul', 30), (1003, 'rohan', 30);
 ```
@@ -398,6 +401,7 @@ INSERT INTO employee VALUES(1001, 'charles', 10), (1002, 'abdul', 30), (1003, 'r
 Records: 3  Duplicates: 0  Warnings: 0
 
 ### Create a table DEPARTMENT with the following attributes(Dept_id,Dept_name).
+
 ```MySQL
 CREATE TABLE department(dept_id int PRIMARY KEY, dept_name varchar(20));
 ```
@@ -405,6 +409,7 @@ CREATE TABLE department(dept_id int PRIMARY KEY, dept_name varchar(20));
 - ✅ Query OK, 0 rows affected (0.17 sec)
 
 ### Enter Four tuples in the table DEPARTMENT.
+
 ```MySQL
 INSERT INTO department VALUES(10, 'accounts'), (20, 'design'), (40, 'testing'), (50, 'purchase');
 ```
@@ -413,7 +418,8 @@ INSERT INTO department VALUES(10, 'accounts'), (20, 'design'), (40, 'testing'), 
 Records: 4  Duplicates: 0  Warnings: 0
 
 ### Perform join Operations using the table EMPLOYEE and DEPARTMENT.
-Inner Join:
+
+#### Inner Join:
 ```MySQL
 SELECT emp_id, emp_name, edept_id, dept_name FROM employee INNER JOIN department ON employee.edept_id=department.dept_id;
 ```
@@ -424,7 +430,7 @@ SELECT emp_id, emp_name, edept_id, dept_name FROM employee INNER JOIN department
 |--------|----------|----------|-----------|
 |   1001 | charles  |       10 | accounts  |
 
-Left Outer Join: 
+#### Left Outer Join: 
 ```MySQL
 SELECT emp_id, emp_name, edept_id, dept_name FROM employee LEFT JOIN department ON employee.edept_id=department.dept_id;
 ```
@@ -437,7 +443,7 @@ SELECT emp_id, emp_name, edept_id, dept_name FROM employee LEFT JOIN department 
 |   1002 | abdul    |       30 | NULL      |
 |   1003 | rohan    |       30 | NULL      |
 
-Right Outer Join:
+#### Right Outer Join:
 ```MySQL
 SELECT emp_id, emp_name, edept_id, dept_name FROM employee RIGHT JOIN department ON employee.edept_id=department.dept_id;
 ```
@@ -451,7 +457,7 @@ SELECT emp_id, emp_name, edept_id, dept_name FROM employee RIGHT JOIN department
 |   NULL | NULL     |     NULL | testing   |
 |   NULL | NULL     |     NULL | purchase  |
 
-Full Join: 
+#### Full Join: 
 ```MySQL
 SELECT emp_id, emp_name, edept_id, dept_name FROM employee LEFT JOIN department ON employee.edept_id=department.dept_id UNION SELECT emp_id, emp_name, edept_id, dept_name FROM employee RIGHT JOIN department ON employee.edept_id=department.dept_id;
 ```
@@ -467,42 +473,99 @@ SELECT emp_id, emp_name, edept_id, dept_name FROM employee LEFT JOIN department 
 |   NULL | NULL     |     NULL | testing   |
 |   NULL | NULL     |     NULL | purchase  |
 
+
 ## Program 7: Create a view for a particular table.
 ### Create a table TRAIN (Train_no,Train_Nmae,Source,Destination).
 ```MySQL
 CREATE TABLE train(train_no int PRIMARY KEY, train_name varchar(20), source varchar(20), destination varchar(20)); 
 ```
+
+- ✅ Query OK, 0 rows affected (0.16 sec)
+
 ### Insert three tuples in the table TRAIN.
 ```MySQL
 INSERT INTO train VALUES (50001, 'malgudi exp', 'bengaluru', 'mysuru'), (50002,'karnataka exp','bengaluru','new delhi'), (50003,'shatabdi exp','bengaluru','chennai'); 
 ```
+
+- ✅ Query OK, 3 rows affected (0.05 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
 ### Display all the tuples from the table TRAIN.
 ```MySQL
 SELECT * FROM train; 
 ```
+
+- ✅ 3 rows in set (0.00 sec)
+
+| train_no | train_name      | source    | destination |
+|----------|-----------------|-----------|-------------|
+|    50001 | malgudi exp     | bengaluru | mysuru      |
+|    50002 | karnataka exp   | bengaluru | new delhi   |
+|    50003 | shatabdi exp    | bengaluru | chennai     |
+
 ### Perform view operations using the table TRAIN.
 ```MySQL
 CREATE VIEW display_view AS SELECT * FROM train; 
 ```
+
+- ✅ Query OK, 0 rows affected (0.06 sec)
+
 Display Train View
 ```MySQL
  SELECT * FROM display_view;
 ```
+
+- ✅ 3 rows in set (0.00 sec)
+
+| train_no | train_name      | source    | destination |
+|----------|-----------------|-----------|-------------|
+|    50001 | malgudi exp     | bengaluru | mysuru      |
+|    50002 | karnataka exp   | bengaluru | new delhi   |
+|    50003 | shatabdi exp    | bengaluru | chennai     |
+
 ```MySQL
 INSERT INTO display_view VALUES(50004,'kochuveli exp', NULL, NULL); 
 ```
+
+- ✅ Query OK, 1 row affected (0.05 sec)
+
 Display Train View after Operation
 ```MySQL
 SELECT * FROM display_view; 
 ```
+
+- ✅ 4 rows in set (0.00 sec)
+
+| train_no | train_name      | source    | destination |
+|----------|-----------------|-----------|-------------|
+|    50001 | malgudi exp     | bengaluru | mysuru      |
+|    50002 | karnataka exp   | bengaluru | new delhi   |
+|    50003 | shatabdi exp    | bengaluru | chennai     |
+|    50004 | kochuveli exp   | NULL      | NULL        |
+
 Add data to 50004 train
 ```MySQL
 UPDATE train set source='bengaluru', destination='kochuveli' WHERE train_no=50004; 
 ```
+
+- ✅ Query OK, 1 row affected (0.08 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
 Output the result
 ```MySQL
 SELECT * FROM display_view;
 ``` 
+
+- ✅ 4 rows in set (0.00 sec)
+
+| train_no | train_name      | source    | destination |
+|----------|-----------------|-----------|-------------|
+|    50001 | malgudi exp     | bengaluru | mysuru      |
+|    50002 | karnataka exp   | bengaluru | new delhi   |
+|    50003 | shatabdi exp    | bengaluru | chennai     |
+|    50004 | kochuveli exp   | bengaluru | kochuveli   |
+
+
 ## Program 8: Implement Locks for a particular table.
 ### Connect the database using the command line window.
 ### Create table CAR with the following attributes(Model_No, Brand,Price).
