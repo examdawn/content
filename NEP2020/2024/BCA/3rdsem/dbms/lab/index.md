@@ -2,8 +2,6 @@
 
 Tested on 10.6.18-MariaDB-0ubuntu0.22.04.1 except Question 4 which will be written with MySQL 8.0.37 in mind
 
-Upto Question 5, output is given so students are not stuck staring at a brick wall of CLI
-
 Question 9 onwards, we are using Oracle Databases since we need to use PL/SQL. I know,  I feel the same way😿
 
 ## Program 1: Execute Single line Query and Group Functions.
@@ -296,11 +294,6 @@ GRANT ALL ON souhrud_practical.* TO 'customer'@'localhost';
 
 - ✅ Query OK, 0 rows affected (0.12 sec)
 
-### Perform TCL command operations using the table PURCHASE.
-
-```MySQL
-
-```
 
 ## Program 5: Implement the Nested Queries.
 ### Create a table TEACHER with the following attributes(Tid,Tanme,Deptid).
@@ -322,36 +315,59 @@ INSERT INTO teacher VALUES(1001, 'charles', 'D11');
 INSERT INTO teacher VALUES(1002, 'abdul', 'D12');
 ```
 
+- ✅ Query OK, 1 row affected (0.01 sec)
+
 Now, output it
 ```MySQL
 select * from teacher;
 ```
+
+- ✅ 2 rows in set (0.00 sec)
+
 | tid  | tname   | deptid |
 |------|---------|--------|
 | 1001 | charles | D11    |
 | 1002 | abdul   | D12    |
 
-- ✅ 2 rows in set (0.00 sec)
+
 ### Create a table DEPARTMENT with the following attributes(Deptid,Dname).
 
 ```MySQL
 CREATE TABLE department(deptid varchar(10), dname varchar(20));
 ```
 
+- ✅ Query OK, 0 rows affected (0.28 sec)
+
 Check the attributes
 ```MySQL
 DESC department;
 ```
+
+- ✅ 2 rows in set (0.17 sec)
+
 
 ### Insert three tuples into the DEPARTMENT Table.
 
 ```MySQL
 INSERT INTO department VALUES('D11','computer science'),('D15','physics'),('D13', 'maths');
 ```
+
+- ✅ Query OK, 3 rows affected (0.06 sec)
+  Records: 3  Duplicates: 0  Warnings: 0
+
 Now, check the output:
 ```MySQL
 SELECT * FROM department;
 ```
+
+- ✅ 3 rows in set (0.00 sec)
+
+| deptid | dname            |
+|--------|------------------|
+| D11    | computer science  |
+| D15    | physics          |
+| D13    | maths            |
+
 
 ### Perform nested queries using the table TEACHER and DEPARTMENT.
 
@@ -359,42 +375,97 @@ SELECT * FROM department;
 SELECT * FROM teacher WHERE deptid IN(SELECT deptid FROM department WHERE teacher.deptid=department.deptid);
 ```
 
+- ✅ 1 row in set (0.04 sec)
+
+| tid  | tname   | deptid |
+|------|---------|--------|
+| 1001 | charles | D11    |
+
 ## Program 6: Implement Join Operations in SQL.
 ### Create a table EMPLOYEE with the following attributes(Emp_id, Emp_name,Edept_id).
 ```MySQL
 CREATE TABLE employee(emp_id int PRIMARY KEY, emp_name varchar(20), edept_id int);
 ```
+
+- ✅ Query OK, 0 rows affected (0.14 sec)
+
 ### Insert three tuples in the table EMPLOYEE.
 ```MySQL
 INSERT INTO employee VALUES(1001, 'charles', 10), (1002, 'abdul', 30), (1003, 'rohan', 30);
 ```
+
+- ✅ Query OK, 3 rows affected (0.05 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
 ### Create a table DEPARTMENT with the following attributes(Dept_id,Dept_name).
 ```MySQL
 CREATE TABLE department(dept_id int PRIMARY KEY, dept_name varchar(20));
 ```
+
+- ✅ Query OK, 0 rows affected (0.17 sec)
+
 ### Enter Four tuples in the table DEPARTMENT.
 ```MySQL
 INSERT INTO department VALUES(10, 'accounts'), (20, 'design'), (40, 'testing'), (50, 'purchase');
 ```
+
+- ✅ Query OK, 4 rows affected (0.04 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
 ### Perform join Operations using the table EMPLOYEE and DEPARTMENT.
 Inner Join:
 ```MySQL
 SELECT emp_id, emp_name, edept_id, dept_name FROM employee INNER JOIN department ON employee.edept_id=department.dept_id;
 ```
 
+- ✅ 1 row in set (0.00 sec)
+
+| emp_id | emp_name | edept_id | dept_name |
+|--------|----------|----------|-----------|
+|   1001 | charles  |       10 | accounts  |
+
 Left Outer Join: 
 ```MySQL
 SELECT emp_id, emp_name, edept_id, dept_name FROM employee LEFT JOIN department ON employee.edept_id=department.dept_id;
 ```
 
+- ✅ 3 rows in set (0.00 sec)
+
+| emp_id | emp_name | edept_id | dept_name |
+|--------|----------|----------|-----------|
+|   1001 | charles  |       10 | accounts  |
+|   1002 | abdul    |       30 | NULL      |
+|   1003 | rohan    |       30 | NULL      |
+
 Right Outer Join:
 ```MySQL
 SELECT emp_id, emp_name, edept_id, dept_name FROM employee RIGHT JOIN department ON employee.edept_id=department.dept_id;
 ```
+
+- ✅ 4 rows in set (0.00 sec)
+
+| emp_id | emp_name | edept_id | dept_name |
+|--------|----------|----------|-----------|
+|   1001 | charles  |       10 | accounts  |
+|   NULL | NULL     |     NULL | design    |
+|   NULL | NULL     |     NULL | testing   |
+|   NULL | NULL     |     NULL | purchase  |
+
 Full Join: 
 ```MySQL
 SELECT emp_id, emp_name, edept_id, dept_name FROM employee LEFT JOIN department ON employee.edept_id=department.dept_id UNION SELECT emp_id, emp_name, edept_id, dept_name FROM employee RIGHT JOIN department ON employee.edept_id=department.dept_id;
 ```
+
+- ✅ 6 rows in set (0.02 sec)
+
+| emp_id | emp_name | edept_id | dept_name |
+|--------|----------|----------|-----------|
+|   1001 | charles  |       10 | accounts  |
+|   1002 | abdul    |       30 | NULL      |
+|   1003 | rohan    |       30 | NULL      |
+|   NULL | NULL     |     NULL | design    |
+|   NULL | NULL     |     NULL | testing   |
+|   NULL | NULL     |     NULL | purchase  |
 
 ## Program 7: Create a view for a particular table.
 ### Create a table TRAIN (Train_no,Train_Nmae,Source,Destination).
