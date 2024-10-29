@@ -61,6 +61,7 @@ SELECT MAX(price) maximum_price FROM inventory;
 ```MySQL
 SELECT MIN(price) minimum_price FROM inventory;
 ```
+
 | minimum_price |
 |---------------|
 | 50000.00      |
@@ -70,6 +71,7 @@ SELECT MIN(price) minimum_price FROM inventory;
 ```MySQL
 SELECT AVG(price) avg_amount FROM inventory;
 ```
+
 | avg_amount    |
 |---------------|
 | 75000.000000  |
