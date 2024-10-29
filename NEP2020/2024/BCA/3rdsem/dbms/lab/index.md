@@ -577,19 +577,31 @@ SELECT * FROM display_view;
 
 ## Program 9: Write PL/SQL Procedure for an application using exception handling.
 ### Create a table BANK with the following attributes(Acno, Name,Balance).
+
 ```PL/SQL
 CREATE TABLE bank(acno int primary key, name varchar(20), balance decimal(10,2));
 ```
+
 ### Insert two tuples in the table BANK.
+
 ```PL/SQL
 INSERT INTO bank VALUES(0001, 'Souhrud', 20);
 INSERT INTO bank VALUES(0002, 'Joel', 30);
 ```
+
 ### Display all the tables from the table BANK.
+
 ```PL/SQL
 SELECT * FROM bank;
 ```
+
+ACNO | NAME     | BALANCE |
+-----|----------|---------|
+1    | Souhrud  | 20      |
+2    | Joel     | 30      |
+
 ### Perform exception handling using the table BANK.
+
 ```PL/SQL
 SET SERVEROUTPUT ON;
 ```
@@ -614,21 +626,40 @@ END;
 /
 ```
 
+### Output: 
+
+```
+1   Souhrud  20
+```
+
+- ✅ PL/SQL procedure successfully completed.
+
 ## Program 10: Write PL/SQL procedure for an application using a cursor.
 ### Create a table BANK with the following attributes(Acno, Name,Balance).
+
 ```PL/SQL
 CREATE TABLE bank(acno int primary key, name varchar(20), balance decimal(10,2));
 ```
 ### Insert two tuples in the table BANK.
+
 ```PL/SQL
 INSERT INTO bank VALUES(0001, 'Souhrud', 20);
 INSERT INTO bank VALUES(0002, 'Joel', 30);
 ```
+
 ### Display all the tuples from the table BANK.
+
 ```PL/SQL
 SELECT * FROM bank;
 ```
+
+ACNO | NAME     | BALANCE |
+-----|----------|---------|
+1    | Souhrud  | 20      |
+2    | Joel     | 30      |
+
 ### Display all the tuples from the table BANK using cursor.
+
 ```PL/SQL
 SET SERVEROUTPUT ON;
 ```
@@ -653,6 +684,19 @@ CLOSE cbank;
 END;
 /
 ```
+
+### Output:
+
+```
+Account no.   Name    Balance
+==================================
+1           Souhrud    20
+2           Joel       30
+```
+
+- ✅ PL/SQL procedure successfully completed.
+
+
 ## Program 11: Write a PL/SQL procedure for an application using functions.
 ### Create a table LAPTOP with the following attributes(Model_No,Company_Name, Price).
 ```PL/SQL
@@ -668,7 +712,14 @@ INSERT INTO laptop VALUES('L1002', 'hp', 40000);
 ```PL/SQL
 SELECT * FROM laptop;
 ```
+
+MODEL | COMPANY_NAME  | PRICE |
+------|---------------|-------|
+L1001 | dell          | 50000 |
+L1002 | hp            | 40000 |
+
 ### Find the maximum price in the table LAPTOP using the function.
+
 ```PL/SQL
 SET SERVEROUTPUT ON;
 ```
@@ -683,6 +734,9 @@ return maxprice;
 end;
 /
 ```
+
+- ✅ Function created.
+
 ```PL/SQL
 declare 
 n number(10,2);
@@ -692,6 +746,14 @@ dbms_output.put_line('maximum price='||n);
 end;
 /
 ```
+
+### Output:
+```
+maximum price=50000
+```
+
+- ✅ PL/SQL procedure successfully completed.
+
 ## Program 12: Write a PL/SQL procedure for an application using a package.
 ### Create a table LIBRARY with the following attributes(Book_id, Book_name, B_price).
 ### Insert three tuples in the table LIBRARY.
