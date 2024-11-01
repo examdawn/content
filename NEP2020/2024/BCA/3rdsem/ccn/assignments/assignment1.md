@@ -35,23 +35,23 @@ Network Topology refers to the arrangement or layout of different elements (link
 
 #### 1. **Bus Topology**
 - All devices share a single communication line (the bus). Data sent by any device travels in both directions along the bus until it reaches its destination.   
-![Bus Topology](https://media.geeksforgeeks.org/wp-content/uploads/3-55.png)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/3-55.png" alt="Bus Topology" width="400" />
 
 #### 2. **Star Topology**
 - All devices are connected to a central hub or switch. Data is sent from one device to the hub, which then forwards it to the intended recipient.  
-![Star Topology](https://media.geeksforgeeks.org/wp-content/uploads/20241028174732747554/Star-Topology.png)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20241028174732747554/Star-Topology.png" alt="Star Topology" width="400" />
 
 #### 3. **Ring Topology**
 - Each device is connected to two other devices, forming a circular pathway for data. Data travels in one direction (or both, in some variations) until it reaches its destination.  
-![Ring Topology](https://media.geeksforgeeks.org/wp-content/uploads/20241028175715256679/Untitled-Diagram-153-1.jpg)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20241028175715256679/Untitled-Diagram-153-1.jpg" alt="Ring Topology" width="400" />
 
 #### 4. **Mesh Topology**
 - Every device is connected to every other device, either fully (every device is connected) or partially (some devices are interconnected).  
-![Mesh Topology](https://media.geeksforgeeks.org/wp-content/uploads/20241028174648312121/Mesh-Topology.png)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20241028174648312121/Mesh-Topology.png" alt="Mesh Topology" width="400" />
 
 #### 5. **Tree Topology**
 - A hybrid topology that combines characteristics of star and bus topologies. It has a central hub (like star) with multiple levels of hierarchy, forming a tree-like structure.  [(1)](https://chatgpt.com/) [(2)](https://www.geeksforgeeks.org/types-of-network-topology/)  
-![Tree Topology](https://media.geeksforgeeks.org/wp-content/uploads/20240614234036/Tree-topology.png)  
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240614234036/Tree-topology.png" alt="Tree Topology" width="400" />
 
 
 ### 4. Explain Types of Network with Advantages and Disadvantages.
@@ -92,7 +92,7 @@ Networks can be classified into several types based on their size, scope, and pu
 ### 5. Explain TCP/IP Model with a neat diagram reference.
 The TCP/IP model is a fundamental framework for computer networking. It stands for Transmission Control Protocol/Internet Protocol, which are the core protocols of the Internet. This model defines how data is transmitted over networks, ensuring reliable communication between devices. It consists of four layers: the Link Layer, the Internet Layer, the Transport Layer, and the Application Layer. Each layer has specific functions that help manage different aspects of network communication, making it essential for understanding and working with modern networks. 
 [(1)](https://www.geeksforgeeks.org/tcp-ip-model/)  
-![TCP/IP](https://media.geeksforgeeks.org/wp-content/uploads/20230417045622/OSI-vs-TCP-vs-Hybrid-2.webp)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20230417045622/OSI-vs-TCP-vs-Hybrid-2.webp" alt="TCP/IP" width="400" />
 
 
 ### 6. What is a Transmission Medium? Explain Types.
@@ -103,25 +103,28 @@ Transmission Media is broadly classified into the following types:
  2. **Unguided Media**
     - It is also referred to as Wireless or Unbounded transmission media . No physical medium is required for the transmission of electromagnetic signals. 
 
+
 ### 7. Explain Twisted Pair Cable with a neat diagram.
 Twisted Pair Cable is a type of wiring used for transmitting data in telecommunications and networking. It was invented by Alexander Graham Bell. Twisted pair cables have two conductors that are generally made up of copper and each conductor has insulation. These two conductors are twisted together, thus giving the name twisted pair cables. [(1)](https://www.geeksforgeeks.org/twisted-pair-cable/) [(2)](https://chatgpt.com/)
 - Twisted Pair Cables are further of two types :
     - Unshielded Twisted Pair Cables (UTP)
     - Shielded Twisted Pair (STP)  
     
-![Twisted](https://media.geeksforgeeks.org/wp-content/uploads/20210817095055/cables-660x387.jpg)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20210817095055/cables-660x387.jpg" alt="Twisted" width="400" />
+
 
 ### 8. Explain Coaxial Cable with a neat diagram.
 Coaxial Cable is a type of guided media made of Plastics, and copper wires which transmit the signal in electrical form rather than light form. Coaxial cable is also known as coax. The core copper conductor is used for the transmission of signals and the insulator is used to provide insulation to the copper conductor the insulator is surrounded by a braided metal conductor which helps to prevent the interference of electrical signals and prevent cross talk. This entire setup is again covered with a protective plastic layer to provide extra safety to the cable.
 [(1)](https://www.geeksforgeeks.org/what-is-coaxial-cable/)  
-![Coaxial](https://media.geeksforgeeks.org/wp-content/uploads/20240327120710/CoaxialCable-660x330.jpg)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240327120710/CoaxialCable-660x330.jpg" alt="Coaxial" width="400" />
 
 
 ### 9. Explain Optical Fibre Cable with a neat diagram.
 Optical fiber is a technology used to transmit data by sending short light pulses along a long fiber, which is typically made of glass or plastic. In optical fiber communication, metal wires are preferred for transmission because the signals travel more safely. Optical fibers are also resistant to electromagnetic interference.
 Total internal reflection of light is used in the fiber optical cable. Depending on the amount of power needed and the distance needed, the fibers are designed to allow light to travel in parallel with the optical fiber. While multimode fiber is used for transmission over shorter distances, single-mode fiber is used for long-distance transmission. These fibers’ outer covering requires better defense than metal wires can provide.
 [(1)](https://www.geeksforgeeks.org/optical-fibre-cable/)  
-![Optical_Fibre](https://media.geeksforgeeks.org/wp-content/uploads/20231005184556/Optical-Fiber.png)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231005184556/Optical-Fiber.png" alt="Optical_Fibre" width="400" />
+
 
 ### 10. Write a note on Radio Waves, Microwaves and IR Waves.
 #### 1. **Radiowave Transmission**
@@ -132,6 +135,7 @@ Microwaves are electromagnetic waves which have frequency range between 1 GHz to
 
 #### 3. **Infrared Waves**  
 Infrared Waves are electromagnetic waves that have frequency range between 300 GHz to 400 THz. These cannot travel along long distances. These waves are used for short range communication and they also use line-of-sight of propagation. These waves cannot pass through solid objects like walls etc. These also not penetrate through walls. The most common application of the IR waves is remote controls that are used for TV, DVD players, and stereo system. 
+
 
 ### 11. What is Switching? Explain Types of Switching.
 Switching is a technique used in computer networking to direct data packets between devices on a network. It involves receiving incoming packets and determining the best path for them to reach their destination. The main types of switching are:
@@ -151,4 +155,4 @@ Switching is a technique used in computer networking to direct data packets betw
 Multiplexing is a technique used to combine and send the multiple data streams over a single medium. The process of combining the data streams is known as multiplexing and hardware used for multiplexing is known as a multiplexer.  
 Multiplexing is achieved by using a device called Multiplexer (MUX) that combines n input lines to generate a single output line. Multiplexing follows many-to-one, i.e., n input lines and one output line.
 [(1)](https://www.javatpoint.com/multiplexing-in-computer-network)  
-![Multiplexing](https://images.javatpoint.com/tutorial/computer-network/images/concept-of-multiplexing.png)
+<img src="https://images.javatpoint.com/tutorial/computer-network/images/concept-of-multiplexing.png" alt="Multiplexing" width="400" />
