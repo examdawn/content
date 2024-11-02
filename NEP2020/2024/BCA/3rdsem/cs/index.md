@@ -11,7 +11,7 @@ Units:
 Others:
 - [Lab Records](lab/index.md)
 - Assignments
-    - [Assignment 1](assignments/assignment1.md)
+    - [Assignment 1(Due 04/Nov/2024)](assignments/assignment1.md)
 
 Source:
 [Syllabus for NEP 2020](https://drive.google.com/file/d/1fArLbfdmMvhREDAw85i2_LrAMqCVwdG_/view)

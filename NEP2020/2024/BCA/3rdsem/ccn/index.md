@@ -9,7 +9,8 @@ Units:
 - Unit 5: The Transport Layer and Application Layer
 
 Others:
-- [Assignments](assignments/assignment1.md)
+- Assignments
+    - [Assignment 1(Due 07/Nov/2024)](assignments/assignment1.md)
 - [Notes From Faculty](https://drive.google.com/drive/folders/19VKBV4FqY4L7BGtOIqXFprrs2iZIWfjl?usp=sharing)
 
 Source:
