@@ -90,7 +90,7 @@ Web Technology refers to the various tools and techniques that are utilized in t
 
     - Disadvantages
         - Many scripts and content management systems tools require databases in order to store dynamic data.
-        - It requires the scripting software to be installed on the server.
+        - It requires the scripting software to be installed on the server. [(1)](https://chatgpt.com/)
         <!-- The nature of dynamic scripts creates new security concerns, in some cases making it easier for hackers to gain access to servers exploiting code flaws. -->
 
 ### 6. Explain the C# Tokens with one example for each
