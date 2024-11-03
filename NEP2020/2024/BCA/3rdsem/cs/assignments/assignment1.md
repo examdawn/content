@@ -1,4 +1,4 @@
-# Assignments - Database Management System
+# Assignment 1 - C# and Dotnet Tools
 
 ## Due Date: 04th Nov 2024 
 
@@ -95,14 +95,92 @@ Web Technology refers to the various tools and techniques that are utilized in t
 
 ### 6. Explain the C# Tokens with one example for each
 
+A c# program is basically collection of tokens.
+
+There are five tokens in C#.
+- Keywords
+    - These are reserved words which are saved for existing things by the language.
+    - Example: event, extern, null, etc
+- Identifiers
+    - Identifier is a name that we give to objects, classes, methods, variables, etc to identify them.
+    - Example: hello, a, b, variable1, etc
+- Literals
+    - Literals are how values in a variable are shown. 
+    - Types:
+        - Numeric literal
+            - Integer literal
+            - Real literal
+        - Boolean Literal
+        - Character Literal
+            - Character Literal
+            - String literal
+        - Example: true is a boolean literal
+- operators
+    - Operators are symbols used to describe operations between one or more operands
+    - Example: + for addition
+- punctuators.
+    - These are used to seperate, group and format the code.
+    - They help in defining the shape of the program
+    - Also Known as Seperators
+    - Example: ; (semicolon)
+
+[MSDotnet.co.in](https://www.msdotnet.co.in/2013/06/tokens-in-c.html)
+
 ### 7. Explain the OOP Concept in C#.
 
+C# is an object-oriented programming language. The four basic principles of object-oriented programming are:
+- Abstraction:
+    - Modeling the relevant attributes and interactions of entities as classes to define an abstract representation of a system.
+- Encapsulation:
+    - Hiding the internal state and functionality of an object and only allowing access through a public set of functions.
+- Inheritance:
+    - Ability to create new abstractions based on existing abstractions.
+- Polymorphism
+    - Ability to implement inherited properties or methods in different ways across multiple abstractions.
+
+[Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/oop)
 ### 8. Define Inheritance and write the types with neat diagram and explain one program
 
+Inheritance is an OOP Concept where we define a class based on another class while bringing over the properties and more from the previous class.
+
+In C#, there are 4 types of inheritance:
+- Single inheritance: 
+    - A derived class that inherits from only one base class.
+- Multi-level inheritance: 
+    - A derived class that inherits from a base class and the derived class itself becomes the base class for another derived class.
+- Hierarchical inheritance: 
+    - A base class that serves as a parent class for two or more derived classes.
+- Multiple inheritance: 
+    - A derived class that inherits from two or more base classes.
+Todo: add diagram and program
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/c-sharp-inheritance/)
 ### 9. Explain the control structures with syntax and flow chart
 
-### 10. List the data types of C# programming
+C# offers three types of control statements:
 
+- Selection Statements 
+    - This consists of if, else, switch, and case branching.
+- Iteration Statements 
+    - This consists of do, for, foreach, and while looping.
+- Jump Statements  
+    - This consists of break, continue, return, and goto statements.
+
+TODO: explanation and programs
+
+[FreeASPHosting](https://freeasphosting.net/csharp-tutorial-control-statements.html)
+### 10. List the data types of C# programming
+| Data Type | Size | Description |
+|--|--|--|
+| int| 4 bytes | Stores whole numbers from -2,147,483,648 to 2,147,483,647|
+| long  | 8 bytes | Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|
+| float | 4 bytes | Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits|
+| double | 8 bytes | Stores fractional numbers. Sufficient for storing 15 decimal digits|
+| bool | 1 bit | Stores true or false values|
+| char | 2 bytes | Stores a single character/letter, surrounded by single quotes|
+| string | 2 bytes per character | Stores a sequence of characters, surrounded by double quotes|
+
+[Geeks For Geeks](https://www.w3schools.com/cs/cs_data_types.php) 
 ### 11. Explain the different types of lists tags with example program
 
 ### 12. Explain types of operators with example of each
