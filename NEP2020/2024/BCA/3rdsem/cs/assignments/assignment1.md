@@ -146,13 +146,77 @@ Inheritance is an OOP Concept where we define a class based on another class whi
 In C#, there are 4 types of inheritance:
 - Single inheritance: 
     - A derived class that inherits from only one base class.
+    - ```mermaid
+    graph TD;
+    A[BaseClass] --> B[DerivedClass]
+    ```
 - Multi-level inheritance: 
     - A derived class that inherits from a base class and the derived class itself becomes the base class for another derived class.
+    ```mermaid
+    graph TD;
+    A[BaseClass] --> B[DerivedClass1]
+    B --> C[DerivedClass2]
+    ```
 - Hierarchical inheritance: 
     - A base class that serves as a parent class for two or more derived classes.
+    ```mermaid
+    graph TD;
+    A[BaseClass] --> B[DerivedClass1]
+    A --> C[DerivedClass2]
+    A --> D[DerivedClass3]
+    ```
 - Multiple inheritance: 
     - A derived class that inherits from two or more base classes.
-Todo: add diagram and program
+    ```
+    graph TD;
+    A[BaseClass1] --> D[DerivedClass]
+    B[BaseClass2] --> D
+    ```
+
+Program:
+```C#
+using System;
+
+// Base class
+class Animal {
+    public void Speak() {
+        Console.WriteLine("Animal speaks");
+    }
+}
+
+// Derived class (Single Inheritance)
+class Dog : Animal {
+    public void Bark() {
+        Console.WriteLine("Dog barks");
+    }
+}
+
+// Derived class (Multi-level Inheritance)
+class Puppy : Dog {
+    public void Whine() {
+        Console.WriteLine("Puppy whines");
+    }
+}
+
+class Program {
+    static void Main() {
+        Puppy puppy = new Puppy();
+        puppy.Speak(); // Inherited from Animal
+        puppy.Bark();  // From Dog
+        puppy.Whine(); // From Puppy
+    }
+}
+```
+
+```mermaid
+graph TD;
+    A[Animal] --> B[Dog]
+    B --> C[Puppy]
+```
+
+- **Animal** is the base class.
+- **Dog** inherits from **Animal** (Single Inheritance).
+- **Puppy** inherits from **Dog** (Multi-level Inheritance).
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/c-sharp-inheritance/)
 ### 9. Explain the control structures with syntax and flow chart
