@@ -146,7 +146,7 @@ Inheritance is an OOP Concept where we define a class based on another class whi
 In C#, there are 4 types of inheritance:
 - Single inheritance: 
     - A derived class that inherits from only one base class.
-    - ```mermaid
+    ```mermaid
     graph TD;
     A[BaseClass] --> B[DerivedClass]
     ```
@@ -170,7 +170,7 @@ In C#, there are 4 types of inheritance:
     ```
     graph TD;
     A[BaseClass1] --> D[DerivedClass]
-    B[BaseClass2] --> D
+    B[BaseClass2] --> D[DerivedClass]
     ```
 
 Program:
