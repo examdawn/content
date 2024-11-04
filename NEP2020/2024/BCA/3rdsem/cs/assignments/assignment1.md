@@ -7,40 +7,40 @@ Client scripting languages are programming languages that run in a user's web br
 
 1. **JavaScript**:
    - **Description**: JavaScript is the most widely used client-side scripting language. It allows developers to create interactive elements on web pages, such as form validation, animations, and dynamic content updates without needing to reload the page.
-   - **Key Features**: 
+  <!-- - **Key Features**: 
      - Event-driven programming
      - Support for AJAX for asynchronous web requests
-     - Extensive libraries and frameworks (like React, Angular, and Vue.js)
+     - Extensive libraries and frameworks (like React, Angular, and Vue.js) -->
 
 2. **HTML (with embedded scripts)**:
    - **Description**: While HTML itself is not a programming language, it is essential for structuring web content. Client-side scripts, often JavaScript, are embedded within HTML documents to enhance functionality.
-   - **Key Features**: 
+  <!-- - **Key Features**: 
      - Structure and presentation of web content
-     - Integration with CSS for styling and JavaScript for interactivity
+     - Integration with CSS for styling and JavaScript for interactivity -->
 
 3. **CSS (with animations)**:
    - **Description**: Cascading Style Sheets (CSS) is primarily used for styling web pages but can also include animations and transitions that enhance user interaction.
-   - **Key Features**: 
+  <!-- - **Key Features**: 
      - Responsive design capabilities
-     - CSS animations and transitions to create visual effects
+     - CSS animations and transitions to create visual effects -->
 
 4. **VBScript**:
    - **Description**: VBScript is a scripting language developed by Microsoft, primarily used in Internet Explorer. It's less common today due to the decline of IE and the rise of standards like JavaScript.
-   - **Key Features**: 
+ <!--  - **Key Features**: 
      - Integration with Windows applications
-     - Limited use due to compatibility issues with modern browsers
+     - Limited use due to compatibility issues with modern browsers -->
 
 5. **TypeScript**:
    - **Description**: TypeScript is a superset of JavaScript that adds static typing. It is compiled to JavaScript, allowing developers to catch errors at compile time and improve code maintainability.
-   - **Key Features**: 
+  <!-- - **Key Features**: 
      - Strongly typed language
-     - Supports modern JavaScript features and additional tooling
+     - Supports modern JavaScript features and additional tooling -->
 
 6. **Dart**:
    - **Description**: Dart is an open-source language developed by Google, primarily used for building mobile, desktop, and web applications. It can be compiled to JavaScript for client-side use.
-   - **Key Features**: 
+   <!--- **Key Features**: 
      - Strong typing and modern language features
-     - Used with the Flutter framework for building cross-platform applications
+     - Used with the Flutter framework for building cross-platform applications -->
 
 
 ### 2. What is .NET Framework?
@@ -63,7 +63,7 @@ Web Technology refers to the various tools and techniques that are utilized in t
 - **Back-End Technologies**
     - Back-end technologies handle server-side operations. Examples include Node.js, Python (with Flask or Django), Ruby on Rails, and PHP.
 - **Databases**
-    - Databases store and manage data for web applications. Common types include relational databases (like MySQL, PostgreSQL) and NoSQL databases (like MongoDB). [(2)](https://chatgpt.com/)
+    - Databases store and manage data for web applications. Common types include relational databases (like MySQL, PostgreSQL) and NoSQL databases (like MongoDB).
 
 
 ### 5. Explain the Advantages and Disadvantages of Client-side and Server-side Technologies
@@ -90,7 +90,7 @@ Web Technology refers to the various tools and techniques that are utilized in t
 
     - Disadvantages
         - Many scripts and content management systems tools require databases in order to store dynamic data.
-        - It requires the scripting software to be installed on the server. [(1)](https://chatgpt.com/)
+        - It requires the scripting software to be installed on the server.
         <!-- The nature of dynamic scripts creates new security concerns, in some cases making it easier for hackers to gain access to servers exploiting code flaws. -->
 
 ### 6. Explain the C# Tokens with one example for each
