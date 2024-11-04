@@ -167,7 +167,7 @@ In C#, there are 4 types of inheritance:
     ```
 - Multiple inheritance: 
     - A derived class that inherits from two or more base classes.
-    ```
+    ```mermaid
     graph TD;
     A[BaseClass1] --> D[DerivedClass]
     B[BaseClass2] --> D[DerivedClass]
