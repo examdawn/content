@@ -4,6 +4,9 @@ Tested on 10.6.18-MariaDB-0ubuntu0.22.04.1 except Question 4 which will be writt
 
 Question 9 onwards, we are using Oracle Databases since we need to use PL/SQL. I know,  I feel the same way😿
 
+Question 12 was answered on [Oracle's LiveSQL](https://livesql.oracle.com/)
+Version: `Live SQL 24.1.3, running Oracle Database 19c EE Extreme Perf - 19.17.0.0.0`
+
 ## Program 1: Execute Single line Query and Group Functions.
 ###	Create a table INVENTORY with the following attributes(Item_No,Item_Name,Price).
 
@@ -756,10 +759,39 @@ maximum price=50000
 
 ## Program 12: Write a PL/SQL procedure for an application using a package.
 ### Create a table LIBRARY with the following attributes(Book_id, Book_name, B_price).
-### Insert three tuples in the table LIBRARY.
-### Display all the tuples from the table LIBRARY.
-### Create a package using the table LIBRARY.
+```PL/SQL
+CREATE TABLE library(book_id int, book_name varchar(60), b_price decimal(20,2));
+```
+Table created.
 
+### Insert three tuples in the table LIBRARY.
+```PL/SQL
+INSERT INTO library VALUES (1001, 'C# and Dotnet', 200);
+INSERT INTO library VALUES (1002, 'Computer Communication and Networks', 250);
+INSERT INTO library VALUES (1003, 'Database Management System',250);
+```
+
+1 row(s) inserted.
+
+1 row(s) inserted.
+
+1 row(s) inserted.
+
+### Display all the tuples from the table LIBRARY.
+```PL/SQL
+SELECT * FROM library;
+```
+
+| BOOK_ID	| BOOK_NAME |	B_PRICE |
+| --- | --- | --- |
+| 1001 | C# and Dotnet | 200 |
+| 1002 | Computer Communication and Networks | 250 |
+| 1003  | Database Management System | 250 |
+
+### Create a package using the table LIBRARY.
+```PL/SQL
+```
+TODO: Solve package part
 ## Source:
 - General Questions were found in Syllabus
 - Specific Questions are from a documents shared in the whatsapp group.
