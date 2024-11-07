@@ -1,11 +1,11 @@
 # Assignments - Computer Communication And Networking
 
-### 1. What is Computer Network?
+### 1. What is a "Computer Network"?
 A computer network is a system that connects many independent computers to share information (data) and resources. The integration of computers and other different devices allows users to communicate more easily. A computer network is a collection of two or more computer systems that are linked together. 
 [(1)](https://www.geeksforgeeks.org/what-is-computer-networking/)
 
 
-### 2. Explain Application of Computer Networking.
+### 2. Explain some Applications of Computer Networking.
 Computer networking has a wide range of applications across various fields. Here are some key areas where it plays a crucial role:
 
 - **Internet Connectivity**: The most obvious application is connecting devices to the internet, enabling access to online resources, communication, and services.
@@ -30,7 +30,7 @@ Each of these applications highlights the importance of computer networking in e
 [(1)](https://chatgpt.com)
 
 
-### 3. What is Network Topology? Explain types with neat diagram.
+### 3. What is a "Network Topology"? Explain types with neat diagram.
 Network Topology refers to the arrangement or layout of different elements (links, nodes, etc.) in a computer network. It defines how devices are interconnected and how data flows within the network. Understanding network topology is essential for designing and managing networks effectively. Here are the primary types of network topologies:
 
 #### 1. **Bus Topology**
@@ -54,7 +54,7 @@ Network Topology refers to the arrangement or layout of different elements (link
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240614234036/Tree-topology.png" alt="Tree Topology" width="400" />
 
 
-### 4. Explain Types of Network with Advantages and Disadvantages.
+### 4. Explain Types of Networks with Advantages and Disadvantages.
 Networks can be classified into several types based on their size, scope, and purpose. Here are the main types of networks, along with their advantages and disadvantages:
 #### 1. **Local Area Network (LAN)**
 
@@ -89,13 +89,13 @@ Networks can be classified into several types based on their size, scope, and pu
     - Limited to metropolitan areas. [(1)](https://chatgpt.com/)
 
 
-### 5. Explain TCP/IP Model with a neat diagram reference.
+### 5. Explain the TCP/IP Model with a neat diagram for reference.
 The TCP/IP model is a fundamental framework for computer networking. It stands for Transmission Control Protocol/Internet Protocol, which are the core protocols of the Internet. This model defines how data is transmitted over networks, ensuring reliable communication between devices. It consists of four layers: the Link Layer, the Internet Layer, the Transport Layer, and the Application Layer. Each layer has specific functions that help manage different aspects of network communication, making it essential for understanding and working with modern networks. 
 [(1)](https://www.geeksforgeeks.org/tcp-ip-model/)  
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230417045622/OSI-vs-TCP-vs-Hybrid-2.webp" alt="TCP/IP" width="400" />
 
 
-### 6. What is a Transmission Medium? Explain Types.
+### 6. What is a "Transmission Medium"? Explain its Types.
 Transmission media refers to the physical medium through which data is transmitted from one device to another within a network. These medium can be wired or wireless. The choice of medium depends on factors like distance, speed, and interference. A transmission medium is a physical path between the transmitter and the receiver i.e. it is the channel through which data is sent from one device to another. [(1)](https://www.geeksforgeeks.org/types-transmission-media/)
 Transmission Media is broadly classified into the following types: 
  1. **Guided Media**
@@ -104,7 +104,7 @@ Transmission Media is broadly classified into the following types:
     - It is also referred to as Wireless or Unbounded transmission media . No physical medium is required for the transmission of electromagnetic signals. 
 
 
-### 7. Explain Twisted Pair Cable with a neat diagram.
+### 7. Explain Twisted Pair Cables with a neat diagram.
 Twisted Pair Cable is a type of wiring used for transmitting data in telecommunications and networking. It was invented by Alexander Graham Bell. Twisted pair cables have two conductors that are generally made up of copper and each conductor has insulation. These two conductors are twisted together, thus giving the name twisted pair cables. [(1)](https://www.geeksforgeeks.org/twisted-pair-cable/) [(2)](https://chatgpt.com/)
 - Twisted Pair Cables are further of two types :
     - Unshielded Twisted Pair Cables (UTP)
@@ -113,20 +113,20 @@ Twisted Pair Cable is a type of wiring used for transmitting data in telecommuni
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210817095055/cables-660x387.jpg" alt="Twisted" width="400" />
 
 
-### 8. Explain Coaxial Cable with a neat diagram.
+### 8. Explain Coaxial Cables with a neat diagram.
 Coaxial Cable is a type of guided media made of Plastics, and copper wires which transmit the signal in electrical form rather than light form. Coaxial cable is also known as coax. The core copper conductor is used for the transmission of signals and the insulator is used to provide insulation to the copper conductor the insulator is surrounded by a braided metal conductor which helps to prevent the interference of electrical signals and prevent cross talk. This entire setup is again covered with a protective plastic layer to provide extra safety to the cable.
 [(1)](https://www.geeksforgeeks.org/what-is-coaxial-cable/)  
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240327120710/CoaxialCable-660x330.jpg" alt="Coaxial" width="400" />
 
 
-### 9. Explain Optical Fibre Cable with a neat diagram.
+### 9. Explain Optical Fibre Cables with a neat diagram.
 Optical fiber is a technology used to transmit data by sending short light pulses along a long fiber, which is typically made of glass or plastic. In optical fiber communication, metal wires are preferred for transmission because the signals travel more safely. Optical fibers are also resistant to electromagnetic interference.
 Total internal reflection of light is used in the fiber optical cable. Depending on the amount of power needed and the distance needed, the fibers are designed to allow light to travel in parallel with the optical fiber. While multimode fiber is used for transmission over shorter distances, single-mode fiber is used for long-distance transmission. These fibers’ outer covering requires better defense than metal wires can provide.
 [(1)](https://www.geeksforgeeks.org/optical-fibre-cable/)  
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231005184556/Optical-Fiber.png" alt="Optical_Fibre" width="400" />
 
 
-### 10. Write a note on Radio Waves, Microwaves and IR Waves.
+### 10. Write a note on Radio Waves, Microwaves and IR Waves each.
 #### 1. **Radiowave Transmission**
 The radio waves have frequency range from 3 KHz to 1 GHz. These waves are easy to generate and these can travel along long distances. These waves are omni directional in nature which means that they can travel in all the directions. They are widely used for the communication between both indoor and outdoor because they have the property that they can penetrate through the walls very easily. These waves are usually used for AM and FM radio, television, cellular phones and wireless LAN.  
 
@@ -137,7 +137,7 @@ Microwaves are electromagnetic waves which have frequency range between 1 GHz to
 Infrared Waves are electromagnetic waves that have frequency range between 300 GHz to 400 THz. These cannot travel along long distances. These waves are used for short range communication and they also use line-of-sight of propagation. These waves cannot pass through solid objects like walls etc. These also not penetrate through walls. The most common application of the IR waves is remote controls that are used for TV, DVD players, and stereo system. 
 
 
-### 11. What is Switching? Explain Types of Switching.
+### 11. What is "Switching"? Explain Types of Switching.
 Switching is a technique used in computer networking to direct data packets between devices on a network. It involves receiving incoming packets and determining the best path for them to reach their destination. The main types of switching are:
 
 #### 1. **Circuit Switching**
@@ -151,7 +151,7 @@ Switching is a technique used in computer networking to direct data packets betw
 [(1)](https://chatgpt.com)
 
 
-### 12. What is Multiplexing.
+### 12. What is "Multiplexing"?
 Multiplexing is a technique used to combine and send the multiple data streams over a single medium. The process of combining the data streams is known as multiplexing and hardware used for multiplexing is known as a multiplexer.  
 Multiplexing is achieved by using a device called Multiplexer (MUX) that combines n input lines to generate a single output line. Multiplexing follows many-to-one, i.e., n input lines and one output line.
 [(1)](https://www.javatpoint.com/multiplexing-in-computer-network)  
