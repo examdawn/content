@@ -4,8 +4,31 @@
 
 21,17,11,9,7,16 are exempted.
 
-### Q1.List some client scripting languages and explain them.
+### Q1.List some popular client scripting languages and explain them.
+
+Client side scripting languages are programming languages where the heavy processing happens client side, usually on the client application or on the web browser itself. Here are some client side scripting languages:
+- HTML
+    - Hyper Text Markup Language is a simple scripting language used to create the layout or structure of a web page.
+    - Usually works in tandem with CSS for styling and JS for more advance scripting
+- CSS
+    - Cascading Style Sheets allow the developer to create the style, look, and feel of the page.
+    - It allows you to customize the font, border styles, format, margins, paddings, etc
+- JS
+    - Javascript is a lightweight interpreted(or sometimes JIT compiled) language with easy to call functions.
+    - This allows us to perform more advanced actions in our website/web page.
+- React.js
+    - React is a JavaScript framework that allows you to create dynamic and responsive web pages
+    - Using React Native, we can even develop Android/iOS apps
+
+[Crampete](https://www.crampete.com/blogs/client-side-scripting-top-languages-to-learn/)
 ### Q2.What is ".NET Framework"?
+The .NET Framework is a software framework created by Microsoft for development of Windows Apps.
+
+This provides a set of libraries, tools, and a runtime environment to build apps with programming languages like C#, F#, Visual Basic, etc. With some effort, you can compile to various targets like Windows Desktop, Linux(x11/xWayland), Mac, web, mobile, and even build games using Godot(C# through mono), Unity(C#, Only for scripting), 
+
+- [Wikipedia](https://en.wikipedia.org/wiki/.NET_Framework)
+
+
 ### Q3.What is "VB.NET"?
 ### Q4.Explain web technologies with examples
 ### Q5.Explain the advantages and disadvantages of client side and server-side technologies
