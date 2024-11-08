@@ -285,7 +285,6 @@ Operators are tokens we use to perform operations with one, two or more operands
     - Example: 
         - (a %= b) can be written as (a = a % b)
 
-- Conditional Operators
 - Unary Operators
     - Increment: 
         - The ‘++’ operator is used to increment the value of an integer. 
