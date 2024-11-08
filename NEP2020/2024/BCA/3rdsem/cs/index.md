@@ -8,6 +8,9 @@ Units:
 - Unit 5: Query Processing Transaction Management
 - Unit 6: ADO.NET connectivity
 
+Important Questions
+- [Important Questions 1](important/important-1.md)
+
 Others:
 - [Lab Records](lab/index.md)
 - Assignments
