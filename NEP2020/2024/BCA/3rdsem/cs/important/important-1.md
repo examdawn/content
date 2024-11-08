@@ -27,11 +27,63 @@ The .NET Framework is a software framework created by Microsoft for development 
 This provides a set of libraries, tools, and a runtime environment to build apps with programming languages like C#, F#, Visual Basic, etc. With some effort, you can compile to various targets like Windows Desktop, Linux(x11/xWayland), Mac, web, mobile, and even build games using Godot(C# through mono), Unity(C#, Only for scripting), 
 
 - [Wikipedia](https://en.wikipedia.org/wiki/.NET_Framework)
-
+- [GeeksForGeeks](https://www.geeksforgeeks.org/introduction-to-net-framework/)
 
 ### Q3.What is "VB.NET"?
+Visual Basic(previously known as VisualBasic.NET(VB.NET)) is an object oriented language for .NET, .NET Framewowrk and Mono
+
+It is a successor to VB6 from .NET framework, and it supports OOP concepts like abstraction, encapsulation, inheritance, polymorphism. This means that everything in the language is an object.
+
+It is not a case sensitive language, and is used to quickly develop a full object oriented program with full access to all libraries from the .NET Framework.
+
+- [JavaTPoint](https://www.javatpoint.com/vb-net)
+- [TutorialsPoint](https://www.tutorialspoint.com/vb.net/index.htm)
+- [Wikipedia](https://en.wikipedia.org/wiki/Visual_Basic_(.NET))
 ### Q4.Explain web technologies with examples
+Web technology is used to describe all the different things people use to make websites and web-based applications. 
+- This includes software and hardware tools, programming languages, and standards needed to create and run web apps on the internet. 
+- Web technology comprises many areas, including web design, web development, web servers, web browsers, e-commerce, and content management systems.
+
+We can simplify this into these classifications of Web Technology:
+- ***Web servers***: 
+    - They process requests and send responses to web browsers. Eg. Nginx, caddy, apache, etc
+- ***Web browsers***: 
+    - They are the tools we use to look at web pages. Eg. Chromium(Chrome, Brave, Edge), Gecko(Firefox), WebKit/WebKitGTK(Gnome Web, Safari) 
+- ***HTML***: 
+    - It's a language that helps structure and show content on web pages
+- ***CSS***: 
+    - It helps make web pages look pretty by adding colors, fonts, and styles
+- ***JavaScript***: 
+    - It's a language that makes web pages do cool stuff like animations and interactive features
+- ***Backend Technologies***: 
+    - They are the tools used to make the server-side parts of web apps work. Eg. ASP.NET, Golang, Python, Flask, Django, Ruby on Rails, etc
+- ***Database Systems***: 
+    - They store and retrieve data used in web apps. Eg. MySQL, PostgreSQL, Oracle SQL, NoSQL, etc
+
+- [GeeksForGeeks](https://www.geeksforgeeks.org/backend-technologies/)
+- [Naukri](https://www.naukri.com/code360/library/complete-introduction-to-web-technology)
 ### Q5.Explain the advantages and disadvantages of client side and server-side technologies
+
+#### Pros and Cons of Client-Side Scripting
+
+- Pros:
+    - Fast response time, as no server communication is needed.
+    - Reduces server load, leading to a more scalable application.
+- Cons:
+    - Security risks, as the code can be seen and altered by users.
+    - May behave differently in different browsers.
+
+#### Pros and Cons of Server-Side Scripting
+
+- Pros:
+    - More secure, as the code is not exposed to clients.
+    - Consistent across different browsers.
+    - Can handle complex processing.
+- Cons:
+    - Can be slower, as it requires communication with the server.
+    - Places more load on the server.
+
+- [Naukri](https://www.naukri.com/code360/library/difference-between-client-side-scripting-and-server-side-scripting)
 ### Q6.Explain C# Tokens with one example for each
 ### Q8.Define Inheritance and write its types with neat diagram and explain one program
 ### Q10.List the data types of C# programming
