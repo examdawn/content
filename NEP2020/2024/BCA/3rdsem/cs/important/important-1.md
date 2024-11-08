@@ -293,12 +293,83 @@ Operators are tokens we use to perform operations with one, two or more operands
     - Decrement: 
         - The ‘- -‘ operator is used to decrement the value of an integer. 
         - For example, x- –.
-- Ternary Operators
+- Ternary Operators is a shorthand version of if-else statement. 
+    - It has three operands and hence the name ternary. 
+    - It will return one of two values depending on the value of a Boolean expression. 
+    - Syntax:
+        `condition ? first_expression : second_expression;`
+    - Eg.  c = a>b?a:b; 
+    Here, C will take on the value of the larger variable.
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/c-sharp-operators)
 ### Q13. What is the Difference between client side and server-side programming?
+#### Server-side Programming :
+
+It is the program that runs on server dealing with the generation of content of web page.
+1) Querying the database
+2) Operations over databases
+3) Access/Write a file on server.
+4) Interact with other servers.
+5) Structure web applications.
+6) Process user input. For example if user input is a text in search box, run a search algorithm on data stored on server and send the results.
+
+#### Client-side Programming :
+
+It is the program that runs on the client machine (browser) and deals with the user interface/display and any other processing that can happen on client machine like reading/writing cookies.
+
+1) Interact with temporary storage
+2) Make interactive web pages
+3) Interact with local storage
+4) Sending request for data to server
+5) Send request to server
+6) work as an interface between server and user
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/server-side-client-side-programming/)
 ### Q14.List the features of C# and explain them
-### Q15.List the features of VB.NET and explain
+
+Here are some features of C#:
+1) Simple
+    - C# is a simple language in the sense that it provides structured approach (to break the problem into parts), rich set of library functions, data types etc.
+2) Modern Programming Language
+    - C# programming is based upon the current trend and it is very powerful and simple for building scalable, interoperable and robust applications.
+3) Object Oriented
+    - C# is object oriented programming language. OOPs makes development and maintenance easier where as in Procedure-oriented programming language it is not easy to manage if code grows as project size grow.
+4) Type Safe
+    - C# type safe code can only access the memory location that it has permission to execute. Therefore it improves a security of the program.
+5) Interoperability
+    - Interoperability process enables the C# programs to do almost anything that a native C++ application can do.
+6) Scalable and Updateable
+    - C# is automatic scalable and updateable programming language. For updating our application we delete the old files and update them with new ones.
+7) Component Oriented
+    - C# is component oriented programming language. It is the predominant software development methodology used to develop more robust and highly scalable applications.
+8) Structured Programming Language
+    - C# is a structured programming language in the sense that we can break the program into parts using functions. So, it is easy to understand and modify.
+9) Rich Library
+    - C# provides a lot of inbuilt functions that makes the development fast.
+10) Fast Speed
+    - The compilation and execution time of C# language is fast.
+
+[JavaTPoint](https://www.javatpoint.com/csharp-features)
+### Q15.List the features of VB.NET and explain them
+Visual Basic is a high-level programming language with many features to develop a secure and robust application. 
+
+- Here are some features:
+    - It is an object-oriented programming language that follows various oops concepts such as abstraction, encapsulation, inheritance, and many more. 
+        - It means that everything in VB.NET programming will be treated as an object.
+    - This language is used to design user interfaces for window, mobile, and web-based applications.
+    - It supports a rapid application development tool kit. In which a developer does not need to write all the codes as it can get various code automatically from its libraries. For example, when we create a form in Visual basic.net, it automatically calls events of various form in that class.
+    - It is not a case sensitive language like other languages such as C++, java, etc.
+    - It supports Boolean condition for decision making in programming.
+    - It also supports the multithreading concept, in which you can do multiple tasks at the same time.
+    - It provides simple events management in .NET application.
+    - A Window Form enables us to inherit all existing functionality of form that can be used to create a new form. So, in this way, it reduced the code complexity.
+    - It uses an external object as a reference that can be used in a VB.NET application.
+    - Automatic initialized a garbage collection.
+    - It follows a structured and extensible programming language for error detection and recovery.
+    - Conditional compilation and easy to use generic classes.
+    - It is useful to develop web, window, and mobile applications.
+
+[JavaTPoint](https://www.javatpoint.com/vb-net)
 ### Q18.Define try and catch block with an example program
 ### Q19.Explain different types of arrays in c#
 ### Q20.Explain Mutable and Immutable strings in c#
