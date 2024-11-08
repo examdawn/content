@@ -371,8 +371,101 @@ Visual Basic is a high-level programming language with many features to develop 
 
 [JavaTPoint](https://www.javatpoint.com/vb-net)
 ### Q18.Define try and catch block with an example program
+When executing C# code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.
+
+When an error occurs, C# will normally stop and generate an error message which means C# will throw an exception (throw an error).
+
+- The `try` statement allows you to define a block of code to be tested for errors while it is being executed.
+- The `catch` statement allows you to define a block of code to be executed, if an error occurs in the try block.
+
+Syntax: 
+```C#
+try 
+{
+  //  Block of code to try
+}
+catch (Exception e)
+{
+  //  Block of code to handle errors
+}
+```
+
+Program: 
+```C#
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		try
+		{
+			int[] myNumbers = {1,2,3};
+			Console.WriteLine(myNumbers[10]);
+		}
+	
+		catch (Exception e)
+		{
+ 			 Console.WriteLine(e.Message);
+		}
+	}
+}
+```
+
+Output: 
+> Index was outside the bounds of the array. 
+
+[W3Schools](https://www.w3schools.com/cs/cs_exceptions.php)
 ### Q19.Explain different types of arrays in c#
+There are three types of arrays in C#, which are
+- Single-dimensional Array
+    - a single-dimensional array is a data structure that stores elements of the same data type in a linear sequence. 
+    - Each element in the array is accessed by its index, starting from zero.
+    - Eg. 
+        ```C#
+        int[] arr = new int[10];
+        ```
+
+        ```C#
+        int[] numbers = new int[] { 1, 2, 3, 4, 5, 6,7,8,9,10 };
+        ```
+- Multi-dimensional Array
+    - Multi-dimensional arrays in C# are arrays that hold data in more than one dimension, allowing for efficient storage and manipulation of complex data structures.
+    - These arrays can be thought of as matrices or tables, providing rows and columns to organize and access elements based on multiple indices.
+    - Eg.
+        ```C#
+        int[,] numbers = new int[4, 3] {{2,3}, {4,5}, {6,7}};
+        ```
+- Jagged Array
+    - In C#, a jagged array is an array of arrays where each element can hold arrays of different sizes. 
+    - Unlike regular multi-dimensional arrays, jagged arrays allow for flexible and uneven lengths, making them ideal for storing complex data structures 
+    - Eg. 
+        ```C#
+        int[][] jaggedArray = new int[2][];
+        jaggedArray[0] = new int[4];
+        jaggedArray[1] = new int[6];
+        jaggedArray[0] = new int[] { 4, 6, 8, };
+        jaggedArray[1] = new int[] { 1, 0, 2, 4, 6 };
+        ```
+
+[ScholarHat](https://www.scholarhat.com/tutorial/csharp/types-of-array-in-csharp)
 ### Q20.Explain Mutable and Immutable strings in c#
+
+> Mutable and immutable are English words that mean "can change" and "cannot change" respectively. 
+
+That means the mutable types are those whose data members can be changed after the instance is created but Immutable types are those whose data members can not be changed after the instance is created.
+
+When we change the value of mutable objects, value is changed in same memory. But in immutable type, the new memory is created and the modified value is stored in new memory.
+
+#### String
+
+Strings are immutable, which means we are creating new memory every time instead of working on existing memory.
+
+#### StringBuilder
+
+StringBuilder is a mutable type, that means we are using the same memory location and keep on appending/modifying the stuff to one instance. It will not create any further instances hence it will not decrease the performance of the application.
+
+[C-SharpCorner](https://www.c-sharpcorner.com/article/mutable-and-immutable-class-in-c-sharp/)
 
 ## Source:
 - Questions - given by faculty
