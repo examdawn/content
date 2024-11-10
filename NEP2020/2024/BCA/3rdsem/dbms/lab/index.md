@@ -573,10 +573,78 @@ SELECT * FROM display_view;
 
 ## Program 8: Implement Locks for a particular table.
 ### Connect the database using the command line window.
+
+```SQLPLUS
+CONNECT system;
+```
+
+- ✅ Connected.
+
 ### Create table CAR with the following attributes(Model_No, Brand,Price).
+
+```SQLPLUS
+CREATE TABLE car(Model_No VARCHAR(5) PRIMARY KEY, Brand VARHCAR(20), Price DECIMAL(10,2));
+```
+
+- ✅ Table created.
+
 ### Insert five tuples in the table CAR.
+
+```SQLPLUS
+INSERT INTO car VALUES('H1001','Hyundai', 1000000);
+INSERT INTO car VALUES('H1002','Maruti', 800000);
+INSERT INTO car VALUES('H1003','Tata', 700000);
+INSERT INTO car VALUES('H1004','Honda', 600000);
+INSERT INTO car VALUES('H1005','Mahindra', 500000);
+```
+
+- ✅ 5 row created.
+
 ### Create a user with (User name: Owner, Password:car) and grant the select, update permission.
+
+```SQLPLUS
+CREATE USER owner IDENTIFIED BY car;
+```
+
+- ✅ User created.
+
+```SQLPLUS
+GRANT CONNECT TO owner;
+```
+
+- ✅ Grant succeeded.
+
+```SQLPLUS
+GRANT SELECT ON car TO owner;
+```
+
+- ✅ Grant succeeded.
+
+```SQLPLUS
+GRANT UPDATE ON car TO owner;
+```
+
+- ✅ Grant succeeded.
+
+```SQLPLUS
+UPDATE car SET Price=1000000 WHERE Model_No='H1001';
+```
+
+- ✅ 1 row updated.
+
+```SQLPLUS
+commit;
+```
+
+- ✅ Commit complete.
+
 ### Implement the Locks using the table CAR.
+
+```SQLPLUS
+LOCK TABLE car IN EXCLUSIVE MODE;
+```
+
+- ✅ Table(s) Locked.
 
 ## Program 9: Write PL/SQL Procedure for an application using exception handling.
 ### Create a table BANK with the following attributes(Acno, Name,Balance).

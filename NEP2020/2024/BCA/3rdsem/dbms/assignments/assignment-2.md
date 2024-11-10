@@ -84,3 +84,8 @@ As the name suggests, lossy decomposition means when we perform join operation o
 
 
 ## 2. What is Normalisation? Explain three types of Normalisation with examples.
+Normalization is the process of organizing the data in the database.
+Normalization is used to minimize the redundancy from a relation or set of relations. It is also used to eliminate undesirable characteristics like Insertion, Update, and Deletion Anomalies.
+Normalization divides the larger table into smaller and links them using relationships.
+The normal form is used to reduce redundancy from the database table.  [(1)](https://www.javatpoint.com/dbms-normalization)  
+Types of Normal Forms:
