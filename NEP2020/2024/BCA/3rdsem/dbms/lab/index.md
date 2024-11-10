@@ -828,22 +828,20 @@ maximum price=50000
 ## Program 12: Write a PL/SQL procedure for an application using a package.
 ### Create a table LIBRARY with the following attributes(Book_id, Book_name, B_price).
 ```PL/SQL
-CREATE TABLE library(book_id int, book_name varchar(60), b_price decimal(20,2));
+CREATE TABLE library(Book_Id INT PRIMARY KEY, Book_Name VARCHAR(40), B_Price DECIMAL(20,2));
 ```
-Table created.
+
+- ✅ Table created.
 
 ### Insert three tuples in the table LIBRARY.
 ```PL/SQL
-INSERT INTO library VALUES (1001, 'C# and Dotnet', 200);
-INSERT INTO library VALUES (1002, 'Computer Communication and Networks', 250);
-INSERT INTO library VALUES (1003, 'Database Management System',250);
+INSERT INTO library VALUES (1001,'C# and Dotnet',200);
+INSERT INTO library VALUES (1002,'Computer Communication and Networks',250);
+INSERT INTO library VALUES (1003,'Database Management System',250);
 ```
 
-1 row(s) inserted.
+- ✅ 3 row(s) inserted.
 
-1 row(s) inserted.
-
-1 row(s) inserted.
 
 ### Display all the tuples from the table LIBRARY.
 ```PL/SQL
@@ -858,8 +856,33 @@ SELECT * FROM library;
 
 ### Create a package using the table LIBRARY.
 ```PL/SQL
+CREATE OR PACKAGE library_package IS
+PROCEDURE ADD_NEW (B_Id VARCHAR,B_Name VARCHAR2,B_Price NUMBER);
+FUNCTION DISPLAY RETURN VARCHAR2;
+END library_package;
+/
 ```
-TODO: Solve package part
+
+- ✅ Package created.
+
+```PL/SQL
+CREATE OR REPLACE PACKAGE BODY library_package IS
+PROCEDURE ADD_NEW (B_Id VARCHAR,B_Name VARCHAR2,B_Price NUMBER) IS
+BEGIN
+INSERT INTO library VALUES(B_Id,B_Name,B_Price);
+END;
+FUNCTION display RETURN VARCHAR2 IS
+BEGIN
+RETURN 'Recorded Inserted';
+END display;
+END library_package;
+/
+```
+
+- ✅ Package body created.
+
+TODO: Record process
+
 ## Source:
 - General Questions were found in Syllabus
 - Specific Questions are from a documents shared in the whatsapp group.
