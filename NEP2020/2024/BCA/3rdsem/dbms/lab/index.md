@@ -856,7 +856,7 @@ SELECT * FROM library;
 
 ### Create a package using the table LIBRARY.
 ```PL/SQL
-CREATE OR PACKAGE library_package IS
+CREATE OR REPLACE PACKAGE library_package IS
 PROCEDURE ADD_NEW (B_Id VARCHAR,B_Name VARCHAR2,B_Price NUMBER);
 FUNCTION DISPLAY RETURN VARCHAR2;
 END library_package;
