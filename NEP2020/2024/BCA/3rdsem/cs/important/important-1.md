@@ -426,14 +426,14 @@ There are three types of arrays in C#, which are
         ```
 
         ```C#
-        int[] numbers = new int[] { 1, 2, 3, 4, 5, 6,7,8,9,10 };
+        int[] myNum = {10, 20, 30, 40};
         ```
 - Multi-dimensional Array
     - Multi-dimensional arrays in C# are arrays that hold data in more than one dimension, allowing for efficient storage and manipulation of complex data structures.
     - These arrays can be thought of as matrices or tables, providing rows and columns to organize and access elements based on multiple indices.
     - Eg.
         ```C#
-        int[,] numbers = new int[4, 3] {{2,3}, {4,5}, {6,7}};
+        int[,] numbers = { {1, 4, 2}, {3, 6, 8} };
         ```
 - Jagged Array
     - In C#, a jagged array is an array of arrays where each element can hold arrays of different sizes. 
