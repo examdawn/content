@@ -881,7 +881,28 @@ END library_package;
 
 - ✅ Package body created.
 
-TODO: Record process
+```PL/SQL
+BEGIN
+library_package.ADD_NEW('1004','OPP With JAVA',500);
+dbms_output.PUT_LINE(library_package.display);
+END;
+/
+```
+- ✅ Recorded Inserted  
+      PL/SQL procedure successfully completed.
+
+Now, Output it:
+```SQLPLUS
+SELECT * FROM library;
+```
+
+| BOOK_ID | BOOK_NAME                                | B_PRICE |
+|---------|------------------------------------------|---------|
+| 1001    | C# and Dotnet                            | 200     |
+| 1002    | Computer Communication and Networks      | 250     |
+| 1003    | Database Management System               | 250     |
+| 1004    | OPP With JAVA                            | 500     |
+
 
 ## Source:
 - General Questions were found in Syllabus
