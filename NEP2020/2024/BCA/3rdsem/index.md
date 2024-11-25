@@ -7,7 +7,7 @@ Subjects:
 - [Computer Communications and Networks(CCN)](ccn/index.md)
 - Kannada
 - Hindi
-- Additional English
+- [Additional English](addEng/index.md)
 - General English
 - [Social Media and Marketing(SMM)](smm/index.md)
 - [Indian Constitution(IC)](ic/index.md)
