@@ -9,3 +9,6 @@ Units:
     - [Important Questions](unit3/imp.md)
 - Unit 4: Youtube Marketing and SEO
     - [Important Questions](unit4/imp.md)
+
+Others:  
+ - [Important Questions for IA](impIA.md)
