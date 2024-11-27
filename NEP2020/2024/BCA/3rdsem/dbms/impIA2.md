@@ -280,7 +280,13 @@ A lock is a variable associated with a data item that describes the status of th
 | Complexity | Simpler design and management. | More complex, requiring concurrency control. | 
 | Examples | Microsoft Access, SQLite. | Oracle, MySQL, PostgreSQL. |
 ### Write a note on decomposition?
-TODO
+Decomposition refers to the division of tables into multiple tables to produce consistency in the data.
+- When we divide a table into multiple tables or divide a relation into multiple relations, then this process is termed Decomposition in DBMS. 
+- We perform decomposition in DBMS when we want to process a particular data set. 
+- It is performed in a database management system when we need to ensure consistency and remove anomalies and duplicate data present in the database. 
+- When we perform decomposition in DBMS, we must try to ensure that no information or data is lost. 
+
+[(GeeksForGeeks)](https://www.geeksforgeeks.org/decomposition-in-dbms/)
 ### Write a note on transaction read and write operations.
 
 A user can make different types of requests to access and modify the contents of a database. So, we have different types of operations relating to a transaction:
