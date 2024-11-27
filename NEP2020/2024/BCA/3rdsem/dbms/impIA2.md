@@ -7,8 +7,6 @@ PL/SQL (Procedural Language/Structured Query Language) is a block-structured lan
 
 [(GeeksForGeeks)](https://www.geeksforgeeks.org/plsql-introduction/)
 
-### What is fundamental dependency?
-TODO
 ### What is single-user system in DBMS?
 A single-user database management system (DBMS) like SQLite is a system that only allows one user to access the database at a time. 
 - Single-user DBMSs are usually found on personal computers 
@@ -107,9 +105,39 @@ Anomalies refer to inconsistencies or errors that can arise when working with re
 [(GeeksForGeeks)](https://www.geeksforgeeks.org/anomalies-in-relational-model/)
 
 ### Write a note on properties of transactions.
-TODO
-### What is fundamental dependency? Explain
-TODO
+A transaction is a single logical unit of work that accesses and possibly modifies the contents of a database. 
+- Transactions access data using read-and-write operations. 
+- To maintain consistency in a database, before and after the transaction, certain properties are followed. 
+    - These are called ACID properties.
+
+The acronym ACID stands for Atomicity, Consistency, Isolation, and Durability. ACID Can be broken down to:
+- ***A***tomicity:
+    - By this, we mean that either the entire transaction takes place at once or doesn’t happen at all. There is no midway i.e. transactions do not occur partially. 
+    - Each transaction is considered as one unit and either runs to completion or is not executed at all
+    - It involves the following two operations.
+        - ***Abort*** : If a transaction aborts, changes made to the database are not visible.
+        - ***Commit*** : If a transaction commits, changes made are visible.
+    - Atomicity is also known as the ‘All or nothing rule’. 
+- ***C***onsistency:
+    - This means that integrity constraints must be maintained so that the database is consistent before and after the transaction. 
+    - It refers to the correctness of a database.  
+- ***I***solation:
+    - This property ensures that multiple transactions can occur concurrently without leading to the inconsistency of the database state. 
+    - Transactions occur independently without interference. 
+    - Changes occurring in a particular transaction will not be visible to any other transaction until that particular change in that transaction is written to memory or has been committed. 
+- ***D***urability:
+    - This property ensures that once the transaction has completed execution, the updates and modifications to the database are stored in and written to disk and they persist even if a system failure occurs. 
+    - These updates now become permanent and are stored in non-volatile memory. 
+    - The effects of the transaction, thus, are never lost. 
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191121102921/ACID-Properties.jpg" alt="ACIDDBMS" width="400" />
+
+[(GeeksForGeeks)](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+
+### What is functional dependency? Explain
+In relational database management, functional dependency is a concept that specifies the
+relationship between two sets of attributes where one attribute determines the value of another
+attribute. It is denoted as X → Y, where the attribute set on the left side of the arrow, X is
+called Determinant, and Y is called the Dependent.
 ### Explain function with example in PL/SQL.
 
 A standalone function is created using the CREATE FUNCTION statement. The simplified syntax for the CREATE OR REPLACE PROCEDURE statement is:
@@ -178,7 +206,6 @@ Reason for a transaction failure in DBMS:
 - System error:
     - Where the termination of an active transaction is done by the database system itself due to some system issue or because the database management system is unable to proceed with the transaction. 
     - For example– The system ends an operating transaction if it reaches a deadlock condition or if there is an unavailability of resources.
-
 
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220122170232/FailureClassificationinDBMS.png" alt="FailureClassification" width="400" />
 
