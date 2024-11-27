@@ -1,4 +1,4 @@
-## Section-A
+## Section-A (2 Marks) 
 
 ### Mention any two feature of PL/SQL.
 ### What is fundamental dependency?
@@ -9,7 +9,7 @@
 ### What is a transaction processing?
 ### What is concurrency control?
 
-## Section-B
+## Section-B (4 Marks)
 
 ### Explain basic syntax of PL/SQL?
 ### Write a note in anomalies in relational database design.
@@ -18,7 +18,7 @@
 ### Explain function with example in PL/SQL.
 ### Explain various transaction failure in DBMS
 
-## Section-C
+## Section-C (8 Marks)
 
 ### What is normalization? Explain 1NF, 2NF, 3NF.
 ### Explain transaction states in DBMS
