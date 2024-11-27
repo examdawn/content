@@ -11,6 +11,7 @@ Units:
 - Unit 5: Query Processing Transaction Management
 
 Others:
+- [Important Questions for IA](impIA.md)
 - [Lab Records](lab/index.md)
 - [Notes From Faculty](https://drive.google.com/drive/folders/19VKBV4FqY4L7BGtOIqXFprrs2iZIWfjl?usp=sharing)
 - [Assignments](assignments/index.md) 
