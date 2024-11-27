@@ -35,7 +35,18 @@ Transaction Failure is when a transaction is unable to execute further due to a 
 
 [(GeeksForGeeks)](https://www.geeksforgeeks.org/failure-classification-in-dbms/)
 ### What is a transaction processing?
-TODO
+Transaction Processing is how a transaction is processed on a DBMS. 
+- Types:
+    - Interleaved Processing 
+        - In this, the concurrent execution of processes is interleaved in a single CPU. 
+        - The transactions are interleaved, meaning the second transaction is started before the primary one could finish. 
+        - Execution can switch between the transactions. 
+        - It can also switch between multiple transactions. This causes inconsistency in the system.
+    - Parallel Processing
+        - It is defined as the processing in which a large task into various smaller tasks and smaller task also executes concurrently on several nodes. 
+        - In this, the processes are concurrently executed in multiple CPUs.
+
+[(GeeksForGeeks)](https://www.geeksforgeeks.org/introduction-to-transaction-processing/)
 ### What is concurrency control?
 Concurrency Control is the process of ensuring simultaneous execution or updation of data by several processes or users
 - This is done while maintaining data consistency and integrity
@@ -176,7 +187,25 @@ Reason for a transaction failure in DBMS:
 ## Section-C (8 Marks)
 
 ### What is normalization? Explain 1NF, 2NF, 3NF, BCNF.
-TODO
+Normalization for relational databases is used to extensively reduce data redundancy and dependency by streamlining database data correctly
+- What normalization basically does is ensure that your data is free of data redundancy or duplicate data and does not have data anomalies that would otherwise compromise its integrity.
+
+Data can be normalized into these forms:
+- First Normal Form (1NF):
+    - This is the most basic level of normalization. 
+    - In 1NF, each table cell should contain only a single value, and each column should have a unique name. The first normal form helps to eliminate duplicate data and simplify queries.
+- Second Normal Form (2NF):
+    - 2NF eliminates redundant data by requiring that each non-key attribute be dependent on the primary key. 
+    - This means that each column should be directly related to the primary key, and not to other columns.
+- Third Normal Form (3NF):
+    - 3NF builds on 2NF by requiring that all non-key attributes are independent of each other. 
+    - This means that each column should be directly related to the primary key, and not to any other columns in the same table.
+- Boyce-Codd Normal Form (BCNF):
+    - BCNF is a stricter form of 3NF that ensures that each determinant in a table is a candidate key. 
+    - In other words, BCNF ensures that each non-key attribute is dependent only on the candidate key.
+
+[(GeeksForGeeks, Explanation)](https://www.geeksforgeeks.org/normal-forms-in-dbms/)
+[(GeeksForGeeks, Forms)](https://www.geeksforgeeks.org/normal-forms-in-dbms/)
 ### Explain transaction states in DBMS
 
 In DBMS, a transaction passes through various states such as active, partially committed, failed, and aborted.
@@ -213,12 +242,16 @@ A lock is a variable associated with a data item that describes the status of th
         - This is Exclusive and cannot be held simultaneously on the same data item. 
         - X-lock is requested using lock-X instruction.
 
-### Explain various types of normalization.
-TODO
+[(GeeksForGeeks)](https://www.geeksforgeeks.org/lock-based-concurrency-control-protocol-in-dbms/)
+
 ### Differentiate between single-user and multi-user system.
-TODO
-### Write a note on the types of locks in concurrency control.
-TODO
+| Feature | Single-User DBMS | Multi-User DBMS | 
+|-----------------------|-------------------------------------------|------------------------------------------| 
+| Definition | Supports one user at a time. | Supports multiple users simultaneously. | 
+| Usage | Typically used for personal applications. | Common in enterprise and collaborative environments. | 
+| Performance | Generally faster due to no contention. | May experience delays due to concurrent access. | 
+| Complexity | Simpler design and management. | More complex, requiring concurrency control. | 
+| Examples | Microsoft Access, SQLite. | Oracle, MySQL, PostgreSQL. |
 ### Write a note on decomposition?
 TODO
 ### Write a note on transaction read and write operations.
