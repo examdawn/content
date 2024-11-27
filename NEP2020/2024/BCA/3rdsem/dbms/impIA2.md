@@ -10,11 +10,26 @@ PL/SQL (Procedural Language/Structured Query Language) is a block-structured lan
 ### What is fundamental dependency?
 TODO
 ### What is single-user system in DBMS?
-TODO
+A single-user database management system (DBMS) like SQLite is a system that only allows one user to access the database at a time. 
+- Single-user DBMSs are usually found on personal computers 
+- They are designed to be simple and easy to use. 
+- They are often used for personal projects or small-scale applications
 ### What is time stamping?
-TODO
+Time Stamping is a Concurrency Control method used to ensure that transactions are executed safely and without conflicts even when multiple transactions happen at one go.
+- It uses Time Stamps to co-ordinate the execution order of transactions 
+
+[(GeeksForGeeks)](https://www.geeksforgeeks.org/timestamp-based-concurrency-control/)
 ### What is an insert anomaly?
-TODO
+Anomalies refer to inconsistencies or errors that can arise when working with relational databases. They can be broken down into 3 types:
+- Insertion Anomalies
+- Deletion Anomalies
+- Update Anomalies
+
+Insert Anomalies occur when it is not possible to insert data into a database because the required fields are missing or because the data is incomplete. 
+- For example, if a database requires that every record has a primary key, but no value is provided for a particular record, it cannot be inserted into the database.
+
+[(GeeksForGeeks)](https://www.geeksforgeeks.org/anomalies-in-relational-model/)
+
 ### What is a transaction failure?
 Transaction Failure is when a transaction is unable to execute further due to a logical error in the procedure or a system error like deadlocks or resource constraints  
 
@@ -22,7 +37,8 @@ Transaction Failure is when a transaction is unable to execute further due to a 
 ### What is a transaction processing?
 TODO
 ### What is concurrency control?
-TODO
+Concurrency Control is the process of ensuring simultaneous execution or updation of data by several processes or users
+- This is done while maintaining data consistency and integrity
 
 ## Section-B (4 Marks)
 
@@ -65,7 +81,20 @@ END;
 [(GeeksForGeeks)](https://www.geeksforgeeks.org/plsql-introduction/)
 
 ### Write a note in anomalies in relational database design.
-TODO
+
+Anomalies refer to inconsistencies or errors that can arise when working with relational databases. These anomalies can be categorized into three types:
+- Insertion Anomalies:
+    - These anomalies occur when it is not possible to insert data into a database because the required fields are missing or because the data is incomplete. 
+    - For example, if a database requires that every record has a primary key, but no value is provided for a particular record, it cannot be inserted into the database.
+- Deletion anomalies:
+    - These anomalies occur when deleting a record from a database and can result in the unintentional loss of data. 
+    - For example, if a database contains information about customers and orders, deleting a customer record may also delete all the orders associated with that customer.
+- Update anomalies:
+    -  These anomalies occur when modifying data in a database and can result in inconsistencies or errors. 
+    - For example, if a database contains information about employees and their salaries, updating an employee’s salary in one record but not in all related records could lead to incorrect calculations and reporting.
+
+[(GeeksForGeeks)](https://www.geeksforgeeks.org/anomalies-in-relational-model/)
+
 ### Write a note on properties of transactions.
 TODO
 ### What is fundamental dependency? Explain
@@ -146,7 +175,7 @@ Reason for a transaction failure in DBMS:
 
 ## Section-C (8 Marks)
 
-### What is normalization? Explain 1NF, 2NF, 3NF.
+### What is normalization? Explain 1NF, 2NF, 3NF, BCNF.
 TODO
 ### Explain transaction states in DBMS
 
@@ -171,7 +200,19 @@ In DBMS, a transaction passes through various states such as active, partially c
 [(GeeksForGeeks)](https://www.geeksforgeeks.org/transaction-states-in-dbms/)
 
 ### Write a note on types of lock in concurrency control.
-TODO
+A lock is a variable associated with a data item that describes the status of the data item to possible operations that can be applied to it. 
+- They synchronize the access by concurrent transactions to the database items. 
+- It is required in this protocol that all the data items must be accessed in a mutually exclusive manner
+- Types: 
+    - Shared Lock (S):
+        - Shared Lock is also known as Read-only lock. 
+        - As the name suggests it can be shared between transactions because while holding this lock the transaction does not have the permission to update data on the data item. 
+        - S-lock is requested using lock-S instruction.
+    - Exclusive Lock (X):
+        - Data item can be both read as well as written.
+        - This is Exclusive and cannot be held simultaneously on the same data item. 
+        - X-lock is requested using lock-X instruction.
+
 ### Explain various types of normalization.
 TODO
 ### Differentiate between single-user and multi-user system.
@@ -201,6 +242,3 @@ A user can make different types of requests to access and modify the contents of
     - In simple words, it can be said that a rollback operation does undo the operations of transactions that were performed before its interruption to achieve a safe state of the database and avoid any kind of ambiguity or inconsistency.
 
 [(GeeksForGeeks)](https://www.geeksforgeeks.org/transaction-in-dbms/)
-
-### Write a note on lock based protocols?
-TODO
