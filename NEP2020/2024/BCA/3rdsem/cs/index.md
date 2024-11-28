@@ -10,6 +10,7 @@ Units:
 
 Important Questions
 - [Important Questions 1](important/important-1.md)
+- [Internal Assessment 2](important/ImpIA2.md)
 
 Others:
 - [Lab Records](lab/index.md)
