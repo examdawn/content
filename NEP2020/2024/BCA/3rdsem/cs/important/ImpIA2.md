@@ -29,7 +29,10 @@ End If
 
 [Official Microsoft Docs](https://learn.microsoft.com/en-us/dotnet/visual-basic/language-reference/statements/if-then-else-statement)
 ### Q2. What is the purpose of Time control? 
+The timer control is a looping control used to repeat any task in a given time interval. 
+- It is an important control used in Client-side and Server-side programming, also in Windows Services.
 
+[Javatpoint](https://www.javatpoint.com/vb-net-timer-control)
 ### Q3. What is the use of Track bar control in VB.NET?
 The Windows Forms TrackBar control (also sometimes called a "slider" control) is used for navigating through a large amount of information or for visually adjusting a numeric setting. 
 - The TrackBar control has two parts: the thumb, also known as a slider, and the tick marks. 
@@ -148,8 +151,61 @@ There are 4 types of Loops:
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/difference-between-ado-and-ado-net/)
 ### Q7. Explain about combo box control and picture box control with an example
+Already answered
+
 ### Q8. Explain Data reader and Data adapter in ADO.NET
 ### Q9. Explain any 4 tools and its properties from toolbox of VB.NET
+
+#### 1. TextBox
+**Description**: A `TextBox` control allows users to input and edit text. It is commonly used for forms where user input is required.
+
+**Properties**:
+- **Text**: Gets or sets the text displayed in the `TextBox`. This is the most commonly used property.
+- **MaxLength**: Sets the maximum number of characters that the user can enter. This is useful for limiting input, such as for usernames or passwords.
+- **Multiline**: A Boolean property that, when set to `True`, allows the `TextBox` to accept multiple lines of text. This is useful for comments or descriptions.
+- **ReadOnly**: When set to `True`, the user cannot change the text in the `TextBox`, making it useful for displaying information that should not be edited.
+
+**Practical Use**: A `TextBox` is often used in forms for input fields like name, email, or password. For example, in a login form, you would typically have two `TextBox` controls for the username and password.
+
+---
+
+#### 2. ComboBox
+**Description**: A `ComboBox` combines a drop-down list with an editable text box, allowing users to either select an item from a list or enter a custom value.
+
+**Properties**:
+- **Items**: A collection that holds the items in the `ComboBox`. You can add or remove items dynamically at runtime.
+- **SelectedIndex**: Gets or sets the zero-based index of the currently selected item. This is useful for retrieving the user's selection.
+- **DropDownStyle**: Determines how the `ComboBox` behaves. Options include `DropDown`, `DropDownList`, and `Simple`. `DropDownList` prevents users from entering custom values.
+- **AutoCompleteMode**: Allows the `ComboBox` to suggest items as the user types, enhancing user experience.
+
+**Practical Use**: A `ComboBox` is often used for selecting options from a predefined list, such as selecting a country from a list of countries in a registration form. It can also allow users to input custom values if needed.
+
+---
+
+#### 3. ListBox
+**Description**: A `ListBox` displays a list of items from which the user can select one or more items. It is useful for presenting a collection of options.
+
+**Properties**:
+- **Items**: Similar to the `ComboBox`, this property holds the collection of items in the `ListBox`.
+- **SelectionMode**: Determines how selections are made within the `ListBox`. Options include `One` (single selection), `MultiSimple`, and `MultiExtended` (multiple selections).
+- **SelectedItems**: Returns a collection of the currently selected items, allowing you to easily access user selections.
+- **HorizontalScrollbar**: A Boolean property that, when set to `True`, enables a horizontal scrollbar if the items exceed the width of the `ListBox`.
+
+**Practical Use**: A `ListBox` is often used to display options for selection, such as a list of available products in an e-commerce application. Users can select multiple items (e.g., multiple products) to add to their cart.
+
+---
+
+#### 4. PictureBox
+**Description**: A `PictureBox` control is used to display images in a Windows Forms application. It can show bitmaps, icons, or other types of images.
+
+**Properties**:
+- **Image**: Gets or sets the image displayed in the `PictureBox`. You can load images from files, resources, or streams.
+- **SizeMode**: Determines how the image is displayed within the `PictureBox`. Options include `Normal`, `StretchImage`, `AutoSize`, and `CenterImage`. This allows you to control how the image fits within the control.
+- **BackColor**: Sets the background color of the `PictureBox`, which can be useful if the image does not fill the entire control.
+- **BorderStyle**: Specifies the border style of the `PictureBox`, which can be set to `None`, `FixedSingle`, or `Fixed3D`.
+
+**Practical Use**: A `PictureBox` is commonly used in applications that require image display, such as a photo viewer or an application that showcases product images. For instance, in a gallery application, each `PictureBox` can display a different image, allowing users to browse through a collection.
+
 ### Q10. Explain subroutine and functions with the help of example
 ### Q11. Explain the architecture of ADO.NET
 ### Q12. What is Data set and Data Provider? 
