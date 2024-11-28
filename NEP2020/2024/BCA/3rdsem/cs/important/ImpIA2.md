@@ -29,8 +29,7 @@ End If
 
 [Official Microsoft Docs](https://learn.microsoft.com/en-us/dotnet/visual-basic/language-reference/statements/if-then-else-statement)
 ### Q2. What is the purpose of Time control? 
-The timer control is a looping control used to repeat any task in a given time interval. 
-- It is an important control used in Client-side and Server-side programming, also in Windows Services.
+The timer control is a looping control used to repeat any task in a given time interval. It is an important control used in Client-side and Server-side programming, also in Windows Services. It is used to execute an application after a specific amount of time. Once the timer is enabled, it generates a tick event handler to perform any defined task in its time interval property. [[1](https://www.javatpoint.com/vb-net-timer-control)]
 
 [Javatpoint](https://www.javatpoint.com/vb-net-timer-control)
 ### Q3. What is the use of Track bar control in VB.NET?
@@ -150,9 +149,31 @@ There are 4 types of Loops:
 | It supports sequential access of rows in a RecordSet. | It allows completely non-sequential data access in DataSet through collection based hierarchy. |
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/difference-between-ado-and-ado-net/)
-### Q7. Explain about combo box control and picture box control with an example
-Already answered
 
+### Q7. Explain about combo box control and picture box control with an example
+- **ComboBox control** - is used to display more than one item in a drop-down list. It is a combination of Listbox and Textbox in which the user can input only one item. Furthermore, it also allows a user to select an item from a drop-down list. [[1](https://www.javatpoint.com/vb-net-combobox-control)]
+    
+    ```VB.NET
+    Imports System.Windows.Forms
+
+    Public Class Form1
+        Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
+            Fruit.Items.Add("Apple")
+            Fruit.Items.Add("Banana")
+            Fruit.Items.Add("Cherry")
+            Fruit.Items.Add("Orange")
+        End Sub
+
+        Private Sub Fruit_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Fruit.SelectedIndexChanged
+            SelectedFruit.Text = "You selected: " & Fruit.Text
+        End Sub
+    End Class
+    ```
+- **PictureBox control** - is used to display the images on Windows Form. The PictureBox control has an image property that allows the user to set the image at runtime or design time.  [[1](https://www.javatpoint.com/vb-net-picturebox-control)]
+    
+    ```VB.NET
+    TODO
+    ```
 ### Q8. Explain Data reader and Data adapter in ADO.NET
 
 #### DataReader
@@ -238,9 +259,57 @@ Already answered
 **Practical Use**: A `PictureBox` is commonly used in applications that require image display, such as a photo viewer or an application that showcases product images. For instance, in a gallery application, each `PictureBox` can display a different image, allowing users to browse through a collection.
 
 ### Q10. Explain subroutine and functions with the help of example
+| Parameters | Sub Procedures | Functions |
+|------------|----------------|-----------|
+| 1          | A subprocedure is not associated with an event. | A function is also not associated with an event. |
+| 2          | A subprocedure is called whenever it is required to perform certain tasks. It returns control to the calling code after performing a task. | A function is called whenever a value is required to be returned to the calling code after performing a task. |
+| 3          | A subprocedure does not return a value to the calling code. | Functions return a value to the calling code. |
+| 4          | A subprocedure cannot be used with an expression. | Functions are used in an expression. |
+| 5          | A subprocedure helps to make the code readable, and easy to modify and debug. | In functions, it is not easy to modify and debug the code. |
+| 6          | A subprocedure is a generalized type of function. | A function is a specific type of procedure. |
+| 7          | A subprocedure is declared with the keyword Sub. | A function is declared with the keyword Function. | 
+
+[[1](https://www.geeksforgeeks.org/sub-procedure-vs-function-in-vb-net/)]
+
+- Example for Subroutine:
+    ```VB.NET
+    Class Program
+        Sub Main()
+            DisplayMessage()
+        End Sub
+
+        Sub DisplayMessage()
+            Console.WriteLine("Hello, this is a subroutine!")
+        End Sub
+    End Class
+    ```
+
+- Example for Function
+    ```VB.NET
+    Class Program
+        Sub Main()
+            Dim result As Integer
+            result = AddNumbers(5, 10)
+            Console.WriteLine("The sum is: " & result)
+            Console.ReadLine()
+        End Sub
+
+        Function AddNumbers(a As Integer, b As Integer) As Integer
+            Return a + b
+        End Function
+    End Class
+    ````
+
 ### Q11. Explain the architecture of ADO.NET
+ADO.NET has two main components that are used for accessing and manipulating data are the .NET Framework data provider and the DataSet. [[1](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-architecture)]
+- **.NET Framework data provider** - These are the components that are designed for data manipulation and fast access to data. It provides various objects such as Connection, Command, DataReader and DataAdapter that are used to perform database operations. 
+- **DataSet** - It is used to access data independently from any data resource. DataSet contains a collection of one or more DataTable objects of data.  [[2](https://www.javatpoint.com/ado-net-introduction)]
+
 ### Q12. What is Data set and Data Provider? 
+- Already Answered
+
 ### Q13. What is docking and undocking in visual studio?
+
 ### Q14. Explain Task bar and Progress bar controls of VB.NET
 ### Q15. Explain the steps to create a simple form using VB.NET
 ### Q16. Explain VB.NET Conditional and looping statements with a suitable example
