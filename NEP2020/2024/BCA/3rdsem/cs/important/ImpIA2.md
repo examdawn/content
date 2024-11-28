@@ -309,8 +309,12 @@ ADO.NET has two main components that are used for accessing and manipulating dat
 - Already Answered
 
 ### Q13. What is docking and undocking in visual studio?
+Docking and undocking in Visual Studio for Windows Forms refers to the ability to arrange controls within a form. Docking allows a control to attach itself to one of the edges of its parent container, automatically resizing to fill the available space. This is useful for creating layouts that adapt to different form sizes and orientations. Undocking, on the other hand, allows a control to be separated from its parent container, enabling it to float freely or be moved to another location, such as a different monitor. [[1](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-9.0)]
 
 ### Q14. Explain Task bar and Progress bar controls of VB.NET
+- **Progress Bar** - It represents a Windows progress bar control. It is used to provide visual feedback to your users about the status of some task. It shows a bar that fills in from left to right as the operation progresses. Similar to what we all seen when downloading or sharing any content.
+
+- **Taskbar** - TODO
 ### Q15. Explain the steps to create a simple form using VB.NET
 ### Q16. Explain VB.NET Conditional and looping statements with a suitable example
 ### Q17. Explain Exception Handling in C# with example syntax
