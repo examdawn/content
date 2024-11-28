@@ -134,6 +134,19 @@ There are 4 types of Loops:
 
 [Official Microsoft Docs](https://learn.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/control-flow/loop-structures)
 ### Q6. Write the difference between ADO and ADO.NET
+ | ADO | ADO.NET |
+ |---| --- |
+| It is based on COM (Component Object Modelling). | It is a CLR (Common Language Runtime) based library. |
+| It works only when data store is connected. | It does not needs active connection to access data from data store. |
+| It has feature of locking. | It does not have feature of locking.
+| It access and store data from data source by recordset object. | It access and store data from data source by dataset object. |
+| XML integration is not feasible in ADO. | XML integration is feasible in ADO.NET. |
+| In ADO, data is stored in binary form. | While in this, data is stored in XML. |
+| It allow us to create client side cursors only. | It give us the choice of using weather client side and server side cursors. |
+| It requires SQL JOINs and UNIONs to combine data from multiple tables in a single result table. | It uses DataRelational objects, for combining data from multiple tables without requiring JOINs and UNIONs. |
+| It supports sequential access of rows in a RecordSet. | It allows completely non-sequential data access in DataSet through collection based hierarchy. |
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/difference-between-ado-and-ado-net/)
 ### Q7. Explain about combo box control and picture box control with an example
 ### Q8. Explain Data reader and Data adapter in ADO.NET
 ### Q9. Explain any 4 tools and its properties from toolbox of VB.NET
