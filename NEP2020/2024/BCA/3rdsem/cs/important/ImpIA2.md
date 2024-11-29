@@ -31,7 +31,6 @@ End If
 ### Q2. What is the purpose of Time control? 
 The timer control is a looping control used to repeat any task in a given time interval. It is an important control used in Client-side and Server-side programming, also in Windows Services. It is used to execute an application after a specific amount of time. Once the timer is enabled, it generates a tick event handler to perform any defined task in its time interval property. [[1](https://www.javatpoint.com/vb-net-timer-control)]
 
-[Javatpoint](https://www.javatpoint.com/vb-net-timer-control)
 ### Q3. What is the use of Track bar control in VB.NET?
 The Windows Forms TrackBar control (also sometimes called a "slider" control) is used for navigating through a large amount of information or for visually adjusting a numeric setting. 
 - The TrackBar control has two parts: the thumb, also known as a slider, and the tick marks. 
@@ -155,20 +154,19 @@ There are 4 types of Loops:
     
     ```VB.NET
     Imports System.Windows.Forms
+        Public Class Form1
+            Private Sub Form1(sender As Object, e As EventArgs) Handles Me.Load
+                Fruit.Items.Add("Banana")
+                Fruit.Items.Add("Cherry")
+                Fruit.Items.Add("Orange")
+            End Sub
 
-    Public Class Form1
-        Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
-            Fruit.Items.Add("Apple")
-            Fruit.Items.Add("Banana")
-            Fruit.Items.Add("Cherry")
-            Fruit.Items.Add("Orange")
-        End Sub
-
-        Private Sub Fruit_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Fruit.SelectedIndexChanged
-            SelectedFruit.Text = "You selected: " & Fruit.Text
-        End Sub
-    End Class
+            Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+                Textbox1.Text = Fruit.Text
+            End Sub
+        End Class
     ```
+
 - **PictureBox control** - is used to display the images on Windows Form. The PictureBox control has an image property that allows the user to set the image at runtime or design time.  [[1](https://www.javatpoint.com/vb-net-picturebox-control)]
     
     ```VB.NET
