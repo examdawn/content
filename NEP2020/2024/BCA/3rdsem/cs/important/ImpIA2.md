@@ -315,6 +315,47 @@ Docking and undocking in Visual Studio for Windows Forms refers to the ability t
 - **Progress Bar** - It represents a Windows progress bar control. It is used to provide visual feedback to your users about the status of some task. It shows a bar that fills in from left to right as the operation progresses. Similar to what we all seen when downloading or sharing any content.
 
 - **Taskbar** - TODO
+
 ### Q15. Explain the steps to create a simple form using VB.NET
+To create a Visual Basic application project. The project type comes with all the template files that you need.
+- Step 1: Open Visual Studio.
+- Step 2: On the start window, choose Create a new project.
+- Step 3: On the Create a new project window, select the Windows Forms App (.NET Framework) template for Visual Basic.
+- Step 4: In the Configure your new project window, enter project_name as the Project name. Then, select Create.
+- Step 5: On the left side of the Visual Studio IDE, select the Toolbox tab. If you don't see it, select View > Toolbox from the menu bar or Ctrl+Alt+X. 
+    - Select the Label control in the Toolbox window, and then drag it onto the form.
+    - In the Properties window, change the text from Label1 to Null, and then press Enter.
+    - Select the Button control and then drag it onto the form.
+    - In the Properties window, change the text from Button1 to Submit, and then press Enter.
+- Step 6: Now add the code by double clicking the button control.
+    - ```VB.NET
+        Public Class Form1
+            Private Sub Button1(sender As Object, e As EventArgs) Handles Button1.Click
+                label1.Text = "Hello World!"
+            End Sub
+        End Class
+      ```
+- Step 7: Now your application is ready to build and run.
+- Step 8: Select Start to run the application. [It will handle both the building and running by itself.]  [[1](https://learn.microsoft.com/en-us/visualstudio/ide/create-a-visual-basic-winform-in-visual-studio?view=vs-2022)]
 ### Q16. Explain VB.NET Conditional and looping statements with a suitable example
+
+
 ### Q17. Explain Exception Handling in C# with example syntax
+An exception is a problem that arises during the execution of a program. A C# exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero. Exceptions provide a way to transfer control from one part of a program to another. C# exception handling is built upon four keywords: try, catch, finally, and throw.
+- **try** − A try block identifies a block of code for which particular exceptions is activated. It is followed by one or more catch blocks.
+- **catch** − A program catches an exception with an exception handler at the place in a program where you want to handle the problem. The catch keyword indicates the catching of an exception.
+- **finally** − The finally block is used to execute a given set of statements, whether an exception is thrown or not thrown. For example, if you open a file, it must be closed whether an exception is raised or not.
+- **throw** − A program throws an exception when a problem shows up. This is done using a throw keyword.  [[1](https://www.tutorialspoint.com/csharp/csharp_exception_handling.htm)]
+
+Syntax:
+```C#
+try {
+   // statements causing exception
+} catch( ExceptionName e1 ) {
+   // error handling code
+} catch( ExceptionName e2 ) {
+   // error handling code
+} finally {
+   // statements to be executed
+}
+```
