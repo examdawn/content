@@ -14,6 +14,8 @@ Important Questions
 
 Others:
 - [Lab Records](lab/index.md)
+    - [Part A](PartA.md)
+    - [Part B](PartB.md)
 - Assignments
     - [Assignment 1(Due 04/Nov/2024)](assignments/assignment1.md)
 
