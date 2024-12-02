@@ -31,6 +31,36 @@ End Class
 
 [Download Output](https://github.com/sounddrill31/VowelCountApp/releases/download/12115653768/VowelCountApp-windows-latest-12115653768.zip)
 ### Program 2 - VB.NET Program to check if number is Odd or Even
+```vbnet
+Public Class Form1
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles Value.TextChanged
+        If Value.Text = Nothing Then
+            Label1.Text = "Enter Number"
+        Else
+            Dim ValueNum As Integer = Value.Text
+            If (ValueNum Mod 2 = 0) Then
+                Label1.Text = "Even - Enter Value"
+            Else
+                Label1.Text = " Odd - Enter Value"
+            End If
+        End If
+    End Sub
+
+    Private Sub ClrButton_Click(sender As Object, e As EventArgs) Handles ClrButton.Click
+        Label1.Text = "Enter Number"
+        Value.Text = String.Empty
+    End Sub
+
+    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
+        Close()
+    End Sub
+End Class
+```
+![Screenshot](screenshots/oddeven.png)
+
+[Source](https://github.com/sounddrill31/OddEvenApp_Winforms/blob/main/Form1.vb)
+
+[Download Output](https://github.com/sounddrill31/OddEvenApp_Winforms/releases/download/12116520828/OddEvenApp_Winforms-windows-latest-12116520828.zip)
 ### Program 3 - VB.NET Program to calculate compound interest
 ### Program 4 - VB.NET Program to display the sum of negative and sum of positive numbers 
 ```vbnet
