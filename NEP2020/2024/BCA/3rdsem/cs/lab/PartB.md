@@ -3,6 +3,7 @@
 ### Program 1 - VB.NET Program to count the number of Vowels
 
 ```vbnet
+Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim str1, str2
         Dim vcount, i, str1len As Integer
@@ -21,6 +22,7 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Close()
     End Sub
+End Class
 ```
 
 ![Screenshot](screenshots/vowels.png)
@@ -32,6 +34,7 @@
 ### Program 3 - VB.NET Program to calculate compound interest
 ### Program 4 - VB.NET Program to display the sum of negative and sum of positive numbers 
 ```vbnet
+Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         Dim Limit As Integer = Integer.Parse(LimitN.Text)
@@ -64,6 +67,7 @@
         ' Exit program
         Close()
     End Sub
+End Class
 ```
 
 ![Screenshot](screenshots/sumnum.png)
@@ -73,6 +77,44 @@
 
 [Download Output](https://github.com/sounddrill31/SumNum_Winforms/releases/download/11983858383/SumNum-windows-latest-11983858383.zip)
 ### Program 5 - VB.NET Program to concat 2 strings
+```vbnet
+Public Class Form1
+    Private Sub Result_Click(sender As Object, e As EventArgs) Handles Result.Click
+        ResultBox.Text = FirstNameBox.Text & " " & LastNameBox.Text
+    End Sub
+
+    Private Sub exitBtn_Click(sender As Object, e As EventArgs) Handles exitBtn.Click
+        Close()
+    End Sub
+
+    Private Sub Clear_Click(sender As Object, e As EventArgs) Handles Clear.Click
+        FirstNameBox.Text = String.Empty
+        LastNameBox.Text = String.Empty
+        ResultBox.Text = "Result"
+    End Sub
+End Class
+```
+
+![Screenshot](screenshots/concat.png)
+
+[Source](https://github.com/sounddrill31/Concat2Strings_WinForms/blob/main/Concat2Strings/Form1.vb)
+
+[Download Output](https://github.com/sounddrill31/Concat2Strings_WinForms/releases/download/12115871070/Concat2Strings-windows-latest-12115871070.zip)
 ### Program 6 - VB.NET Program to change the styles and fonts of Text
 ### Program 7 - VB.NET Program to generate student enrollment details
 ### Program 8 - VB.NET Program to demonstrate MDI parent forms
+```vbnet
+Public Class Form1
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Form1.IsMdiContainer = True
+        Form2.MdiParent = Me
+        Form2.Show()
+    End Sub
+End Class
+```
+
+![Screenshot](screenshots/mdiexample.png)
+
+[Source](https://github.com/sounddrill31/MDIFormsExample_Winforms/blob/main/Form1.vb)
+
+[Download Output](https://github.com/sounddrill31/MDIFormsExample_Winforms/releases/download/12080036688/MDIFormsExample-windows-latest-12080036688.zip)
