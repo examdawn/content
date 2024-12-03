@@ -49,9 +49,21 @@ A cyclic redundancy check (CRC) is a mathematical technique that provides a way 
 
 ## Q3.Explain Hamming Code with a neat example.
 
-## Q4.Explain Stop and Wait Protocol.
+
+## Q4.Explain Stop and Wait Protocol. 
+The Stop-and-Wait protocol is a flow control mechanism used in the data link layer for transmitting data over noiseless channels. In this protocol, the sender transmits a frame and then waits for an acknowledgment from the receiver before sending the next frame. It allows unidirectional data transmission, meaning only one direction (sending or receiving) occurs at a time. While it effectively manages flow control, it does not include any error control mechanisms. [[1](https://www.javatpoint.com/stop-and-wait-protocol)]
+
+
 ## Q5.Explain Stop and Wait Automatic Repeat Request with a neat diagram.
+The Stop and Wait ARQ protocol sends a data frame and then waits for an acknowledgment (ACK) from the receiver. The ACK indicates that the receiver successfully received the data frame. After receiving the ACK from the receiver, the sender delivers the next data frame. So there is a stop before the next data frame is transferred, hence it is known as the Stop and Wait ARQ protocol. [[1](https://www.geeksforgeeks.org/stop-and-wait-arq/)]
+
+![SAWARQ](https://media.geeksforgeeks.org/wp-content/uploads/Stop-and-Wait-ARQ.png)
+
+
 ## Q6.Explain Go Back-N Automatic Repeat Request.
+The Go-Back-N (GBN) protocol is a sliding window protocol used in networking for reliable data transmission. It is part of the Automatic Repeat reQuest (ARQ) protocols, which ensure that data is correctly received and that any lost or corrupted packets are retransmitted. [[1](https://www.geeksforgeeks.org/sliding-window-protocol-set-2-receiver-side/)]
+
+
 ## Q7.Explain Selective Repeat Request.
 Selective Repeat Request (SRR) is an error control protocol used in data communication to ensure reliable transmission of data frames. It is part of the Automatic Repeat reQuest (ARQ) family of protocols and is particularly effective in managing the retransmission of lost or corrupted frames without requiring the retransmission of all previously sent frames. [[1](https://www.geeksforgeeks.org/sliding-window-protocol-set-3-selective-repeat/)]
 
