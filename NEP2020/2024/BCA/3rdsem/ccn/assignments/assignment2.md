@@ -46,6 +46,7 @@ A cyclic redundancy check (CRC) is a mathematical technique that provides a way 
     Therefore, the remainder is all zeros. Hence, the
     data received has no error. [[2](https://www.geeksforgeeks.org/modulo-2-binary-division/)]
 
+
 ## Q3.Explain Hamming Code with a neat example.
 
 ## Q4.Explain Stop and Wait Protocol.
@@ -54,8 +55,13 @@ A cyclic redundancy check (CRC) is a mathematical technique that provides a way 
 ## Q7.Explain Selective Repeat Request.
 ## Q8.Explain Designing Issues with a Network Layer.
 ## Q9.Explain Distance Vector Routing Algorithm.
+Distance Vector Routing is an algorithm where a router calculates distances to destinations based solely on its immediate neighbors. It shares its routing table with directly connected routers at regular intervals, allowing them to update their tables. The Bellman-Ford algorithm is typically used for route computation. Despite its simplicity, Distance Vector Routing faces issues like the Count to Infinity problem and persistent routing loops. [[1](https://www.geeksforgeeks.org/difference-between-distance-vector-routing-and-link-state-routing/)]
+
+
 ## Q10.Explain Link Status Routing Algorithm.
 The Link Status Routing Algorithm, or Link State Routing, is a dynamic routing protocol where each router maintains a complete view of the entire network. Unlike Distance Vector protocols, routers flood their link state information across the network to ensure all routers share the same topology. Dijkstra’s Algorithm is used to compute the shortest paths to all destinations, preventing persistent routing loops. However, this flooding can lead to increased network traffic. [[1](https://www.geeksforgeeks.org/difference-between-distance-vector-routing-and-link-state-routing/)]
+
+
 ## Q11.Explain Leaky Bucket Algorithm with an neat diagram.
 ## Q12.Explain Token Bucket Algorithm with an neat diagram.
 ## Q13.Explain service provided by Transport Layer Protocol.
@@ -69,6 +75,7 @@ The Link Status Routing Algorithm, or Link State Routing, is a dynamic routing p
     - It ensures data integrity by using error detection codes and checksums, along with ACK/NACK services to confirm the successful delivery of data.
 - **Flow Control**: 
     - Flow control prevents data loss by managing the rate of data transmission between sender and receiver, primarily using the sliding window protocol to adjust the flow based on receiver capacity. [[1](https://www.geeksforgeeks.org/transport-layer-responsibilities/)]
+
 
 ## Q14.Explain the elements of Transport Layer.
 Transport Layer is a 4th layer from the top. The main role of the transport layer is to provide the communication services directly to the application processes running on different hosts. The elements of Transport Layer are: 
