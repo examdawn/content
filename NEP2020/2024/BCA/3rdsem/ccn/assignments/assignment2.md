@@ -48,7 +48,9 @@ A cyclic redundancy check (CRC) is a mathematical technique that provides a way 
 
 
 ## Q3.Explain Hamming Code with a neat example.
+Hamming code is an error-correcting method developed by Richard Hamming in the 1950s. It adds extra bits to data, enabling the detection and correction of single-bit errors during transmission or storage, thus improving the reliability of communication systems and digital storage. [[1](https://www.geeksforgeeks.org/hamming-code-in-computer-network/)]
 
+<!-- TODO: Neat Example -->
 
 ## Q4.Explain Stop and Wait Protocol. 
 The Stop-and-Wait protocol is a flow control mechanism used in the data link layer for transmitting data over noiseless channels. In this protocol, the sender transmits a frame and then waits for an acknowledgment from the receiver before sending the next frame. It allows unidirectional data transmission, meaning only one direction (sending or receiving) occurs at a time. While it effectively manages flow control, it does not include any error control mechanisms. [[1](https://www.javatpoint.com/stop-and-wait-protocol)]
@@ -88,8 +90,16 @@ The Link Status Routing Algorithm, or Link State Routing, is a dynamic routing p
 
 
 ## Q11.Explain Leaky Bucket Algorithm with an neat diagram.
+A simple leaky bucket algorithm can be implemented using FIFO queue. A FIFO queue holds the packets. If the traffic consists of fixed-size packets (e.g., cells in ATM networks), the process removes a fixed number of packets from the queue at each tick of the clock. If the traffic consists of variable-length packets, the fixed output rate must be based on the number of bytes or bits. 
+
+![leakyb](https://media.geeksforgeeks.org/wp-content/uploads/leakyTap-1.png)
+
 
 ## Q12.Explain Token Bucket Algorithm with an neat diagram.
+The Token Bucket algorithm is used in networking for traffic shaping and rate limiting. It controls the amount of data sent or received within a period, ensuring traffic conforms to a specified rate. It helps differentiate performance based on network requirements and provides predictable or guaranteed performance. 
+
+![tokenb](https://media.geeksforgeeks.org/wp-content/uploads/20240116162804/Blank-diagram-(7).png)
+
 
 ## Q13.Explain service provided by Transport Layer Protocol.
 - **Process to Process Delivery**: 
