@@ -58,6 +58,17 @@ A cyclic redundancy check (CRC) is a mathematical technique that provides a way 
 ## Q11.Explain Leaky Bucket Algorithm with an neat diagram.
 ## Q12.Explain Token Bucket Algorithm with an neat diagram.
 ## Q13.Explain service provided by Transport Layer Protocol.
+- **Process to Process Delivery**: 
+    - The Transport Layer uses port numbers (16-bit addresses) to deliver data segments to the correct process on a host, differentiating multiple processes running simultaneously.
+- **End-to-End Connection between Hosts**:
+    - It establishes connections using protocols like TCP (reliable, connection-oriented) and UDP (unreliable, best-effort delivery), suitable for different applications such as video conferencing.
+- **Multiplexing and Demultiplexing**: 
+    - Multiplexing combines data from multiple processes into a single packet using port numbers, while demultiplexing distributes incoming packets to the appropriate processes on the receiver's side.
+- **Data Integrity and Error Correction**: 
+    - It ensures data integrity by using error detection codes and checksums, along with ACK/NACK services to confirm the successful delivery of data.
+- **Flow Control**: 
+    - Flow control prevents data loss by managing the rate of data transmission between sender and receiver, primarily using the sliding window protocol to adjust the flow based on receiver capacity. [[1](https://www.geeksforgeeks.org/transport-layer-responsibilities/)]
+
 ## Q14.Explain the elements of Transport Layer.
 Transport Layer is a 4th layer from the top. The main role of the transport layer is to provide the communication services directly to the application processes running on different hosts. The elements of Transport Layer are: 
 - **Error Control**:  
