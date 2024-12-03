@@ -55,6 +55,7 @@ A cyclic redundancy check (CRC) is a mathematical technique that provides a way 
 ## Q8.Explain Designing Issues with a Network Layer.
 ## Q9.Explain Distance Vector Routing Algorithm.
 ## Q10.Explain Link Status Routing Algorithm.
+The Link Status Routing Algorithm, or Link State Routing, is a dynamic routing protocol where each router maintains a complete view of the entire network. Unlike Distance Vector protocols, routers flood their link state information across the network to ensure all routers share the same topology. Dijkstra’s Algorithm is used to compute the shortest paths to all destinations, preventing persistent routing loops. However, this flooding can lead to increased network traffic. [[1](https://www.geeksforgeeks.org/difference-between-distance-vector-routing-and-link-state-routing/)]
 ## Q11.Explain Leaky Bucket Algorithm with an neat diagram.
 ## Q12.Explain Token Bucket Algorithm with an neat diagram.
 ## Q13.Explain service provided by Transport Layer Protocol.
