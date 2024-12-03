@@ -53,7 +53,20 @@ A cyclic redundancy check (CRC) is a mathematical technique that provides a way 
 ## Q5.Explain Stop and Wait Automatic Repeat Request with a neat diagram.
 ## Q6.Explain Go Back-N Automatic Repeat Request.
 ## Q7.Explain Selective Repeat Request.
+Selective Repeat Request (SRR) is an error control protocol used in data communication to ensure reliable transmission of data frames. It is part of the Automatic Repeat reQuest (ARQ) family of protocols and is particularly effective in managing the retransmission of lost or corrupted frames without requiring the retransmission of all previously sent frames. [[1](https://www.geeksforgeeks.org/sliding-window-protocol-set-3-selective-repeat/)]
+
+
 ## Q8.Explain Designing Issues with a Network Layer.
+1. **Reliability**:
+    - Reliability is a key design issue, as network components may be unreliable, leading to data loss. Effective error detection and correction mechanisms are essential for maintaining data integrity.
+2. **Addressing**:
+    - Addressing is fundamental in network design for identifying senders and receivers. Proper management of addresses facilitates efficient communication and ensures data reaches its intended destination.
+- **Error Control**:
+    - Error control is vital due to imperfections in communication circuits. Design must include error-detecting and correcting codes agreed upon by both sender and receiver to protect data integrity.
+- **Flow Control**:
+    - Flow control is crucial for balancing data transmission between senders and receivers to prevent data loss. Design mechanisms like buffer adjustments or message segmentation manage speed mismatches. [[1](https://www.javatpoint.com/design-issues-for-the-layers-of-computer-networks)]
+
+
 ## Q9.Explain Distance Vector Routing Algorithm.
 Distance Vector Routing is an algorithm where a router calculates distances to destinations based solely on its immediate neighbors. It shares its routing table with directly connected routers at regular intervals, allowing them to update their tables. The Bellman-Ford algorithm is typically used for route computation. Despite its simplicity, Distance Vector Routing faces issues like the Count to Infinity problem and persistent routing loops. [[1](https://www.geeksforgeeks.org/difference-between-distance-vector-routing-and-link-state-routing/)]
 
@@ -63,7 +76,9 @@ The Link Status Routing Algorithm, or Link State Routing, is a dynamic routing p
 
 
 ## Q11.Explain Leaky Bucket Algorithm with an neat diagram.
+
 ## Q12.Explain Token Bucket Algorithm with an neat diagram.
+
 ## Q13.Explain service provided by Transport Layer Protocol.
 - **Process to Process Delivery**: 
     - The Transport Layer uses port numbers (16-bit addresses) to deliver data segments to the correct process on a host, differentiating multiple processes running simultaneously.
