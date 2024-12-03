@@ -46,16 +46,25 @@ A cyclic redundancy check (CRC) is a mathematical technique that provides a way 
     Therefore, the remainder is all zeros. Hence, the
     data received has no error. [[2](https://www.geeksforgeeks.org/modulo-2-binary-division/)]
 
-## Explain Hamming Code with a neat example.
+## Q3.Explain Hamming Code with a neat example.
 
-## Explain Stop and Wait Protocol.
-## Explain Stop and Wait Automatic Repeat Request with a neat diagram.
-## Explain Go Back-N Automatic Repeat Request.
-## Explain Selective Repeat Request.
-## Explain Designing Issues with a Network Layer.
-## Explain Distance Vector Routing Algorithm.
-## Explain Link Status Routing Algorithm.
-## Explain Leaky Bucket Algorithm with an neat diagram.
-## Explain Token Bucket Algorithm with an neat diagram.
-## Explain service provided by Transport Layer Protocol.
-## Explain the elements of Transport Layer.
+## Q4.Explain Stop and Wait Protocol.
+## Q5.Explain Stop and Wait Automatic Repeat Request with a neat diagram.
+## Q6.Explain Go Back-N Automatic Repeat Request.
+## Q7.Explain Selective Repeat Request.
+## Q8.Explain Designing Issues with a Network Layer.
+## Q9.Explain Distance Vector Routing Algorithm.
+## Q10.Explain Link Status Routing Algorithm.
+## Q11.Explain Leaky Bucket Algorithm with an neat diagram.
+## Q12.Explain Token Bucket Algorithm with an neat diagram.
+## Q13.Explain service provided by Transport Layer Protocol.
+## Q14.Explain the elements of Transport Layer.
+Transport Layer is a 4th layer from the top. The main role of the transport layer is to provide the communication services directly to the application processes running on different hosts. The elements of Transport Layer are: 
+- **Error Control**:  
+    - The Data Link Layer checks for errors only between devices on the same link, so errors introduced by routers are not detected. In contrast, the Transport Layer performs end-to-end error checking to ensure that packets arrive correctly.
+- **Sequence Control**:  
+    - On the sending end, the Transport Layer ensures that packets from upper layers are suitable for lower layers, while on the receiving end, it guarantees the correct reassembly of the transmission's segments.
+- **Loss Control**:  
+    - The Transport Layer ensures that all fragments of a transmission arrive at the destination. On the sending end, it assigns sequence numbers to each fragment, enabling the receiver's Transport Layer to identify any missing segments.
+- **Flow Control**:  
+    - Flow control prevents the sender from overwhelming the receiver, which can lead to packet loss and increased network congestion. The Transport Layer employs the sliding window protocol to efficiently manage data transmission and ensure the receiver is not overloaded. This protocol operates on a byte-oriented basis rather than a frame-oriented one. [[1](https://www.javatpoint.com/computer-network-transport-layer)]
