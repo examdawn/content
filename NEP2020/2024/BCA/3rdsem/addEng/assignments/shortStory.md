@@ -17,7 +17,7 @@
 - Resolution:
    - The conclusion of the story, where the conflict is resolved and the protagonist experiences some change
 
-## Story (1/10):
+## Story (Chapter 1/10):
 
 <!-- Exposition -->
 Clang! The sword shattered into pieces as Rian, known as the strongest adventurer in the continent, fell to his knees, facing a monstrous foe. The odds of victory were zero; even his teammates lay defeated at the enemy's feet. And as the monstrous foe was about to give his final blow to Rian, as he swung his sword *Ping!* The sound of Heavenly sword echoed the battle field creating Awe and fear which gripped the hearts of all the soldiers who heard it up close. 
@@ -26,7 +26,7 @@ Leading the war was a mystical swordsman with the power of overturning a whole c
 
 <!-- Rising Action -->
 
-Eren was no fool, he knew the other villagers were actively taking advantage of him - skimming him for prices and sending him for silly fetch quests and such but he had to hunt for the sake of his ill sister. He met with the local librarian who was taking care of them both and the local bard at the tavern who was the librarian's brother. Lumine, the librarian, asked them to venture out into the wilderness to hunt a few boars for money so he could buy some medicine for his sister. He readily agreed since they were the only ones who readily accepted Eren and Tina and therefore deeply trusted them.
+Eren was no fool, he knew the other villagers were actively taking advantage of him - skimming him for prices and sending him for silly fetch quests and such but he had to hunt for the sake of his ill sister. He met with the local librarian who was taking care of them both and the local bard at the tavern who was the librarian's brother, Aether. Lumine, the librarian, asked them to venture out into the wilderness to hunt a few boars for money so he could buy some medicine for his sister. He readily agreed since they were the only ones who readily accepted Eren and Tina and therefore deeply trusted them.
 
 <!-- Tina = sis
 Lumine = librarian
@@ -54,14 +54,34 @@ On heading back, Eren saw that Lumine was extremely upset at him for venturing t
 
 
 
-## Story(2/10)
+## Story (Chapter 2/10)
 
 <!--Summary transitioning to Exposition--> 
 He left the village knowing that Lumine and Aether would take care of his sister and went to Royal Acadamy of Sword and Magic, a prestigious institution known for training the finest warriors and mages to learn the art of the Sword; Eren had heard rumors that the acadamy gave Nobles special privileges... As commoners like him would have to face a dificult battle to gain enrollment. 
 
 Upon entering the acadamies examination ground, he couldn't believe what his eyes - The academy treated both nobles and commoners as equals, with the only difference being that the nobles were allowed to bring a maid or a butler to assist them. 
 
-He made his way to the line for the examination, and as he approached the office, he was welcomed by a piercing gaze from a woman, who despite her appearance, looked gentle.
+He made his way to the line for the examination, and as he approached the office, he was welcomed by a piercing gaze from a woman, who despite her appearance, looked gentle. Lexie was Lumine's childhood friend and was responsible for the day to day management of the royal academy
 
 
-<!--Remember to add a scene where he gets blessed with magic and also as a remind that our character is a mystical swordsman-->
+
+"Hi, Welcome! Eren... let's see", said Lexie as she sorted through her cabinet, "Ah! Here is your file. It says here that you are bringing a pet?"
+
+<!--"Liber Umbrarum" - the dark book-->
+Liber "Umbra" Umbrarum: "Umbra is not a pet! If anything, this young'in is my little familiar
+
+"What even are you? I've never seen a talking book before", asked Lexie, clearly amused.
+
+Umbra: FUmbrais FUmbra!An Ancient Grimoire with infinite wisdom! and the power to command shadows I was a war strategist back in... huh... I... can't remember"-->
+
+"Anyways, Eren... Are you applying for the exam this time again? You almost passed the l"st time, asked Lexia.,""I saw you fight in the mock entrance battle test and I feel like you already have what it takes to graduate. I'll get the processing done for you
+
+Eren nodded and headed to the tavern. Aether, a regular drunkard, talked to the manager at the city and got accomodation for Eren there. 
+
+<!-- Trans. to rising action-->
+The next day, he rushed to the exam stadium and prepared his weapon. We couldn't bring his trusty Mythril Sword he found in the previous dungeon(this was done to discourage Nobles from gaming the exams using bought enchanted armour and accessories)
+
+<!-- Umbra = female because I'm trying to distance from replicant-->
+But he did register Umbra as his pet, much to her dissatisfaction - but this meant he could wield its ranged magic attacks 
+
+He was matched up against a few people whom he easily defeated and climbed the leaderboards - making the lost, jealous students suspect his sword abilities. They felt he was cheating with that.<!-- 
