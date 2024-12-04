@@ -28,7 +28,7 @@ Eren was no fool, he knew the other villagers were actively taking advantage of 
 
 He left the village knowing that [SOMEONE] would take care of his sister, went to Royal Acadamy of Sword and Magic, a prestigious institution known for training the finest warriors and mages; Eren hearing rumors that the acadamy gave Nobles special privileges, As commoners like him would face an dificult battle to gain enrollment. Upon entering the acadamies examination ground, he couldn't believe what he saw. The academy treated both nobles and commoners as equals, with the only difference being that the nobles were allowed to bring a maid or a butler to assist them. 
 
-He made his way to the line which carried out the 
+He made his way to the line for the examination, and as he approached the office, he was welcomed by a piercing gaze from a woman, who despite her appearance, looked gentle.
 
 
 <!--Remember to add a scene where he gets blessed with magic and also as a remind that our character is a mystical swordsman-->
