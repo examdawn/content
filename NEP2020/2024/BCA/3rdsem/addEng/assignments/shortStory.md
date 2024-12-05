@@ -47,7 +47,7 @@ He fought a long and arduous battle but when on the verge of losing, the grimoir
 
 
 <!-- Conclusion -->
-On heading back, Eren saw that Lumine was extremely upset at him for venturing too deep and getting to his home covered in cuts and bruises. For some reason, Lumine acted suspicious when she saw the talking Grimoire, almost as if she knew him... "Just thinking about it gives me a bad feeling". But he couldn't bring himself to suspect her... She had taken care of him for years
+On heading back, Lumine was extremely upset at Eren for venturing too deep and getting to his home covered in cuts and bruises. For some reason, Lumine acted suspicious when she saw the talking Grimoire, almost as if she knew him... "Just thinking about it gives me a bad feeling". But he couldn't bring himself to suspect her... She had taken care of him for years
 
  He gave the medicine to Tina with the money he got from and read her a book to put her to sleep.
 
@@ -84,4 +84,20 @@ The next day, he rushed to the exam stadium and prepared his weapon. We couldn't
 <!-- Umbra = female because I'm trying to distance from replicant-->
 But he did register Umbra as his pet, much to her dissatisfaction - but this meant he could wield its ranged magic attacks 
 
-He was matched up against a few people whom he easily defeated and climbed the leaderboards - making the lost, jealous students suspect his sword abilities. They felt he was cheating with that. 
+<!-- Rising Action-->
+He was matched up against a few people whom he easily defeated and climbed the leaderboards - making the lost, jealous students suspect his sword abilities. They felt he was cheating with that. Whispers circulated about a newcomer rising through the rank in a single week, and the students, who all assumed the newcomer had used connections to win against others, directly challenged him, believing he was cheating.. The partiality of student who challenged him was his senior believing that he had weak sword abilities and no knowledge of any sword art. However they were all defeated in a single swing, shattering their pride in an instant. While some acknowledged his strength, others envied it and decided to seek revenge later <!-- but was unsucessful. | Lil Bro was Unsuccessful :sob: :sob: --> 
+
+As he was strolling through the academy, he saw a single student. She looked troubled, but as he got closer to the student, it was clear that it was her first day at the academy and did not know the direction to the lecture room for <!--rizzcraft--> the first class of the day, Magic Literacy. 
+
+<!-- TODO: interaction. I dont want to make the mc a loner-->
+<!-- The heroine should be untidy in the first meeting as she was running late. Cool, works for me btw he forgets to ask her name in the first meeting. Keep this, gr8 idea-->
+
+This was supposed to be a simple introduction to magic with the ability to do basic magic, cast simple day to day useful spells, perform advanced computations and how to get started on reading complex magic textbooks. For some reason, Eren had no aptitude for magic and the most basic spells failed him - he could never get them right and his day-to-day proficiency was on par with a normal infant. XX on the other hand, was surprisingly good at it, despite not looking the part since children who have practiced magic from an early age are usually extremely well dressed.
+
+Then, they practice some sword craft, attended a lecture on Applied Magic, and went home. 
+
+
+<!-- Alright, you can take over from here for a while -->
+
+<!-- Is this char a boss? Or someone that would trouble him?  -->
+<!-- I need a hero mfs when they only really need a female characterr -->
