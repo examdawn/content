@@ -72,9 +72,9 @@ Liber "Umbra" Umbrarum: "Umbra is not a pet! If anything, this young'in is my li
 
 "What even are you? I've never seen a talking book before", asked Lexie, clearly amused.
 
-Umbra: FUmbrais FUmbra!An Ancient Grimoire with infinite wisdom! and the power to command shadows I was a war strategist back in... huh... I... can't remember"-->
+Umbra: "Umbra is Umbra! An Ancient Grimoire with infinite wisdom! and the power to command shadows I was a war strategist back in... huh... I... can't remember"
 
-"Anyways, Eren... Are you applying for the exam this time again? You almost passed the l"st time, asked Lexia.,""I saw you fight in the mock entrance battle test and I feel like you already have what it takes to graduate. I'll get the processing done for you
+"Anyways, Eren... Are you applying for the exam this time again? You almost passed the lst time", asked Lexia.,"I saw you fight in the mock entrance battle test and I feel like you already have what it takes to graduate. I'll get the processing done for you"
 
 Eren nodded and headed to the tavern. Aether, who was also a regular drunkard, talked to the manager at the city's local tavern and got accomodation for Eren there. 
 
@@ -85,7 +85,7 @@ The next day, he rushed to the exam stadium and prepared his weapon. We couldn't
 But he did register Umbra as his pet, much to her dissatisfaction - but this meant he could wield its ranged magic attacks 
 
 <!-- Rising Action-->
-He was matched up against a few people whom he easily defeated and climbed the leaderboards - making the lost, jealous students suspect his sword abilities. They felt he was cheating with that. Whispers circulated about a newcomer rising through the rank in a single week, and the students, who all assumed the newcomer had used connections to win against others, directly challenged him, believing he was cheating.. The partiality of student who challenged him was his senior believing that he had weak sword abilities and no knowledge of any sword art. However they were all defeated in a single swing, shattering their pride in an instant. While some acknowledged his strength, others envied it and decided to seek revenge later <!-- but was unsucessful. | Lil Bro was Unsuccessful :sob: :sob: --> 
+He was matched up against a few people whom he easily defeated and climbed the leaderboards - making the lost, jealous students suspect his sword abilities. They felt he was cheating with that. Whispers circulated about a newcomer rising through the rank in a single week, and the students, who all assumed the newcomer had used connections to win against others, directly challenged him, believing he was cheating. The partiality of student who challenged him was his senior believing that he had weak sword abilities and no knowledge of any sword art. However they were all defeated in a single swing, shattering their pride in an instant. While some acknowledged his strength, others envied it and decided to seek revenge later <!-- but was unsucessful. | Lil Bro was Unsuccessful :sob: :sob: --> 
 
 As he was strolling through the academy, he saw a single student. She looked troubled, but as he got closer to the student, it was clear that it was her first day at the academy and did not know the direction to the lecture room for <!--rizzcraft--> the first class of the day, Magic Literacy. 
 
