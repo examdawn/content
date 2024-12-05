@@ -76,7 +76,7 @@ Umbra: FUmbrais FUmbra!An Ancient Grimoire with infinite wisdom! and the power t
 
 "Anyways, Eren... Are you applying for the exam this time again? You almost passed the l"st time, asked Lexia.,""I saw you fight in the mock entrance battle test and I feel like you already have what it takes to graduate. I'll get the processing done for you
 
-Eren nodded and headed to the tavern. Aether, a regular drunkard, talked to the manager at the city and got accomodation for Eren there. 
+Eren nodded and headed to the tavern. Aether, who was also a regular drunkard, talked to the manager at the city's local tavern and got accomodation for Eren there. 
 
 <!-- Trans. to rising action-->
 The next day, he rushed to the exam stadium and prepared his weapon. We couldn't bring his trusty Mythril Sword he found in the previous dungeon(this was done to discourage Nobles from gaming the exams using bought enchanted armour and accessories)
@@ -84,4 +84,4 @@ The next day, he rushed to the exam stadium and prepared his weapon. We couldn't
 <!-- Umbra = female because I'm trying to distance from replicant-->
 But he did register Umbra as his pet, much to her dissatisfaction - but this meant he could wield its ranged magic attacks 
 
-He was matched up against a few people whom he easily defeated and climbed the leaderboards - making the lost, jealous students suspect his sword abilities. They felt he was cheating with that.<!-- 
+He was matched up against a few people whom he easily defeated and climbed the leaderboards - making the lost, jealous students suspect his sword abilities. They felt he was cheating with that. 
