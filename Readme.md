@@ -34,6 +34,7 @@ Content available for:
 
 If you are in the semester folder, and have added this correctly, you can use scripts to generate assignment.md, lab.md and solved.md. If you use these scripts, remember to have the heading "\# Subject Name" for subject's index.md.
 
+Before running the script, go to semester folder(eg NEP2020/2024/BCA/3rdsem/)
 For assignment.md:
 ```bash
 bash ../../../../helper-scripts/gen-assign.sh
@@ -41,7 +42,7 @@ bash ../../../../helper-scripts/gen-assign.sh
 
 For lab.md:
 ```bash
-bash ../../../../helper-scripts/gen-assign.sh
+bash ../../../../helper-scripts/gen-lab.sh
 ```
 
 For solved.md:
