@@ -51,7 +51,7 @@ bash ../../../../helper-scripts/gen-solved.sh
 ```
 
 ## Contribution Guidelines
-[Follow these guidelines while contributing!](.github/CONTRIBUTING.md)
+[Follow these guidelines while contributing!](https://github.com/bca-students/content/blob/main/.github/CONTRIBUTING.md)
 
 ## Copyright and More
 For initiating takedowns, please read [the takedown page](takedown.md)
