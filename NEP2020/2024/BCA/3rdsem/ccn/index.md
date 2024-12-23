@@ -2,7 +2,7 @@
 
 Units:
 - Unit 1: Introduction
-    - [Important Questions](unit1/imp.md)
+    - [Important Questions](solved/unit1/imp.md)
 - Unit 2: The Physical Layer
 - Unit 3: The Data Link Layer
 - Unit 4: The Network Layer

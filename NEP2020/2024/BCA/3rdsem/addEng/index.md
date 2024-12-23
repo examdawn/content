@@ -3,7 +3,7 @@
 Others: 
 
 Important Questions:
-- [2nd Internal Exams](imp2.md)
+- [2nd Internal Exams](solved/imp2.md)
 
 Grading Structure of Questions:
 - Internals:

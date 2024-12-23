@@ -4,10 +4,10 @@ Units:
 
 Others: 
 - [Assignments](assignments/index.md) 
-- [Previous Year Papers](pyq/marchapril2023.md)
+- [Previous Year Papers](solved/pyq/marchapril2023.md)
 
 Important Questions:
-- [2nd Internal Exams](imp2.md)
+- [2nd Internal Exams](solved/imp2.md)
 
 Grading Structure of Questions:
 - Internals:
