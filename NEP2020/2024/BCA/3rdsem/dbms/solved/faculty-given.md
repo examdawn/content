@@ -128,7 +128,7 @@ ER Notations are used to represent various components of the ER Model, using dif
 A Relationship in a Database refers to a connection between properties of tables. 
 - It is a logical association between different entities stored in seperate tables
 - Eg. Customers, Products, and Orders are linked to each other using relations
-
+TODO: Finish
 
 # Unit 3:
 ## Q1. What is a Domain, Attribute and Tuple?
@@ -459,14 +459,35 @@ There are Two Types of Functional Dependencies:
     - i.e. If X → Y and Y is not a subset of X, then it is called Non-trivial functional dependency.
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/types-of-functional-dependencies-in-dbms/)
-## Q4. 1st normal Form
-TODO: Solve
-## Q5. 2nd normal Form
-TODO: Solve
-## Q6.  3rd normal form
-TODO: Solve
-## Q7. BCNF
-TODO: Solve
+## Q4. 1st normal Form, 2nd normal Form, 3rd normal form, BCNF
+Normalization is the process of minimizing redundancy from a relation or set of relations. 
+- Redundancy in relation may cause insertion, deletion, and update anomalies. 
+    - So, it helps to minimize the redundancy in relations. 
+    - Normal forms are used to eliminate or reduce redundancy in database tables. 
+- What normalization basically does is ensure that your data is free of data redundancy or duplicate data and does not have data anomalies that would otherwise compromise its integrity.
+
+Levels of Normalization:
+- ***First Normal Form*** (1NF)
+- ***Second Normal Form*** (2NF)
+- ***Third Normal Form*** (3NF)
+- ***Boyce-Codd Normal Form*** (BCNF)
+
+Explanation:
+- First Normal Form (1NF):
+    - This is the most basic level of normalization. 
+    - In 1NF, each table cell should contain only a single value, and each column should have a unique name. The first normal form helps to eliminate duplicate data and simplify queries.
+- Second Normal Form (2NF):
+    - 2NF eliminates redundant data by requiring that each non-key attribute be dependent on the primary key. 
+    - This means that each column should be directly related to the primary key, and not to other columns.
+- Third Normal Form (3NF):
+    - 3NF builds on 2NF by requiring that all non-key attributes are independent of each other. 
+    - This means that each column should be directly related to the primary key, and not to any other columns in the same table.
+- Boyce-Codd Normal Form (BCNF):
+    - BCNF is a stricter form of 3NF that ensures that each determinant in a table is a candidate key. 
+    - In other words, BCNF ensures that each non-key attribute is dependent only on the candidate key.
+
+[(GeeksForGeeks, Explanation)](https://www.geeksforgeeks.org/normal-forms-in-dbms/)
+[(GeeksForGeeks, Forms)](https://www.geeksforgeeks.org/normal-forms-in-dbms/)
 
 # Unit 5:
 ## Q1. Transaction states
