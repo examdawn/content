@@ -7,16 +7,61 @@ Total = 60 marks
 
 # Section A(2m x 4q = 8)
 ## Q1. Define Database and Database Management system.
+TODO: Solve
 ## Q2. What is data model? Name three categories of data model.
+TODO: Solve
 ## Q3. What is key attribute? Give an example.
+TODO: Solve
 ## Q4. List data types allowed in SQL.
+TODO: Solve
 ## Q5. What is transaction control language? List any two transaction control commands.
+TODO: Solve
 ## Q6. What is concurrency control?
-
+TODO: Solve
 # Section B(5m x 4q = 20)
 ## Q7. Explain the main characteristics of Database approach.
 ## Q8. What is data independence? Explain briefly about the types of data independence.
+Data independence is a property of a database management system by which we can change the database schema at one level of the database system without changing the database schema at the next higher level. 
+
+It has two types:
+- **Logical Independence**: Changes in the logical structure don't affect user applications.
+- **Physical Independence**: Changes in physical storage don't affect the logical structure.
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/what-is-data-independence-in-dbms/)
+
 ## Q9. What is an ER diagram? Explain different notations used in drawing ER diagram.
+The Entity Relationship Diagram explains the relationship among the entities present in the database. 
+- ER models are used to model real-world objects like a person, a car, or a company and the relation between these real-world objects
+
+![ER Notations](https://binaryterms.com/wp-content/uploads/2021/10/Entity-Relationship-Diagram-Symbols.jpg)
+
+
+- Rectangles illustrate the entity set.
+    - A Strong Entity Set only has a single border.
+        - It is defined by its own set of attributes
+    - A Weak Entity Set has two borders 
+        - It is always associated with another Entity Set(which is called the Identifier Entity Set)
+- Diamond illustrates the relationship between the entity set.
+    - A Strong Relationship has a single border
+        - Here, the Child Entity is completely dependent on the Parent Entity.
+    - A Weak Relationship has two borders
+        - A weak Relationship is where a child Entity can exist without the Parent Entity.
+- Ellipse illustrates the attributes of an entity set.
+    - A simple Attribute has a single outer border
+        - It cannot be further divided into sub-parts. Example, *id* attribute
+        - It is also known as a Single-Valued Attribute
+    - A Multi-Valued Attribute has 2 outer borders
+        - This means it has more than one value for a given entity.
+            - Eg. *phone_number* may have multiple numbers stored
+    - A Composite Attribute has subparts derived from it.
+        - It can be broken down into subparts. Example, *name* can be broken down into *first_name* and *last_name* 
+    - A Derived Attribute has a dotted border
+        - It means the data in this attribute was derived from another attribute
+            - For Example, *age* was Derived from *date_of_birth*
+- Lines illustrate the association of attributes to the entity set and the association of entity set to the relationship set.
+
+[BinaryTerms](https://binaryterms.com/entity-relationship-diagram.html)
+
 ## Q10. Create an employee table using the following fields.
 | Field name | Data type |
 | ---------- | --------- |
@@ -31,13 +76,91 @@ Total = 60 marks
 4. Find department wise count of Employees
 5. Display the tuples in the order of average salaries of Employees.
 ## Q11. What is a transaction? Explain ACID properties of a transaction.
-## Q12. Write a short note on database backup and database recovery.
+A transaction is a single logical unit of work that accesses and possibly modifies the contents of a database. 
+- Transactions access data using read-and-write operations. 
+- To maintain consistency in a database, before and after the transaction, certain properties are followed. 
+    - These are called ACID properties.
 
+The acronym ACID stands for Atomicity, Consistency, Isolation, and Durability. ACID Can be broken down to:
+- ***A***tomicity:
+    - By this, we mean that either the entire transaction takes place at once or doesn’t happen at all. There is no midway i.e. transactions do not occur partially. 
+    - Each transaction is considered as one unit and either runs to completion or is not executed at all
+    - It involves the following two operations.
+        - ***Abort*** : If a transaction aborts, changes made to the database are not visible.
+        - ***Commit*** : If a transaction commits, changes made are visible.
+    - Atomicity is also known as the ‘All or nothing rule’. 
+- ***C***onsistency:
+    - This means that integrity constraints must be maintained so that the database is consistent before and after the transaction. 
+    - It refers to the correctness of a database.  
+- ***I***solation:
+    - This property ensures that multiple transactions can occur concurrently without leading to the inconsistency of the database state. 
+    - Transactions occur independently without interference. 
+    - Changes occurring in a particular transaction will not be visible to any other transaction until that particular change in that transaction is written to memory or has been committed. 
+- ***D***urability:
+    - This property ensures that once the transaction has completed execution, the updates and modifications to the database are stored in and written to disk and they persist even if a system failure occurs. 
+    - These updates now become permanent and are stored in non-volatile memory. 
+    - The effects of the transaction, thus, are never lost. 
+
+![ACID Properties](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191121102921/ACID-Properties.jpg)
+
+[(GeeksForGeeks)](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+
+## Q12. Write a short note on database backup and database recovery.
+TODO: Solve
 # Section C(8m x 4q = 32)
-Answer any 4 questions. Each question carries 8 marks.
 ## Q13. Explain three schema architecture with a neat diagram.
+TODO: Solve
 ## Q14. Discuss the different types of indexes.
-## Q15. Draw an ER diagram for Bank Database with 5 entities and 5 attributes for each entity. Specify the cardinality ratio on each of the relationships existing between entitties.
+TODO: Solve
+## Q15. Draw an ER diagram for Bank Database with 5 entities and 5 attributes for each entity. Specify the cardinality ratio on each of the relationships existing between entities.
+TODO: Solve
 ## Q16. Explain different relational algebra operations.
+TODO: Solve
 ## Q17. What is Normalization? Differentiate between 3NF and BCNF.
+BCNF
+Normalization is the process of minimizing redundancy from a relation or set of relations. 
+- Redundancy in relation may cause insertion, deletion, and update anomalies. 
+    - So, it helps to minimize the redundancy in relations. 
+    - Normal forms are used to eliminate or reduce redundancy in database tables. 
+- What normalization basically does is ensure that your data is free of data redundancy or duplicate data and does not have data anomalies that would otherwise compromise its integrity.
+
+Levels of Normalization:
+- ***First Normal Form*** (1NF)
+- ***Second Normal Form*** (2NF)
+- ***Third Normal Form*** (3NF)
+- ***Boyce-Codd Normal Form*** (BCNF)
+
+Explanation:
+- Third Normal Form (3NF):
+    - 3NF builds on 2NF by requiring that all non-key attributes are independent of each other. 
+    - This means that each column should be directly related to the primary key, and not to any other columns in the same table.
+- Boyce-Codd Normal Form (BCNF):
+    - BCNF is a stricter form of 3NF that ensures that each determinant in a table is a candidate key. 
+    - In other words, BCNF ensures that each non-key attribute is dependent only on the candidate key.
+
+[(GeeksForGeeks, Explanation)](https://www.geeksforgeeks.org/normal-forms-in-dbms/)
+[(GeeksForGeeks, Forms)](https://www.geeksforgeeks.org/normal-forms-in-dbms/)
+
 ## Q18. Explain different states of a transaction with a neat diagram.
+Transaction in DBMS is a set of logically related operations executed as a single unit. 
+- These logic are followed to perform modification on data while maintaining integrity and consistency
+- Example: Adding student1's exam result to the database
+
+![Transaction States](https://media.geeksforgeeks.org/wp-content/uploads/20200501195048/Tt7.png)
+
+- These are different types of Transaction States :  
+    - ***Active State*** 
+        - When the instructions of the transaction are running then the transaction is in active state. If all the ‘read and write’ operations are performed without any error then it goes to the “partially committed state”; if any instruction fails, it goes to the “failed state”. 
+    - ***Partially Committed*** 
+        - After completion of all the read and write operation the changes are made in main memory or local buffer. If the changes are made permanent on the DataBase then the state will change to “committed state” and in case of failure it will go to the “failed state”. 
+    - ***Failed State*** 
+        - When any instruction of the transaction fails, it goes to the “failed state” or if failure occurs in making a permanent change of data on Database. 
+    - ***Aborted State***
+        - After having any type of failure the transaction goes from “failed state” to “aborted state” and since in previous states, the changes are only made to local buffer or main memory 
+        - Hence these changes are deleted or rolled-back. 
+    - ***Committed State***
+        - It is the state when the changes are made permanent on the Data Base and the transaction is complete and therefore terminated in the “terminated state”. 
+    - ***Terminated State***
+        - If there isn’t any roll-back or the transaction comes from the “committed state”, then the system is consistent and ready for new transaction and the old transaction is terminated.  
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/transaction-states-in-dbms/)
