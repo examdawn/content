@@ -491,11 +491,82 @@ Explanation:
 
 # Unit 5:
 ## Q1. Transaction states
-TODO: Solve
+Transaction in DBMS is a set of logically related operations executed as a single unit. 
+- These logic are followed to perform modification on data while maintaining integrity and consistency
+- Example: Adding student1's exam result to the database
+
+![Transaction States](https://media.geeksforgeeks.org/wp-content/uploads/20200501195048/Tt7.png)
+
+- These are different types of Transaction States :  
+    - ***Active State*** 
+        - When the instructions of the transaction are running then the transaction is in active state. If all the ‘read and write’ operations are performed without any error then it goes to the “partially committed state”; if any instruction fails, it goes to the “failed state”. 
+    - ***Partially Committed*** 
+        - After completion of all the read and write operation the changes are made in main memory or local buffer. If the changes are made permanent on the DataBase then the state will change to “committed state” and in case of failure it will go to the “failed state”. 
+    - ***Failed State*** 
+        - When any instruction of the transaction fails, it goes to the “failed state” or if failure occurs in making a permanent change of data on Database. 
+    - ***Aborted State***
+        - After having any type of failure the transaction goes from “failed state” to “aborted state” and since in previous states, the changes are only made to local buffer or main memory 
+        - Hence these changes are deleted or rolled-back. 
+    - ***Committed State***
+        - It is the state when the changes are made permanent on the Data Base and the transaction is complete and therefore terminated in the “terminated state”. 
+    - ***Terminated State***
+        - If there isn’t any roll-back or the transaction comes from the “committed state”, then the system is consistent and ready for new transaction and the old transaction is terminated.  
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/transaction-states-in-dbms/)
 ## Q2.  Transaction operations
-TODO: Solve
+A user can make different types of requests to access and modify the contents of a database. 
+
+So, we have different types of operations relating to a transaction. They are discussed as follows:
+- **Read**(X)
+    -  A read operation is used to read the value of X from the database and store it in a buffer in the main memory for further actions such as displaying that value.
+    -  Such an operation is performed when a user wishes just to see any content of the database and not make any changes to it. 
+    - For example, when a user wants to check his/her account's balance, a read operation would be performed on user's account balance from the database.
+- **Write**(X) 
+    -  A write operation is used to write the value to the database from the buffer in the main memory. 
+    - For a write operation to be performed, first a read operation is performed to bring its value in buffer, and then some changes are made to it, e.g. some set of arithmetic operations are performed on it according to the user's request, then to store the modified value back in the database, a write operation is performed.
+    -  For example, when a user requests to withdraw some money from his account, 
+        - his account balance is fetched from the database using a read operation, 
+        - then the amount to be deducted from the account is subtracted from this value, 
+        - and then the obtained value is stored back in the database using a write operation.
+- **Commit**
+    -  This operation in transactions is used to maintain integrity in the database. Due to some failure of power, hardware, or software, etc., a transaction might get interrupted before all its operations are completed. 
+        - This may cause ambiguity in the database, i.e. it might get inconsistent before and after the transaction.
+    -  To ensure that further operations of any other transaction are performed only after work of the current transaction is done, a commit operation is performed to the changes made by a transaction permanently to the database.
+- **Rollback**
+    -  This operation is performed to bring the database to the last saved state when any transaction is interrupted in between due to any power, hardware, or software failure.
+    -  In simple words, it can be said that a rollback operation does undo the operations of transactions that were performed before its interruption to achieve a safe state of the database and avoid any kind of ambiguity or inconsistency.
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/transaction-in-dbms/)
 ## Q3. Properties of Transaction
-TODO: Solve
+A transaction is a single logical unit of work that accesses and possibly modifies the contents of a database. 
+- Transactions access data using read-and-write operations. 
+- To maintain consistency in a database, before and after the transaction, certain properties are followed. 
+    - These are called ACID properties.
+
+The acronym ACID stands for Atomicity, Consistency, Isolation, and Durability. ACID Can be broken down to:
+- ***A***tomicity:
+    - By this, we mean that either the entire transaction takes place at once or doesn’t happen at all. There is no midway i.e. transactions do not occur partially. 
+    - Each transaction is considered as one unit and either runs to completion or is not executed at all
+    - It involves the following two operations.
+        - ***Abort*** : If a transaction aborts, changes made to the database are not visible.
+        - ***Commit*** : If a transaction commits, changes made are visible.
+    - Atomicity is also known as the ‘All or nothing rule’. 
+- ***C***onsistency:
+    - This means that integrity constraints must be maintained so that the database is consistent before and after the transaction. 
+    - It refers to the correctness of a database.  
+- ***I***solation:
+    - This property ensures that multiple transactions can occur concurrently without leading to the inconsistency of the database state. 
+    - Transactions occur independently without interference. 
+    - Changes occurring in a particular transaction will not be visible to any other transaction until that particular change in that transaction is written to memory or has been committed. 
+- ***D***urability:
+    - This property ensures that once the transaction has completed execution, the updates and modifications to the database are stored in and written to disk and they persist even if a system failure occurs. 
+    - These updates now become permanent and are stored in non-volatile memory. 
+    - The effects of the transaction, thus, are never lost. 
+
+![ACID Properties](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191121102921/ACID-Properties.jpg)
+
+[(GeeksForGeeks)](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+
 ## Q4. Concurrency control problem
 TODO: Solve
 ## Q5. concurrency control techniques
