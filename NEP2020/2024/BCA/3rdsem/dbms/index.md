@@ -14,7 +14,7 @@ Others:
 - Important Questions for 2nd Internals
     - [IA2](solved/impIA2.md)
 - [Lab Records](lab/index.md)
-- [Notes From Faculty](https://drive.google.com/drive/folders/19VKBV4FqY4L7BGtOIqXFprrs2iZIWfjl?usp=sharing)
+- [Notes From Faculty](../notes.md#database-management-systems)
 - [Assignments](assignments/index.md) 
 
 Source:
