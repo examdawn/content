@@ -147,8 +147,43 @@ Tuple:
 
 
 [Gaurav Tiwari(Medium)](https://medium.com/@gauravtiwari20162/explain-1-domain-2-tuple-3-attributes-4-degree-5-cardinality-of-relation-cf31d94f1d5b)
-#### Q2. Explain Relational Model constraints, Domain Constraints, Referential Constraints,Integrity constraints, Null constraints.
+#### Q2. Explain Relational Model constraints: Domain Constraints, Referential Constraints,Integrity constraints, Null constraints.
+
 #### Q3. Explain operators in Relational algebra? Specifically Unary, Projection, binary 
+Relational algebra is a procedural query language, which takes instances of relations as input and yields instances of relations as output. It uses operators to perform queries. 
+
+An operator can be either unary or binary. They accept relations as their input and yield relations as their output. 
+
+Types:
+- **Unary**
+    - The operations that operate on only one relation are called unary operations in relational algebra. The three unary operations in relational algebra are:
+        - ***Selection***
+            - The selection operation is a unary operation that is performed on one relation. 
+            - The selection operation is used to retrieve tuples from the relation that satisfies the given condition. 
+            - It is denoted by σ (sigma) 
+        - ***Projection***
+            -  Project operation selects (or chooses) certain attributes discarding other attributes.
+            - The Project operation is also known as vertical partitioning since it partitions the relation or table vertically discarding other columns or attributes.
+            - It is denoted by π (pi)
+        - ***Rename***
+            - The rename operation is operation applied on one relation. 
+            - Rename operation (as the name suggests) is used to rename the relation, attributes or both. 
+            - It is denoted by ρ (rho)
+- ***Binary***
+    - The operations that operate on two relations are called binary operations in relational algebra. The three binary operations in relational algebra are:
+        - ***Union***
+            - It performs binary union between two given relations
+            - It is denoted by ∪ (union)
+        - ***Set Difference***
+            - The result of set difference operation is tuples, which are present in one relation but are not in the second relation.
+            - It is denoted by − (Minus Symbol) 
+        - ***Cartesian Product***
+            - Combines information of two different relations into one. 
+            - It is denoted by X (Multiplication X) 
+
+- [GeeksForGeeks(Unary)](https://www.geeksforgeeks.org/what-are-the-unary-operations-in-relational-algebra/?ref=asr10)
+- [TutorialsPoint](https://www.tutorialspoint.com/dbms/relational_algebra.htm) 
+
 #### Q4. What is join operator? Explain its types with an example.
 #### Q5. Explain nested Queries with example
 #### Q6. Describe the PL/SQL block
