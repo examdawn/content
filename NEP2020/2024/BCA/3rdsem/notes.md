@@ -18,6 +18,9 @@ Units:
 - Unit 5: Query Processing Transaction Management
     - [Notes for Unit 5](Placeholder-Link)
     - [Slides for Unit 5(Misleading 1st Slide)](https://drive.google.com/file/d/1_wV_GcmDYqpwrJEtnWO-FZDylJRBV5sl/view)
+
+Important Questions: https://docs.google.com/document/d/1XOOHuzNnF4Ar4h8a6cwTDW7g5wsowCqj/edit?usp=sharing&ouid=115724178685133008976&rtpof=true&sd=true
+
 ### C# and Dotnet Tools
 Units:
 - Unit 1: Introduction to .NET Technology

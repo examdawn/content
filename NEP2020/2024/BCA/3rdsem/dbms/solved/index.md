@@ -12,3 +12,5 @@ Units:
 Others:
 - Important Questions for 2nd Internals
     - [IA2](impIA2.md)
+- Important Questions and Topics shared by Faculty
+    - [Important Questions](faculty-given.md)
