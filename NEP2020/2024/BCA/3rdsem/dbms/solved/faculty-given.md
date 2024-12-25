@@ -69,6 +69,8 @@ Types of DBMS
 
 # Unit 2:
 ## Q1. Construct a ER diagram for Company database,Student database,Employee salary database.
+
+TODO: Solve
 ## Q2. Define Entity, Relationship and types of cardinality
 An Entity is a real-world object, person, place or thing that we are representing in the database. 
 - Eg. A car exists in the real world, and we can represent it in our database
@@ -149,6 +151,8 @@ Tuple:
 [Gaurav Tiwari(Medium)](https://medium.com/@gauravtiwari20162/explain-1-domain-2-tuple-3-attributes-4-degree-5-cardinality-of-relation-cf31d94f1d5b)
 ## Q2. Explain Relational Model constraints: Domain Constraints, Referential Constraints,Integrity constraints, Null constraints.
 
+TODO: Solve
+
 ## Q3. Explain operators in Relational algebra? Specifically Unary, Projection, binary 
 Relational algebra is a procedural query language, which takes instances of relations as input and yields instances of relations as output. It uses operators to perform queries. 
 
@@ -184,29 +188,258 @@ Types:
 - [GeeksForGeeks(Unary)](https://www.geeksforgeeks.org/what-are-the-unary-operations-in-relational-algebra/?ref=asr10)
 - [TutorialsPoint](https://www.tutorialspoint.com/dbms/relational_algebra.htm) 
 
-## Q4. What is join operator? Explain its types with an example.
+## Q4. What is join operation? Explain its types with an example.
+SQL JOIN clause is used to query and access data from multiple tables by establishing logical relationships between them. 
+- It can access data from multiple tables simultaneously using common key values shared across different tables. 
+
+I will explain the types with various examples.
+Consider two tables: `employees` and `departments`.
+
+**employees**
+
+| id  | name    | dept_id |
+| --- | ------- | ------- |
+| 1   | Alice   | 1       |
+| 2   | Bob     | 2       |
+| 3   | Charlie | NULL    |
+| 4   | David   | 1       |
+
+**departments**
+
+| id  | dept_name     |
+| --- | ------------- |
+| 1   | HR            |
+| 2   | IT            |
+| 3   | Marketing     |
+
+1. **Natural Join (⨝)**: This join automatically matches columns with the same name and data type in both tables. You don't need to specify any condition. In this example, it would automatically join on the `dept_id` column, as it's present in both tables.
+
+Notation:
+R ⨝ S 
+
+
+Example:
+```MySQL
+SELECT employees.name, departments.dept_name FROM employees NATURAL JOIN departments;
+```
+
+Result:
+
+| id  | name    | dept_name |
+| --- | ------- | --------- |
+| 1   | Alice   | HR        |
+| 2   | Bob     | IT        |
+| 4   | David   | HR        |
+
+2. **Left Join (Left Outer Join)**  (⟕): This join returns all rows from the left table (employees), and the matching rows from the right table (departments). If there’s no match, `NULL` is returned for columns from the right table.
+
+Notation:
+R ⟕ S
+
+Example:
+```MySQL
+SELECT employees.name, departments.dept_name FROM employees LEFT JOIN departments ON employees.dept_id = departments.id;
+```
+
+Result:
+
+| name    | dept_name |
+| ------- | --------- |
+| Alice   | HR        |
+| Bob     | IT        |
+| Charlie | NULL      |
+| David   | HR        |
+
+3. **Right Join (Right Outer Join)** (⟖): This join returns all rows from the right table (departments), and the matching rows from the left table (employees). If there’s no match, `NULL` is returned for columns from the left table.
+
+Notation:
+R  ⟖ S
+
+Example:
+```MySQL
+SELECT employees.name, departments.dept_name FROM employees RIGHT JOIN departments ON employees.dept_id = departments.id;
+```
+
+Result:
+
+| name    | dept_name |
+| ------- | --------- |
+| Alice   | HR        |
+| Bob     | IT        |
+| NULL    | Marketing |
+
+4. **Full Join (Full Outer Join)** (⟗): This join returns all rows when there is a match in either the left or right table. If there’s no match, `NULL` is returned for the unmatched rows.
+
+Notation:
+R ⟗ S
+
+MySQL does not directly support full outer join, but you can achieve it using a combination of left join and right join with a `UNION`.
+
+Example:
+```MySQL
+SELECT employees.name, departments.dept_name FROM employees LEFT JOIN departments ON employees.dept_id = departments.id 
+UNION 
+SELECT employees.name, departments.dept_name FROM employees RIGHT JOIN departments ON employees.dept_id = departments.id;
+```
+
+Result:
+
+| name    | dept_name |
+| ------- | --------- |
+| Alice   | HR        |
+| Bob     | IT        |
+| Charlie | NULL      |
+| David   | HR        |
+| NULL    | Marketing |
+
+5. **Inner Join**: This join returns rows that have matching values in both tables.  
+
+Example: 
+```MySQL
+SELECT employees.name, departments.dept_name FROM employees INNER JOIN departments ON employees.dept_id = departments.id;
+```
+
+Result:
+
+| name    | dept_name |
+| ------- | --------- |
+| Alice   | HR        |
+| Bob     | IT        |
+| David   | HR        |
+
 ## Q5. Explain nested Queries with example
+Nested queries are a way to perform complex queries by embedding one query within another. The outer query can apply some conditions on the results of the inner query. Let us use Students, Grades tables for understanding nested queries.
+
+Input:
+Students table
+| StudentID | StudentName | Age | Major         |
+|-----------|-------------|-----|---------------|
+| 1         | Alice       | 20  | Mathematics   |
+| 2         | Bob         | 21  | Computer Sci  |
+| 3         | Charlie     | 22  | Mathematics   |
+| 4         | David       | 19  | Physics       |
+
+Grades table:
+| StudentID | Subject      | Score |
+|-----------|--------------|-------|
+| 1         | Mathematics  | 95    |
+| 1         | Physics      | 88    |
+| 2         | Computer Sci | 85    |
+| 3         | Mathematics  | 92    |
+| 4         | Physics      | 78    |
+
+```SQL
+SELECT StudentName
+FROM Students
+WHERE StudentID IN (
+    SELECT StudentID
+    FROM Grades
+    WHERE Subject = ‘Mathematics’ AND Score > 90
+);```
+
+Output:
+| StudentName |
+|-------------|
+| Alice       |
+| Charlie     |
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/nested-queries-in-sql/)
 ## Q6. Describe the PL/SQL block
+PL/SQL Queries are more or less blocks of code.
+- Declare Block
+    - Declare section starts with DECLARE keyword in which variables, constants, records as cursors can be declared which stores data temporarily. 
+    - It basically consists definition of PL/SQL identifiers. 
+    - This part of the code is optional.
+- Begin Block
+    - Execution section starts with BEGIN and ends with END keyword.
+    - Here, the program logic is written to perform any task like loops and conditional statements. 
+    - This is a mandatory section.
+- Exception Block
+    - Exception section starts with EXCEPTION keyword
+    - Any exceptions can be handled in this section 
+    - It contains statements that are executed when a run-time error occurs.
+    - This section is optional 
+- End
+    - Indicates the end of the PL/SQL Begin Block.
+    - This is a mandatory section
+- Seperator(;)
+    - Marks the End of the PL/SQL query sequence
+    - Helps seperate one PL/SQL sequence from another one
+
+Syntax:
+```PL/SQL
+DECLARE
+    declaration statements;
+
+BEGIN
+    executable statements;
+
+EXCEPTIONS
+    exception handling statements;
+
+END;
+```
+
+[(GeeksForGeeks)](https://www.geeksforgeeks.org/plsql-introduction/)
 ## Q7. Features of PL/SQL
+Features of PL/SQL:
+- PL/SQL is basically a procedural language
+    - It provides the functionality of decision-making, iteration, and many more features of procedural programming languages.
+- PL/SQL can execute a number of queries in one block using single command.
+- One can create a PL/SQL unit such as procedures, functions, packages, triggers, and types
+    - They are stored in the database for reuse by applications.
+- PL/SQL provides a feature to handle the exception which occurs in PL/SQL block known as exception handling block.
+- Applications written in PL/SQL are portable to computer hardware or operating system where Oracle is operational.
+    PL/SQL Offers extensive error checking.
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/plsql-introduction/)
 ## Q8. What is cursor and its types
+The cursor is used to retrieve data one row at a time from the results set, unlike other SQL commands that operate on all rows at once.
+- Cursors update table records in a singleton or row-by-row manner.
+
+
+Cursors are classified depending on how they are opened:
+- ***Implicit Cursor***: If the Oracle engine opened a cursor for its internal processing it is known as an Implicit Cursor. 
+    - It is created “automatically” for the user by Oracle when a query is executed and is simpler to code.
+- ***Explicit Cursor***: A Cursor can also be opened for processing data through a PL/SQL block, on demand. 
+    - A user-defined cursor is known as an Explicit Cursor.
+    - Syntax for creating a Cursor
+        - `CURSOR cursor_name IS select_statement;`
+
+
 ## Q9. Explain exception with an example?
+An exception is an error which disrupts the normal flow of program instructions. PL/SQL provides us the exception block which raises the exception thus helping the programmer to find out the fault and resolve it.
 
+There are two types of exceptions defined in PL/SQL:
+- **User defined exception**.
+- **System defined exceptions**.
 
+[GeeksForGeeks](https://www.geeksforgeeks.org/exception-handling-plsql/) TODO: Finish
 # Unit 4:
 ## Q1. Anamolies in relational Database design
+TODO: Solve
 ## Q2. Decomposition 
+TODO: Solvw
 ## Q3. Functional Dependencies
+TODO: Solve
 ## Q4. 1st normal Form
+TODO: Solve
 ## Q5. 2nd normal Form
+TODO: Solve
 ## Q6.  3rd normal form
+TODO: Solve
 ## Q7. BCNF
-
+TODO: Solve
 
 # Unit 5:
 ## Q1. Transaction states
+TODO: Solve
 ## Q2.  Transaction operations
+TODO: Solve
 ## Q3. Properties of Transaction
+TODO: Solve
 ## Q4. Concurrency control problem
+TODO: Solve
 ## Q5. concurrency control techniques
-
+TODO: Solve
 
