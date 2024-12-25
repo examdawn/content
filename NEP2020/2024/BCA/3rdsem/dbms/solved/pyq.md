@@ -13,11 +13,44 @@ TODO: Solve
 ## Q3. What is key attribute? Give an example.
 TODO: Solve
 ## Q4. List data types allowed in SQL.
-TODO: Solve
+Common Datatypes in SQL are:
+- INTEGER
+- VARCHAR(n)
+- DATE
+- BOOLEAN
+- JSON
 ## Q5. What is transaction control language? List any two transaction control commands.
-TODO: Solve
+In the database, Transaction Control Language (TCL) commands are used to govern transactions. 
+- This command is used to manage changes to DML statements.
+- TCL allows you to create logical transactions by combining your statements. 
+
+Types:
+- **Commit** Command:
+    - This command is used to save all the transactions in the DB.
+    - Syntax: `COMMIT;`
+    - For Example,
+        -   ```SQL
+            UPDATE Student SET DOB=’2005-03-27’ WHERE Stu_Name=’Joey’;`
+            COMMIT;
+            ```
+        - Thus, this example would insert the DOB in the given table, which has the name = Joey and then COMMIT these changes in the DB.
+
+- **ROLLBACK** Command:
+    - The “rollback” term refers to the method of undoing changes. 
+        - Thus, this command could only be used in order to reverse transactions that occurred since the last ROLLBACK or COMMIT command. 
+    - All the modifications must be cancelled in case any SQL grouped statements produce a certain error.
+    - Syntax: `ROLLBACK;`
+    - For Example:
+        -   ```SQL
+            UPDATE Student SET DOB=’2005-03-27’ WHERE Stu_Name=’Joe’;
+            ROLLBACK;
+            ```
+    - The example given above would insert the DOB in a table that has name = Joey and then ROLLBACK these changes in the DB. 
+        - Thus, this type of operation would not create an impact on the table.
 ## Q6. What is concurrency control?
-TODO: Solve
+Concurrency Control is the process of ensuring simultaneous execution or updation of data by several processes or users
+- This is done while maintaining data consistency and integrity
+
 # Section B(5m x 4q = 20)
 ## Q7. Explain the main characteristics of Database approach.
 ## Q8. What is data independence? Explain briefly about the types of data independence.
