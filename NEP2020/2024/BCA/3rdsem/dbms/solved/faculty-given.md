@@ -416,12 +416,49 @@ There are two types of exceptions defined in PL/SQL:
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/exception-handling-plsql/) TODO: Finish
 # Unit 4:
-## Q1. Anamolies in relational Database design
-TODO: Solve
+## Q1. Anomalies in relational Database design
+Anomalies in the relational model refer to inconsistencies or errors that can arise when working with relational databases, specifically in the context of data insertion, deletion, and modification.
+- Database anomalies are the faults in the database caused due to poor management of storing everything in the flat database. 
+- It can be removed with the process of **Normalization**, which generally splits the database which results in reducing the anomalies in the database.
+
+These anomalies can be categorized into three types:
+- **Insertion Anomalies**
+- **Deletion Anomalies**
+- **Update Anomalies**.
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/anomalies-in-relational-model/)
 ## Q2. Decomposition 
-TODO: Solvw
+When we divide a table into multiple tables or divide a relation into multiple relations, then this process is called Decomposition. 
+- We perform decomposition in DBMS when we want to process a particular data set. 
+- It is performed in a database management system when we need to ensure consistency and remove anomalies and duplicate data present in the database. 
+    - When we perform decomposition in DBMS, we must try to ensure that no information or data is lost.
+
+There are two types of Decomposition:
+- **Lossless Decomposition**
+    - We can regain the original relation R with the help of joins from the multiple relations formed after decomposition
+        - While regaining the original relation, no information should be lost.
+        - If we perform join operation on the sub-divided relations, we must get the original relation.
+- **Lossy Decomposition**
+    - When we perform join operation on the sub-relations, it doesn't result to the same relation which was decomposed
+
+![Decomposition in DBMS](https://media.geeksforgeeks.org/wp-content/uploads/20240225103236/Screenshot-2024-02-25-103224.png)
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/decomposition-in-dbms/)
 ## Q3. Functional Dependencies
-TODO: Solve
+In relational database management, functional dependency is a concept that specifies the relationship between two sets of attributes where one attribute determines the value of another attribute. 
+- It is denoted as X → Y
+    - The attribute set on the left side of the arrow, X is called Determinant, and Y is called the Dependent.
+    - Basically, the value of Y depends on the Value of X
+
+There are Two Types of Functional Dependencies:
+- ***Trivial functional dependency***
+    - In Trivial Functional Dependency, a dependent is always a subset of the determinant. 
+    - i.e. If X → Y and Y is the subset of X, then it is called trivial functional dependency
+- ***Non-Trivial functional dependency***
+    - In Non-trivial functional dependency, the dependent is strictly not a subset of the determinant. 
+    - i.e. If X → Y and Y is not a subset of X, then it is called Non-trivial functional dependency.
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/types-of-functional-dependencies-in-dbms/)
 ## Q4. 1st normal Form
 TODO: Solve
 ## Q5. 2nd normal Form
