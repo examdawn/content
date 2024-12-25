@@ -160,8 +160,23 @@ Tuple:
 
 [Gaurav Tiwari(Medium)](https://medium.com/@gauravtiwari20162/explain-1-domain-2-tuple-3-attributes-4-degree-5-cardinality-of-relation-cf31d94f1d5b)
 ## Q2. Explain Relational Model constraints: Domain Constraints, Referential Constraints,Integrity constraints, Null constraints.
+Constraints are rules imposed on database contents to validate quality and ensure data integrity during operations like insertion and updates. They protect against threats and damages to the database.  
+The main types of constraints in a relational database are four.
+- ***Domain constraints***:
+    - Every domain must contain atomic values(smallest indivisible units) which means composite and multi-valued attributes are not allowed.
+    - We perform a datatype check here, which means when we assign a data type to a column we limit the values that it can contain. Eg. If we assign the datatype of attribute age as int, we can’t give it values other than int datatype. [[1](https://www.geeksforgeeks.org/constraints-on-relational-database-model/#main)]
+- ***Referential constraints***:
+    - The referential constraint is specified between two relations and is used to maintain the consistency among tuples in the two relations. 
+    - the referential constraint states that a tuple in one relation that refers to another relation must refer to an existing tuple in that relation. [[2](https://www.pvpsiddhartha.ac.in/dep_it/lecture%20notes/2-2-23/DBMS/PVP20%20DBMS%20UNIT-2.pdf)]
+- ***Integrity constraints***:  
+    - The entity integrity constraint states that primary key value can't be null.
+    - This is because the primary key value is used to identify individual rows in relation and if the primary key has a null value, then we can't identify those rows.
+    - A table can contain a null value other than the primary key field [[3](https://www.javatpoint.com/dbms-integrity-constraints)]
+- ***Null constraints***:  
+    - Use the NULL keyword to specify that a column can store the NULL value for its data type.
+    - This implies that the column need not receive any value during insert or update operations. 
+    - The NULL constraint is logically equivalent to omitting the NOT NULL constraint from the column definition. [[4]](https://www.ibm.com/docs/en/informix-servers/12.10?topic=format-using-null-constraint)
 
-TODO: Solve
 
 ## Q3. Explain operators in Relational algebra? Specifically Unary, Projection, binary 
 Relational algebra is a procedural query language, which takes instances of relations as input and yields instances of relations as output. It uses operators to perform queries. 
