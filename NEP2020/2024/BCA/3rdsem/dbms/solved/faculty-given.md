@@ -1,12 +1,12 @@
 # Database Management Systems 
-## Important Questions and Topics
-### Unit 1:
-#### Q1. Database architecture
+# Important Questions and Topics
+## Unit 1:
+### Q1. Database architecture
 A DBMS (Database Management System) architecture refers to the overall design and organization of a DBMS, including the components, interfaces, and interactions between them. It provides a framework for managing and accessing data in a database.
 
 [Javatpoint](https://www.javatpoint.com/dbms-architecture)
 
-#### Q2. Database Schema and Models
+### Q2. Database Schema and Models
 
 Database schema:
 - The Skeleton of the database is created by the attributes and this skeleton is named Schema.
@@ -20,7 +20,7 @@ Database schema:
 A Data Model in Database Management System (DBMS)  is the concept of tools that are developed to summarize the description of the database. Data Models provide us with a transparent picture of data which helps us in creating an actual database. It shows us from the design of the data to its proper implementation of data.
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/data-models-in-dbms/)
-#### Q3. Data Independence
+### Q3. Data Independence
 Data independence is a property of a database management system by which we can change the database schema at one level of the database system without changing the database schema at the next higher level. 
 
 It has two types:
@@ -43,7 +43,7 @@ It has two types:
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/what-is-data-independence-in-dbms/)
 
-#### Q4. Database Languages
+### Q4. Database Languages
 Database languages are special-purpose languages that help with tasks like data definition, manipulation, and control: 
 
 - ***Data Definition Language (DDL)***: Used to define data types, create tables, and define relationships between them. DDL commands include CREATE, ALTER, DROP, TRUNCATE, and RENAME. 
@@ -55,7 +55,7 @@ Transaction Control Language (TCL): Used to run the changes made by the DML stat
 ![Types of DB Languages](https://files.codingninjas.in/article_images/database-languages-0-1650484671.webp)
 
 [Naukri](https://www.naukri.com/code360/library/database-languages-in-dbms)
-#### Q5. Classification of DBMS
+### Q5. Classification of DBMS
 Types of DBMS
 - ***Relational Database Management System (RDBMS)***: Data is organized into tables (relations) with rows and columns, and the relationships between the data are managed through primary and foreign keys. 
     - SQL (Structured Query Language) is used to query and manipulate the data.
@@ -67,9 +67,9 @@ Types of DBMS
 [GeeksForGeeks](https://www.geeksforgeeks.org/introduction-of-dbms-database-management-system-set-1/)
 
 
-### Unit 2:
-#### Q1. Construct a ER diagram for Company database,Student database,Employee salary database.
-#### Q2. Define Entity, Relationship and types of cardinality
+## Unit 2:
+### Q1. Construct a ER diagram for Company database,Student database,Employee salary database.
+### Q2. Define Entity, Relationship and types of cardinality
 An Entity is a real-world object, person, place or thing that we are representing in the database. 
 - Eg. A car exists in the real world, and we can represent it in our database
 - We can store data about such entities
@@ -89,7 +89,7 @@ Types of Cardinality:
     - This relationship is mainly implemented using junction table. 
     - ![N to N Relationship](https://media.geeksforgeeks.org/wp-content/uploads/20240607225932/sec.png)
 [GeeksForGeeks](https://www.geeksforgeeks.org/what-is-relationship-type-in-dbms/)
-#### Q3. Explain ER notations used in database Schema design.
+### Q3. Explain ER notations used in database Schema design.
 ER Notations are used to represent various components of the ER Model, using different symbols.
 
 ![ER Notations](https://binaryterms.com/wp-content/uploads/2021/10/Entity-Relationship-Diagram-Symbols.jpg)
@@ -120,16 +120,16 @@ ER Notations are used to represent various components of the ER Model, using dif
 - Lines illustrate the association of attributes to the entity set and the association of entity set to the relationship set.
 
 [BinaryTerms](https://binaryterms.com/entity-relationship-diagram.html)
-#### Q4. What is an attribute? What are the types of attributes.
+### Q4. What is an attribute? What are the types of attributes.
 [Already Answered in Q3](#q3-explain-er-notations-used-in-database-schema-design)
-#### Q5. What is a relationship? Give an example of all types of relationships.
+### Q5. What is a relationship? Give an example of all types of relationships.
 A Relationship in a Database refers to a connection between properties of tables. 
 - It is a logical association between different entities stored in seperate tables
 - Eg. Customers, Products, and Orders are linked to each other using relations
 
 
-### Unit 3:
-#### Q1. What is a Domain, Attribute and Tuple?
+## Unit 3:
+### Q1. What is a Domain, Attribute and Tuple?
 Domain:
 - In a database, a domain is a column that contains a data type. Data types can be built-in (such as integers or strings) or custom types that define constraints on the data themselves.
 - Example:
@@ -147,9 +147,9 @@ Tuple:
 
 
 [Gaurav Tiwari(Medium)](https://medium.com/@gauravtiwari20162/explain-1-domain-2-tuple-3-attributes-4-degree-5-cardinality-of-relation-cf31d94f1d5b)
-#### Q2. Explain Relational Model constraints: Domain Constraints, Referential Constraints,Integrity constraints, Null constraints.
+### Q2. Explain Relational Model constraints: Domain Constraints, Referential Constraints,Integrity constraints, Null constraints.
 
-#### Q3. Explain operators in Relational algebra? Specifically Unary, Projection, binary 
+### Q3. Explain operators in Relational algebra? Specifically Unary, Projection, binary 
 Relational algebra is a procedural query language, which takes instances of relations as input and yields instances of relations as output. It uses operators to perform queries. 
 
 An operator can be either unary or binary. They accept relations as their input and yield relations as their output. 
@@ -184,29 +184,29 @@ Types:
 - [GeeksForGeeks(Unary)](https://www.geeksforgeeks.org/what-are-the-unary-operations-in-relational-algebra/?ref=asr10)
 - [TutorialsPoint](https://www.tutorialspoint.com/dbms/relational_algebra.htm) 
 
-#### Q4. What is join operator? Explain its types with an example.
-#### Q5. Explain nested Queries with example
-#### Q6. Describe the PL/SQL block
-#### Q7. Features of PL/SQL
-#### Q8. What is cursor and its types
-#### Q9. Explain exception with an example?
+### Q4. What is join operator? Explain its types with an example.
+### Q5. Explain nested Queries with example
+### Q6. Describe the PL/SQL block
+### Q7. Features of PL/SQL
+### Q8. What is cursor and its types
+### Q9. Explain exception with an example?
 
 
-### Unit 4:
-#### Q1. Anamolies in relational Database design
-#### Q2. Decomposition 
-#### Q3. Functional Dependencies
-#### Q4. 1st normal Form
-#### Q5. 2nd normal Form
-#### Q6.  3rd normal form
-#### Q7. BCNF
+## Unit 4:
+### Q1. Anamolies in relational Database design
+### Q2. Decomposition 
+### Q3. Functional Dependencies
+### Q4. 1st normal Form
+### Q5. 2nd normal Form
+### Q6.  3rd normal form
+### Q7. BCNF
 
 
-### Unit 5:
-#### Q1. Transaction states
-#### Q2.  Transaction operations
-#### Q3. Properties of Transaction
-#### Q4. Concurrency control problem
-#### Q5. concurrency control techniques
+## Unit 5:
+### Q1. Transaction states
+### Q2.  Transaction operations
+### Q3. Properties of Transaction
+### Q4. Concurrency control problem
+### Q5. concurrency control techniques
 
 
