@@ -65,6 +65,8 @@ Types of DBMS
     - It allows for complex data representations and relationships
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/introduction-of-dbms-database-management-system-set-1/)
+
+
 ### Unit 2:
 #### Q1. Construct a ER diagram for Company database,Student database,Employee salary database.
 #### Q2. Define Entity, Relationship and types of cardinality
@@ -128,6 +130,23 @@ A Relationship in a Database refers to a connection between properties of tables
 
 ### Unit 3:
 #### Q1. What is a Domain, Attribute and Tuple?
+Domain:
+- In a database, a domain is a column that contains a data type. Data types can be built-in (such as integers or strings) or custom types that define constraints on the data themselves.
+- Example:
+    - In a table, a domain is a set of values that can be used to attribute an attribute. The domain of a month can accept January, February, etc. 
+    - A domain of integers can accept whole numbers that are negative, positive, and zero.
+
+Attribute:
+- Any real-world object is considered to be an entity that has self-existence
+    - These entities in DBMS have their own characteristics and properties known as attributes.  - Attributes give us additional information about entities and help us to study their relationship within the specified system.
+
+Tuple:
+- A Tuple in a DBMS is just a row having inter-related data about a particular entity(it can be any object).
+    - Tuples are mostly seen in Relational Databases Management Systems(RDBMS) as RDBMS works on the relational model (Tabular format).
+    - In DBMS, we call rows “Tuples” and a row “Tuple”.
+
+
+[Gaurav Tiwari(Medium)](https://medium.com/@gauravtiwari20162/explain-1-domain-2-tuple-3-attributes-4-degree-5-cardinality-of-relation-cf31d94f1d5b)
 #### Q2. Explain Relational Model constraints, Domain Constraints, Referential Constraints,Integrity constraints, Null constraints.
 #### Q3. Explain operators in Relational algebra? Specifically Unary, Projection, binary 
 #### Q4. What is join operator? Explain its types with an example.
@@ -136,6 +155,8 @@ A Relationship in a Database refers to a connection between properties of tables
 #### Q7. Features of PL/SQL
 #### Q8. What is cursor and its types
 #### Q9. Explain exception with an example?
+
+
 ### Unit 4:
 #### Q1. Anamolies in relational Database design
 #### Q2. Decomposition 
@@ -144,6 +165,8 @@ A Relationship in a Database refers to a connection between properties of tables
 #### Q5. 2nd normal Form
 #### Q6.  3rd normal form
 #### Q7. BCNF
+
+
 ### Unit 5:
 #### Q1. Transaction states
 #### Q2.  Transaction operations
