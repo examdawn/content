@@ -14,3 +14,4 @@ Others:
     - [IA2](impIA2.md)
 - Important Questions and Topics shared by Faculty
     - [Important Questions](faculty-given.md)
+- [Previous Year Paper(2022](pyq.md)
