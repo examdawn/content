@@ -75,7 +75,6 @@ Types of DBMS
 - **Student Database**
     ![Student ER](https://www.simplilearn.com/ice9/free_resources_article_thumb/ERDiagramsInDBMS_1.png)
 
-TODO: Solve
 ## Q2. Define Entity, Relationship and types of cardinality
 An Entity is a real-world object, person, place or thing that we are representing in the database. 
 - Eg. A car exists in the real world, and we can represent it in our database
@@ -84,7 +83,7 @@ An Entity is a real-world object, person, place or thing that we are representin
 A relationship in DBMS refers to the logical association between different entities that are stored in separate tables.
 - Eg. Customers, products, and orders
 
-Types of Cardinality:
+Types of Cardinality/Relationship:
 - ***One To One Relationship***
     - Consider two entities "Person" and "Aadhar card". Each person can have only one Aadhar card and each Aadhar card is assigned to only one person.
     -  ![One To One Relationship](https://media.geeksforgeeks.org/wp-content/uploads/20240607225720/pha.png)
@@ -135,17 +134,9 @@ A Relationship in a Database refers to a connection between properties of tables
 - Eg. Customers, Products, and Orders are linked to each other using relations  
 
 The example for all the types of relationships are:
-- **One-to-One relationship**  
-    Consider two entities "Person" and "Aadhar card". Each person can have only one Aadhar card and each Aadhar card is assigned to only one person.
-    ![One-One](https://media.geeksforgeeks.org/wp-content/uploads/20240607225720/pha.png)
-
-- **One-to-Many or Many-to-One relationship**  
-    Consider two entities "customer" and "order". Each customer can place multiple orders but each order is placed by only one customer.
-    ![One-Many](https://media.geeksforgeeks.org/wp-content/uploads/20240607225819/cpo.png)
-
-- **Many-to-Many relationship**  
-    Consider two entities "Student" and "Course" where each student can enroll in multiple courses and each course can have multiple students enrolled in it. 
-    ![Many-Many](https://media.geeksforgeeks.org/wp-content/uploads/20240607225932/sec.png)
+- [***One-to-One relationship***](https://github.com/bca-students/content/blob/main/NEP2020/2024/BCA/3rdsem/dbms/solved/faculty-given.md#L87)  
+- [***One-to-Many or Many-to-One relationship***](https://github.com/bca-students/content/blob/main/NEP2020/2024/BCA/3rdsem/dbms/solved/faculty-given.md#L90)  
+- [***Many-to-Many relationship***](https://github.com/bca-students/content/blob/main/NEP2020/2024/BCA/3rdsem/dbms/solved/faculty-given.md#L93)
 
 [GeeksforGeeks](https://www.geeksforgeeks.org/what-is-relationship-type-in-dbms/)
 
