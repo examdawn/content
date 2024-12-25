@@ -134,9 +134,9 @@ A Relationship in a Database refers to a connection between properties of tables
 - Eg. Customers, Products, and Orders are linked to each other using relations  
 
 The example for all the types of relationships are:
-- [***One-to-One relationship***](https://github.com/bca-students/content/blob/main/NEP2020/2024/BCA/3rdsem/dbms/solved/faculty-given.md#L87)  
-- [***One-to-Many or Many-to-One relationship***](https://github.com/bca-students/content/blob/main/NEP2020/2024/BCA/3rdsem/dbms/solved/faculty-given.md#L90)  
-- [***Many-to-Many relationship***](https://github.com/bca-students/content/blob/main/NEP2020/2024/BCA/3rdsem/dbms/solved/faculty-given.md#L93)
+- [***One-to-One relationship***](?plain=1#L87)  
+- [***One-to-Many or Many-to-One relationship***](?plain=1#L90)  
+- [***Many-to-Many relationship***](?plain=1#L93)
 
 [GeeksforGeeks](https://www.geeksforgeeks.org/what-is-relationship-type-in-dbms/)
 
