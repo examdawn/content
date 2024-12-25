@@ -68,7 +68,12 @@ Types of DBMS
 
 
 # Unit 2:
-## Q1. Construct a ER diagram for Company database,Student database,Employee salary database.
+## Q1. Construct a ER diagram for Company database,Student database.
+- **Company Database**:
+    ![Company ER](https://media.geeksforgeeks.org/wp-content/uploads/20200621171512/company.png)
+
+- **Student Database**
+    ![Student ER](https://www.simplilearn.com/ice9/free_resources_article_thumb/ERDiagramsInDBMS_1.png)
 
 TODO: Solve
 ## Q2. Define Entity, Relationship and types of cardinality
