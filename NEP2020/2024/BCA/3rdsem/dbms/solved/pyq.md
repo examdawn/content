@@ -264,7 +264,16 @@ In the above diagram:
 
 [JavaTPoint](https://www.javatpoint.com/dbms-three-schema-architecture)
 ## Q14. Discuss the different types of indexes.
-TODO: Solve
+Indexing enhances database performance by reducing the number of disk visits needed to execute a query. It is a data structure technique that uses key fields to create indexes, with the main or candidate key appearing as the Search key in the first column, often sorted for faster retrieval. While sorting is not mandatory, it aids in efficiency. The second column, known as the Data Reference or Pointer, contains pointers to the disk block addresses where the corresponding key values are stored.
+1. ***Primary Indexing***
+    Primary indexing is applied to the primary key of a table, ensuring that data can be accessed quickly without scanning the entire table.
+2. ***Secondary Indexing***
+    Secondary indexing provides an additional access path to data stored in a table, allowing for efficient searches based on non-primary key columns.
+3. ***Clustered Index***:
+    A clustered index determines the physical order of data in a table. When a clustered index is created, the rows are sorted and stored according to the values of the indexed column(s).
+
+[GeeksforGeeks](https://www.geeksforgeeks.org/indexing-in-databases-set-1/)
+
 ## Q15. Draw an ER diagram for Bank Database with 5 entities and 5 attributes for each entity. Specify the cardinality ratio on each of the relationships existing between entities.
 TODO: Solve
 ## Q16. Explain different relational algebra operations.
