@@ -360,7 +360,8 @@ WHERE StudentID IN (
     SELECT StudentID
     FROM Grades
     WHERE Subject = ‘Mathematics’ AND Score > 90
-);```
+);
+```
 
 Output:
 | StudentName |
