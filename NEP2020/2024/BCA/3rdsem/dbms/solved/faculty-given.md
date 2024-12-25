@@ -568,7 +568,41 @@ The acronym ACID stands for Atomicity, Consistency, Isolation, and Durability. A
 [(GeeksForGeeks)](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 
 ## Q4. Concurrency control problem
-TODO: Solve
-## Q5. concurrency control techniques
-TODO: Solve
+Concurrency control is an essential aspect of database management systems that ensures transactions can execute concurrently without interfering with each other. 
+- However, concurrency control can be challenging to implement
+    - without it, several problems can arise, affecting the consistency of the database. 
+- When multiple transactions execute concurrently in an uncontrolled or unrestricted manner, then it might lead to several problems. 
+- These problems are commonly referred to as concurrency problems in a database environment. 
 
+These problems are:
+- Lost Update Problem: 
+- Dirty Read Problem: 
+- Inconsistent Retrevial Problem:
+- Phantom Read Problem:
+
+
+TODO: Finish
+
+## Q5. concurrency control techniques
+Following are the Concurrency Control techniques in DBMS:
+- ***Lock-Based Protocol***
+    - A lock is a variable associated with a data item that describes the status of the data item to possible operations that can be applied to it. 
+    - Types:
+        - **Shared Lock** (S): Shared Lock is also known as Read-only lock. 
+            - As the name suggests it can be shared between transactions because while holding this lock the transaction does not have the permission to update data on the data item. 
+            - S-lock is requested using lock-S instruction. 
+        - **Exclusive Lock** (X): Data item can be both read as well as written.
+            - This is Exclusive and cannot be held simultaneously on the same data item. 
+            - X-lock is requested using lock-X instruction. 
+- ***Two Phase Locking Protocol***
+    - A transaction follows the two-phase locking protocol if locking and unlocking can be done in two phases. 
+    - The two phases of 2PL are:
+        1. *Growing Phase*: In this phase, we can acquire new locks on data items, but none of these locks can be released.
+        2. *Shrinking Phase*: In this phase, the existing locks can be released, but no new locks can be
+obtained
+- ***Timestamp-Based Protocol***
+    - A timestamp is a tag that can be attached to any transaction or any data item, which denotes a specific time on which the transaction or the data item had been used in any way. 
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/concurrency-control-techniques/)
+
+[GeeksForGeeks(Lock Based Protocol)](https://www.geeksforgeeks.org/lock-based-concurrency-control-protocol-in-dbms/)
