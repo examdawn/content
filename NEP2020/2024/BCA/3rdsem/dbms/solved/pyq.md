@@ -7,11 +7,29 @@ Total = 60 marks
 
 # Section A(2m x 4q = 8)
 ## Q1. Define Database and Database Management system.
-TODO: Solve
+
+A database is a structured collection of data that is stored and accessed in a computer system
+- Databases are used to organize and manage related data, such as company information, banking transactions, and customer details. 
+
+A database management system (DBMS) is a software tool that allows users to create, manage, and manipulate databases: 
+- **Store data**: DBMSs help organizations store and organize large amounts of data. 
+- **Retrieve data**: DBMSs help users find and access information quickly and easily. 
+- **Secure data**: DBMSs keep data safe from unauthorized people and ensure only those with valid permissions can access it. 
+- **Maintain data integrity**: DBMSs ensure that data is consistently organized and remains easily accessible. 
+
+
 ## Q2. What is data model? Name three categories of data model.
-TODO: Solve
+Data models are conceptual representations of how data is organized and structured. 
+- They provide a blueprint for storing, managing, and retrieving data in a database or data storage system. 
+- There are several types of data models, each with its strengths and weaknesses. Here are some:
+    - Relational Data Model
+    - Hierarchical Data Model
+    - Network Data Model
 ## Q3. What is key attribute? Give an example.
-TODO: Solve
+A key attribute is a property that uniquely identifies an entity and is mapped to the primary key field in a database. 
+- In an ER diagram, you would draw an oval with underlined text
+- Example: ***Student_ID*** in a table called ***STUDENT***
+
 ## Q4. List data types allowed in SQL.
 Common Datatypes in SQL are:
 - INTEGER
