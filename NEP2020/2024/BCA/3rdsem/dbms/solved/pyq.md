@@ -227,10 +227,42 @@ The acronym ACID stands for Atomicity, Consistency, Isolation, and Durability. A
 [(GeeksForGeeks)](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 
 ## Q12. Write a short note on database backup and database recovery.
-TODO: Solve
+Database Backup and Recovery
+
+Database backup and recovery are critical components of database management that ensure data integrity and availability in the event of data loss, corruption, or system failure.
+
+**Database Backup:**
+A database backup is a copy of the database that can be used to restore the original after a data loss event. Backups can be full, incremental, or differential:
+- **Full Backup:** A complete copy of the entire database at a specific point in time.
+- **Incremental Backup:** A backup that captures only the changes made since the last backup, whether it was full or incremental.
+- **Differential Backup:** A backup that captures all changes made since the last full backup.
+
+Backups can be stored on various media, including local disks, external drives, or cloud storage. Regular backups are essential to protect against data loss due to hardware failures, accidental deletions, or disasters.
+
+**Database Recovery:**
+Database recovery is the process of restoring a database from a backup to bring it back to a consistent state after a failure. Recovery strategies can vary based on the type of failure:
+- **Crash Recovery:** Automatically restores the database to a consistent state after a system crash using transaction logs.
+- **Media Recovery:** Involves restoring the database from backups when data is lost due to hardware failure or corruption.
+- **Point-in-Time Recovery:** Allows the database to be restored to a specific moment, useful for recovering from accidental data modifications.
+
+Recovery procedures must be well-documented and tested to ensure that they can be executed quickly and effectively when needed.
+
 # Section C(8m x 4q = 32)
 ## Q13. Explain three schema architecture with a neat diagram.
-TODO: Solve
+The three schema architecture is also called ANSI/SPARC architecture or three-level architecture.
+- This framework is used to describe the structure of a specific database system.
+- The three schema architecture is also used to separate the user applications and physical database.
+- The three schema architecture contains three-levels. It breaks the database down into three different categories.
+
+![3 Schema Arch.](https://images.javatpoint.com/dbms/images/dbms-three-schema-architecture.png)
+In the above diagram:
+- It shows the DBMS architecture.
+- Mapping is used to transform the request and response between various database levels of architecture.
+- Mapping is not good for small DBMS because it takes more time.
+- In External / Conceptual mapping, it is necessary to transform the request from external level to conceptual schema.
+- In Conceptual / Internal mapping, DBMS transform the request from the conceptual to internal level.
+
+[JavaTPoint](https://www.javatpoint.com/dbms-three-schema-architecture)
 ## Q14. Discuss the different types of indexes.
 TODO: Solve
 ## Q15. Draw an ER diagram for Bank Database with 5 entities and 5 attributes for each entity. Specify the cardinality ratio on each of the relationships existing between entities.
