@@ -132,8 +132,22 @@ ER Notations are used to represent various components of the ER Model, using dif
 ## Q5. What is a relationship? Give an example of all types of relationships.
 A Relationship in a Database refers to a connection between properties of tables. 
 - It is a logical association between different entities stored in seperate tables
-- Eg. Customers, Products, and Orders are linked to each other using relations
-TODO: Finish
+- Eg. Customers, Products, and Orders are linked to each other using relations  
+
+The example for all the types of relationships are:
+- **One-to-One relationship**  
+    Consider two entities "Person" and "Aadhar card". Each person can have only one Aadhar card and each Aadhar card is assigned to only one person.
+    ![One-One](https://media.geeksforgeeks.org/wp-content/uploads/20240607225720/pha.png)
+
+- **One-to-Many or Many-to-One relationship**  
+    Consider two entities "customer" and "order". Each customer can place multiple orders but each order is placed by only one customer.
+    ![One-Many](https://media.geeksforgeeks.org/wp-content/uploads/20240607225819/cpo.png)
+
+- **Many-to-Many relationship**  
+    Consider two entities "Student" and "Course" where each student can enroll in multiple courses and each course can have multiple students enrolled in it. 
+    ![Many-Many](https://media.geeksforgeeks.org/wp-content/uploads/20240607225932/sec.png)
+
+[GeeksforGeeks](https://www.geeksforgeeks.org/what-is-relationship-type-in-dbms/)
 
 # Unit 3:
 ## Q1. What is a Domain, Attribute and Tuple?
