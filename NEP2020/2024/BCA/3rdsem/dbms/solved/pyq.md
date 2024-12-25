@@ -116,8 +116,8 @@ The Entity Relationship Diagram explains the relationship among the entities pre
 ## Q10. Create an employee table using the following fields.
 | Field name | Data type |
 | ---------- | --------- |
-|    EMPNO   |   ENAME   |
-|   NUMBER   |    CHAR   |
+|    EMPNO   |   NUMBER  |
+|    ENAME   |    CHAR   |
 |    DOB     |   Date    |
 |    Dept    |   String  |
 |   Salary   |    Real   |
@@ -126,6 +126,76 @@ The Entity Relationship Diagram explains the relationship among the entities pre
 3. Find the sum of salaries.
 4. Find department wise count of Employees
 5. Display the tuples in the order of average salaries of Employees.
+
+Ans.
+
+Create the Table:
+```SQL
+CREATE TABLE Employee(EMPNO NUMBER Primary Key, ENAME VARCHAR(100), DOB Date, DEPT VARCHAR(100), SALARY Real);
+```
+
+Insert Data:
+```SQL
+INSERT INTO Employee VALUES(101, 'Souhrud', TO_DATE('27-06-2005', 'DD-MM-YYYY'),'Electronics', 32000);
+
+INSERT INTO Employee VALUES(102, 'Nanda', TO_DATE('6-11-2004', 'DD-MM-YYYY'), 'Design', 34000);
+
+INSERT INTO Employee VALUES(103, 'Joel', TO_DATE('30-06-2005', 'DD-MM-YYYY'), 'Software', 29500);
+
+INSERT INTO Employee VALUES(104, 'Nikhil', TO_DATE('6-01-2005', 'DD-MM-YYYY'), 'Hardware', 30000);
+
+INSERT INTO Employee VALUES(105, 'Varun', TO_DATE('16-03-2005', 'DD-MM-YYYY'), 'Software', 29000);
+
+```
+
+Display Once to Verify:
+```SQL
+SELECT * FROM Employee;
+```
+| EMPNO | 	ENAME | 	DOB	 | DEPT |	SALARY |
+| --- | --- | --- | --- | --- |
+| 101 | 	Souhrud | 	27-JUN-05 |	Electronics |	32000 |
+| 102 | 	Nanda | 	06-NOV-04	 | Design	 | 34000 |
+| 103 | 	Joel | 	30-JUN-05 |	Software |	29500 |
+| 104 | 	Nikhil | 	06-JAN-05 |	Hardware |	30000 |
+| 105 | 	Varun | 	16-MAR-05 | 	Software |	29000 |
+
+Show Sum Of Salary:
+```SQL
+SELECT SUM(SALARY) As TOTAL_SALARY FROM Employee;
+```
+|TOTAL_SALARY |
+| --- |
+|154500 |
+
+Department Count:
+```SQL
+SELECT DEPT, COUNT(*) As Employee_Count 
+FROM Employee 
+GROUP BY DEPT;
+```
+| DEPT |	EMPLOYEE_COUNT |
+| --- | --- |
+| Electronics |	1 |
+| Software |	2 |
+| Design |	1 |
+| Hardware |	1 |
+
+Order by Average:
+```SQL
+SELECT DEPT, AVG(SALARY) As Avg_Salary 
+FROM Employee 
+GROUP BY DEPT 
+ORDER BY Avg_Salary;
+```
+| DEPT |	AVG_SALARY |
+| --- | --- |
+| Software |	29250 |
+| Hardware |	30000 |
+| Electronics |	32000 |
+| Design |	34000 |
+
+
 ## Q11. What is a transaction? Explain ACID properties of a transaction.
 A transaction is a single logical unit of work that accesses and possibly modifies the contents of a database. 
 - Transactions access data using read-and-write operations. 
