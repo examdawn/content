@@ -2,13 +2,91 @@
 ## Important Questions and Topics
 ### Unit 1:
 #### Q1. Database architecture
+A DBMS (Database Management System) architecture refers to the overall design and organization of a DBMS, including the components, interfaces, and interactions between them. It provides a framework for managing and accessing data in a database.
+
+[Javatpoint](https://www.javatpoint.com/dbms-architecture)
+
 #### Q2. Database Schema and Models
+
+Database schema:
+- The Skeleton of the database is created by the attributes and this skeleton is named Schema.
+- Schema mentions the logical constraints like table, primary key, etc.
+- The schema does not represent the data type of the attributes.
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/database-schemas/)
+
+![Database schema Example](https://media.geeksforgeeks.org/wp-content/uploads/20230511011217/schema1drawio.png)
+
+A Data Model in Database Management System (DBMS)  is the concept of tools that are developed to summarize the description of the database. Data Models provide us with a transparent picture of data which helps us in creating an actual database. It shows us from the design of the data to its proper implementation of data.
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/data-models-in-dbms/)
 #### Q3. Data Independence
+Data independence is a property of a database management system by which we can change the database schema at one level of the database system without changing the database schema at the next higher level. 
+
+It has two types:
+- Physical Data Independence 
+- Logical Data Independence
+
+**Logical Data Independence**:
+- Refers to the capacity to change the logical schema without altering the external schema or application programs.
+- Changes may include adding new fields or tables.
+- Allows users to interact with data without needing to modify their applications when the logical structure changes.
+
+**Physical Data Independence**:
+- Refers to the ability to change the physical schema without affecting the logical schema.
+- Changes may involve altering storage devices, file formats, or indexing methods.
+- Ensures that the logical structure remains stable even if the physical storage changes.
+
+***Summary***:
+- **Logical Independence**: Changes in the logical structure don't affect user applications.
+- **Physical Independence**: Changes in physical storage don't affect the logical structure.
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/what-is-data-independence-in-dbms/)
+
 #### Q4. Database Languages
+Database languages are special-purpose languages that help with tasks like data definition, manipulation, and control: 
+
+- ***Data Definition Language (DDL)***: Used to define data types, create tables, and define relationships between them. DDL commands include CREATE, ALTER, DROP, TRUNCATE, and RENAME. 
+- ***Data Manipulation Language (DML)***: Used to perform tasks like inserting, updating, or deleting data. DML commands include INSERT and UPDATE. 
+- ***Data Control Language (DCL)***: Used to control access to data. DCL commands include GRANT and REVOKE. 
+- ***Data Query Language (DQL)***: Used to search for information and compute derived information. 
+Transaction Control Language (TCL): Used to run the changes made by the DML statement. TCL commands include COMMIT. 
+
+![Types of DB Languages](https://files.codingninjas.in/article_images/database-languages-0-1650484671.webp)
+
+[Naukri](https://www.naukri.com/code360/library/database-languages-in-dbms)
 #### Q5. Classification of DBMS
+Types of DBMS
+- ***Relational Database Management System (RDBMS)***: Data is organized into tables (relations) with rows and columns, and the relationships between the data are managed through primary and foreign keys. 
+    - SQL (Structured Query Language) is used to query and manipulate the data.
+- ***NoSQL DBMS***: Designed for high-performance scenarios and large-scale data
+    - NoSQL databases store data in various non-relational formats such as key-value pairs, documents, graphs, or columns.
+- ***Object-Oriented DBMS (OODBMS)***: Stores data as objects, similar to those used in object-oriented programming
+    - It allows for complex data representations and relationships
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/introduction-of-dbms-database-management-system-set-1/)
 ### Unit 2:
 #### Q1. Construct a ER diagram for Company database,Student database,Employee salary database.
 #### Q2. Define Entity, Relationship and types of cardinality
+An Entity is a real-world object, person, place or thing that we are representing in the database. 
+- Eg. A car exists in the real world, and we can represent it in our database
+- We can store data about such entities
+
+A relationship in DBMS refers to the logical association between different entities that are stored in separate tables.
+- Eg. Customers, products, and orders
+
+Types of Cardinality:
+- ***One To One Relationship***
+    - Consider two entities "Person" and "Aadhar card". Each person can have only one Aadhar card and each Aadhar card is assigned to only one person.
+    -  ![One To One Relationship](https://media.geeksforgeeks.org/wp-content/uploads/20240607225720/pha.png)
+- ***One-to-Many or Many-to-One Relationship***
+    - Consider two entities "customer" and "order". Each customer can place multiple orders but each order is placed by only one customer.
+    - ![One To N Relationship](https://media.geeksforgeeks.org/wp-content/uploads/20240607225819/cpo.png)
+- ***Many-to-Many Relationship***
+    - Consider two entities "Student" and "Course" where each student can enroll in multiple courses and each course can have multiple students enrolled in it. 
+    - This relationship is mainly implemented using junction table. 
+    - ![N to N Relationship](https://media.geeksforgeeks.org/wp-content/uploads/20240607225932/sec.png)
+[GeeksForGeeks](https://www.geeksforgeeks.org/what-is-relationship-type-in-dbms/)
 #### Q3. Explain ER notations used in database Schema design.
 ER Notations are used to represent various components of the ER Model, using different symbols.
 
@@ -43,6 +121,10 @@ ER Notations are used to represent various components of the ER Model, using dif
 #### Q4. What is an attribute? What are the types of attributes.
 [Already Answered in Q3](#q3-explain-er-notations-used-in-database-schema-design)
 #### Q5. What is a relationship? Give an example of all types of relationships.
+A Relationship in a Database refers to a connection between properties of tables. 
+- It is a logical association between different entities stored in seperate tables
+- Eg. Customers, Products, and Orders are linked to each other using relations
+
 
 ### Unit 3:
 #### Q1. What is a Domain, Attribute and Tuple?
