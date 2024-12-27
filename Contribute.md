@@ -10,6 +10,15 @@ We also welcome any positive informative criticism or suggestions if you have an
 - [Contribution Guidelines and Instructions](https://github.com/bca-students/content/blob/main/.github/CONTRIBUTING.md)
 
 ## Contributors
+### Website Maintainers
+#### Website Maintainer(s)
+- Jack-Pots
+  - [Primary Git Profile](https://github.com/Jack-Pots)
+  - [LinkedIn](https://www.linkedin.com/in/jack-pots/)
+#### Content Maintainer(s)
+- [sounddrill](https://sounddrill31.github.io/)
+  - [Primary Git Profile](https://github.com/sounddrill31/)
+  - [LinkedIn](https://www.linkedin.com/in/souhrud-reddy/)
 
 ### Website Contributors
 <a href="https://github.com/bca-students/bca-students.github.io/graphs/contributors">
