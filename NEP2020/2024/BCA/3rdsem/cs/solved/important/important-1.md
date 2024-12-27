@@ -212,92 +212,94 @@ graph TD;
 ### Q12.Explain types of operators with an example of each
 Operators are tokens we use to perform operations with one, two or more operands. Types of Operators are:
 - Arithmetic Operators
-    - Addition: The ‘+’ operator adds two operands. 
-        - For example, x+y.
-    - Subtraction: The ‘-‘ operator subtracts two operands. 
-        - For example, x-y.
-    - Multiplication: The ‘*’ operator multiplies two operands. 
-        - For example, x*y.
-    - Division: The ‘/’ operator divides the first operand by the second. 
-        - For example, x/y.
-    - Modulus: The ‘%’ operator returns the remainder when first operand is divided by the second.      
-        - For example, x%y.
+    - Addition: The `+` operator adds two operands. 
+        - For example, `x+y`.
+    - Subtraction: The `-` operator subtracts two operands. 
+        - For example, `x-y`.
+    - Multiplication: The `*` operator multiplies two operands. 
+        - For example, `x*y`.
+    - Division: The `/` operator divides the first operand by the second. 
+        - For example, `x/y`.
+    - Modulus: The `%` operator returns the remainder when first operand is divided by the second.      
+        - For example, `x%y`.
 - Relational Operators
-    - ‘=='(Equal To) operator checks whether the two given operands are equal or not. 
+    - `==`(Equal To) operator checks whether the two given operands are equal or not. 
         - If so, it returns true. 
         - Otherwise it returns false. 
-        - For example, 5==5 will return true.
-    - ‘!='(Not Equal To) operator checks whether the two given operands are equal or not. 
+        - For example, `5==5` will return true.
+    - `!=`(Not Equal To) operator checks whether the two given operands are equal or not. 
         - If not, it returns true. 
         - Otherwise it returns false. 
-        - For example, 5!=5 will return false.
-    - ‘>'(Greater Than) operator checks whether the first operand is greater than the second operand. 
+        - For example, `5!=5` will return false.
+    - `>`(Greater Than) operator checks whether the first operand is greater than the second operand. 
         - If so, it returns true. 
         - Otherwise it returns false. 
-        - For example, 6>5 will return true.
-    - ‘<‘(Less Than) operator checks whether the first operand is lesser than the second operand. 
+        - For example, `6>5` will return true.
+    - `<`(Less Than) operator checks whether the first operand is lesser than the second operand. 
         - If so, it returns true. 
         - Otherwise it returns false. 
-        - For example, 6<5 will return false.
-    - ‘>='(Greater Than Equal To) operator checks whether the first operand is greater than or equal to the second operand. 
+        - For example, `6<5` will return false.
+    - `>=`(Greater Than Equal To) operator checks whether the first operand is greater than or equal to the second operand. 
         - If so, it returns true. 
         - Otherwise it returns false. 
-        - For example, 5>=5 will return true.
-    - ‘<='(Less Than Equal To) operator checks whether the first operand is lesser than or equal to the second operand. 
+        - For example, `5>=5` will return true.
+    - `<=`(Less Than Equal To) operator checks whether the first operand is lesser than or equal to the second operand. 
         - If so, it returns true. 
         - Otherwise it returns false. 
-        - For example, 5<=5 will also return true.
+        - For example, `5<=5` will also return true.
 - Logical Operators
     - Logical AND: 
-        - The ‘&&’ operator returns true when both the conditions in consideration are satisfied. 
+        - The `&&` operator returns true when both the conditions in consideration are satisfied. 
         - Otherwise it returns false. 
-        - For example, a && b returns true when both a and b are true (i.e. non-zero).
+        - For example, `a && b` returns true when both a and b are true (i.e. non-zero).
     - Logical OR: 
-        - The ‘||’ operator returns true when one (or both) of the conditions in consideration is satisfied. 
+        - The `||` operator returns true when one (or both) of the conditions in consideration is satisfied. 
         - Otherwise it returns false. 
-        - For example, a || b returns true if one of a or b is true (i.e. non-zero). 
+        - For example, `a || b` returns true if one of a or b is true (i.e. non-zero). 
     - Logical NOT: 
-        - The ‘!’ operator returns true the condition in consideration is not satisfied. 
+        - The `!` operator returns true the condition in consideration is not satisfied. 
         - Otherwise it returns false. 
-        - For example, !a returns true if a is false, i.e. when a=0.
+        - For example, `!a` returns true if a is false, i.e. when a=0.
 - Assignment Operators
-    - “=”(Simple Assignment): This is the simplest assignment operator. This operator is used to assign the value on the right to the variable on the left.
+    - `=`(Simple Assignment): This is the simplest assignment operator. This operator is used to assign the value on the right to the variable on the left.
     - Example: 
-        - a = 10;
+        - `a = 10`;
 
-    - “+=”(Add Assignment): This operator is combination of ‘+’ and ‘=’ operators. This operator first adds the current value of the variable on left to the value on the right and then assigns the result to the variable on the left.
+    - `+=`(Add Assignment): This operator is combination of `+` and `=` operators. This operator first adds the current value of the variable on left to the value on the right and then assigns the result to the variable on the left.
     - Example:
-        - (a += b) can be written as (a = a + b)
+        - `a += b` can be written as `a = a + b`
 
-    - “-=”(Subtract Assignment): This operator is combination of ‘-‘ and ‘=’ operators. This operator first subtracts the current value of the variable on left from the value on the right and then assigns the result to the variable on the left.
+    - `-=`(Subtract Assignment): This operator is combination of ‘-‘ and ‘=’ operators. This operator first subtracts the current value of the variable on left from the value on the right and then assigns the result to the variable on the left.
     - Example: 
-        - (a -= b) can be written as (a = a - b)
+        - `a -= b` can be written as `a = a - b`
 
-    - “*=”(Multiply Assignment): This operator is combination of ‘*’ and ‘=’ operators. This operator first multiplies the current value of the variable on left to the value on the right and then assigns the result to the variable on the left.
+    - `*=`(Multiply Assignment): This operator is combination of `*` and `=` operators. This operator first multiplies the current value of the variable on left to the value on the right and then assigns the result to the variable on the left.
     - Example: 
-        - (a *= b) can be written as (a = a * b)
+        - `a *= b` can be written as `a = a * b`
 
-    - “/=”(Division Assignment): This operator is combination of ‘/’ and ‘=’ operators. This operator first divides the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
+    - `/=`(Division Assignment): This operator is combination of `/` and `=` operators. This operator first divides the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
     - Example: 
-        - (a /= b) can be written as (a = a / b)
+        - `a /= b` can be written as `a = a / b`
 
-    - “%=”(Modulus Assignment): This operator is combination of ‘%’ and ‘=’ operators. This operator first modulo the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
+    - `%=`(Modulus Assignment): This operator is combination of `%` and `=` operators. This operator first modulo the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
     - Example: 
-        - (a %= b) can be written as (a = a % b)
+        - `a %= b` can be written as `a = a % b`
 
 - Unary Operators
     - Increment: 
-        - The ‘++’ operator is used to increment the value of an integer. 
-        - For example, x++.
+        - The `++` operator is used to increment the value of an integer.
+        - This is equivalent to `x=x+1`
+        - For example, `x++`
     - Decrement: 
-        - The ‘- -‘ operator is used to decrement the value of an integer. 
-        - For example, x- –.
+        - The `--` operator is used to decrement the value of an integer.
+        - This is equivalent to `x=x-1` 
+        - For example, `x--`.
 - Ternary Operators is a shorthand version of if-else statement. 
     - It has three operands and hence the name ternary. 
     - It will return one of two values depending on the value of a Boolean expression. 
     - Syntax:
         `condition ? first_expression : second_expression;`
-    - Eg.  c = a>b?a:b; 
+    - Eg.  `c = a>b?a:b;` 
     Here, C will take on the value of the larger variable.
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/c-sharp-operators)
