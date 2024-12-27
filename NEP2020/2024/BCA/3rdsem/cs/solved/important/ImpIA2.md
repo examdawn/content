@@ -1,6 +1,6 @@
 # C#/Dotnet
-## Important Questions, Internal Assessment 2
-### Q1. Explain the If-Else statement in VB.NET and Give one example
+# Important Questions, Internal Assessment 2
+## Q1. Explain the If-Else statement in VB.NET and Give one example
 If-Else, also known as If-Then-Else statements are used for basic conditional logic.
 - It conditionally executes a group of statements, depending on the value of an expression.
 
@@ -28,10 +28,10 @@ End If
 ```
 
 [Official Microsoft Docs](https://learn.microsoft.com/en-us/dotnet/visual-basic/language-reference/statements/if-then-else-statement)
-### Q2. What is the purpose of Time control? 
+## Q2. What is the purpose of Time control? 
 The timer control is a looping control used to repeat any task in a given time interval. It is an important control used in Client-side and Server-side programming, also in Windows Services. It is used to execute an application after a specific amount of time. Once the timer is enabled, it generates a tick event handler to perform any defined task in its time interval property. [[1](https://www.javatpoint.com/vb-net-timer-control)]
 
-### Q3. What is the use of Track bar control in VB.NET?
+## Q3. What is the use of Track bar control in VB.NET?
 The Windows Forms TrackBar control (also sometimes called a "slider" control) is used for navigating through a large amount of information or for visually adjusting a numeric setting. 
 - The TrackBar control has two parts: the thumb, also known as a slider, and the tick marks. 
     - The thumb is the part that can be adjusted. 
@@ -44,7 +44,7 @@ The Windows Forms TrackBar control (also sometimes called a "slider" control) is
 
 [Official Microsoft Docs](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/trackbar-control-overview-windows-forms)
 
-### Q4. Write any two advantages of ADO.NET
+## Q4. Write any two advantages of ADO.NET
 ADO.NET(Active Data Objects .NET) is the database access framework used to connect to data sources like MS SQL Server, Microsoft Access, Oracle SQL, MySQL/MariaDB, SQLite, direct XML, etc
 
 ADO.NET has many features like:
@@ -58,7 +58,7 @@ ADO.NET has many features like:
     - It encourages programmers to use limited resources and allow concurrent use by design
 
 [(GeeksForGeeks)](https://www.geeksforgeeks.org/introduction-to-ado-net/)
-### Q5. Explain looping statements in VB.NET
+## Q5. Explain looping statements in VB.NET
 In Visual Basic, loop statements are used to run code repeatedly while the condition is maintained.
 
 There are 4 types of Loops:
@@ -134,7 +134,7 @@ There are 4 types of Loops:
         ```
 
 [Official Microsoft Docs](https://learn.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/control-flow/loop-structures)
-### Q6. Write the difference between ADO and ADO.NET
+## Q6. Write the difference between ADO and ADO.NET
  | ADO | ADO.NET |
  |---| --- |
 | It is based on COM (Component Object Modelling). | It is a CLR (Common Language Runtime) based library. |
@@ -149,7 +149,7 @@ There are 4 types of Loops:
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/difference-between-ado-and-ado-net/)
 
-### Q7. Explain about combo box control and picture box control with an example
+## Q7. Explain about combo box control and picture box control with an example
 - **ComboBox control** - is used to display more than one item in a drop-down list. It is a combination of Listbox and Textbox in which the user can input only one item. Furthermore, it also allows a user to select an item from a drop-down list. [[1](https://www.javatpoint.com/vb-net-combobox-control)]
     
     ```VB.NET
@@ -172,9 +172,9 @@ There are 4 types of Loops:
     ```VB.NET
     TODO
     ```
-### Q8. Explain Data reader and Data adapter in ADO.NET
+## Q8. Explain Data reader and Data adapter in ADO.NET
 
-#### DataReader
+## DataReader
 `DataReader` is a forward-only, read-only cursor used to retrieve a stream of data from a database. 
 - It is designed for high performance and is ideal for scenarios where you need to read data quickly and efficiently.
 - Key Features:
@@ -188,7 +188,7 @@ There are 4 types of Loops:
     - ***Lightweight***:
         - Since it uses less memory and resources compared to other data retrieval methods, it is faster and more efficient for large datasets.
 ---
-#### DataAdapter
+## DataAdapter
 `DataAdapter` serves as a bridge between a DataSet and a data source. 
 - It is used to fill a DataSet with data and to update the data source with changes made in the DataSet. 
 - It provides a more flexible way to work with data compared to `DataReader`.
@@ -204,9 +204,9 @@ There are 4 types of Loops:
     - ***DataSet Integration***: 
         - The `DataAdapter` works with DataSet, allowing you to store data in memory and manipulate it without needing to constantly connect to the database.
 
-### Q9. Explain any 4 tools and its properties from toolbox of VB.NET
+## Q9. Explain any 4 tools and its properties from toolbox of VB.NET
 
-#### 1. TextBox
+## 1. TextBox
 **Description**: A `TextBox` control allows users to input and edit text. It is commonly used for forms where user input is required.
 
 **Properties**:
@@ -219,7 +219,7 @@ There are 4 types of Loops:
 
 ---
 
-#### 2. ComboBox
+## 2. ComboBox
 **Description**: A `ComboBox` combines a drop-down list with an editable text box, allowing users to either select an item from a list or enter a custom value.
 
 **Properties**:
@@ -232,7 +232,7 @@ There are 4 types of Loops:
 
 ---
 
-#### 3. ListBox
+## 3. ListBox
 **Description**: A `ListBox` displays a list of items from which the user can select one or more items. It is useful for presenting a collection of options.
 
 **Properties**:
@@ -245,7 +245,7 @@ There are 4 types of Loops:
 
 ---
 
-#### 4. PictureBox
+## 4. PictureBox
 **Description**: A `PictureBox` control is used to display images in a Windows Forms application. It can show bitmaps, icons, or other types of images.
 
 **Properties**:
@@ -256,7 +256,7 @@ There are 4 types of Loops:
 
 **Practical Use**: A `PictureBox` is commonly used in applications that require image display, such as a photo viewer or an application that showcases product images. For instance, in a gallery application, each `PictureBox` can display a different image, allowing users to browse through a collection.
 
-### Q10. Explain subroutine and functions with the help of example
+## Q10. Explain subroutine and functions with the help of example
 | Parameters | Sub Procedures | Functions |
 |------------|----------------|-----------|
 | 1          | A subprocedure is not associated with an event. | A function is also not associated with an event. |
@@ -298,23 +298,23 @@ There are 4 types of Loops:
     End Class
     ````
 
-### Q11. Explain the architecture of ADO.NET
+## Q11. Explain the architecture of ADO.NET
 ADO.NET has two main components that are used for accessing and manipulating data are the .NET Framework data provider and the DataSet. [[1](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-architecture)]
 - **.NET Framework data provider** - These are the components that are designed for data manipulation and fast access to data. It provides various objects such as Connection, Command, DataReader and DataAdapter that are used to perform database operations. 
 - **DataSet** - It is used to access data independently from any data resource. DataSet contains a collection of one or more DataTable objects of data.  [[2](https://www.javatpoint.com/ado-net-introduction)]
 
-### Q12. What is Data set and Data Provider? 
+## Q12. What is Data set and Data Provider? 
 - Already Answered
 
-### Q13. What is docking and undocking in visual studio?
+## Q13. What is docking and undocking in visual studio?
 Docking and undocking in Visual Studio for Windows Forms refers to the ability to arrange controls within a form. Docking allows a control to attach itself to one of the edges of its parent container, automatically resizing to fill the available space. This is useful for creating layouts that adapt to different form sizes and orientations. Undocking, on the other hand, allows a control to be separated from its parent container, enabling it to float freely or be moved to another location, such as a different monitor. [[1](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-9.0)]
 
-### Q14. Explain Task bar and Progress bar controls of VB.NET
+## Q14. Explain Task bar and Progress bar controls of VB.NET
 - **Progress Bar** - It represents a Windows progress bar control. It is used to provide visual feedback to your users about the status of some task. It shows a bar that fills in from left to right as the operation progresses. Similar to what we all seen when downloading or sharing any content.
 
 - **Taskbar** - TODO
 
-### Q15. Explain the steps to create a simple form using VB.NET
+## Q15. Explain the steps to create a simple form using VB.NET
 To create a Visual Basic application project. The project type comes with all the template files that you need.
 - Step 1: Open Visual Studio.
 - Step 2: On the start window, choose Create a new project.
@@ -335,10 +335,10 @@ To create a Visual Basic application project. The project type comes with all th
       ```
 - Step 7: Now your application is ready to build and run.
 - Step 8: Select Start to run the application. [It will handle both the building and running by itself.]  [[1](https://learn.microsoft.com/en-us/visualstudio/ide/create-a-visual-basic-winform-in-visual-studio?view=vs-2022)]
-### Q16. Explain VB.NET Conditional and looping statements with a suitable example
+## Q16. Explain VB.NET Conditional and looping statements with a suitable example
 
 
-### Q17. Explain Exception Handling in C# with example syntax
+## Q17. Explain Exception Handling in C# with example syntax
 An exception is a problem that arises during the execution of a program. A C# exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero. Exceptions provide a way to transfer control from one part of a program to another. C# exception handling is built upon four keywords: try, catch, finally, and throw.
 - **try** − A try block identifies a block of code for which particular exceptions is activated. It is followed by one or more catch blocks.
 - **catch** − A program catches an exception with an exception handler at the place in a program where you want to handle the problem. The catch keyword indicates the catching of an exception.

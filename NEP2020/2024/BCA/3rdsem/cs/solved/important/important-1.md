@@ -1,10 +1,10 @@
 # Important Questions 1 - C# and Dotnet Tools
 
-## Same Questions as Assignment 1
+# Same Questions as Assignment 1
 
 21,17,11,9,7,16 are exempted.
 
-### Q1.List some popular client scripting languages and explain them.
+## Q1.List some popular client scripting languages and explain them.
 
 Client side scripting languages are programming languages where the heavy processing happens client side, usually on the client application or on the web browser itself. Here are some client side scripting languages:
 - HTML
@@ -21,7 +21,7 @@ Client side scripting languages are programming languages where the heavy proces
     - Using React Native, we can even develop Android/iOS apps
 
 [Crampete](https://www.crampete.com/blogs/client-side-scripting-top-languages-to-learn/)
-### Q2.What is ".NET Framework"?
+## Q2.What is ".NET Framework"?
 The .NET Framework is a software framework created by Microsoft for development of Windows Apps.
 
 This provides a set of libraries, tools, and a runtime environment to build apps with programming languages like C#, F#, Visual Basic, etc. With some effort, you can compile to various targets like Windows Desktop, Linux(x11/xWayland), Mac, web, mobile, and even build games using Godot(C# through mono), Unity(C#, Only for scripting), 
@@ -29,7 +29,7 @@ This provides a set of libraries, tools, and a runtime environment to build apps
 - [Wikipedia](https://en.wikipedia.org/wiki/.NET_Framework)
 - [GeeksForGeeks](https://www.geeksforgeeks.org/introduction-to-net-framework/)
 
-### Q3.What is "VB.NET"?
+## Q3.What is "VB.NET"?
 Visual Basic(previously known as VisualBasic.NET(VB.NET)) is an object oriented language for .NET, .NET Framewowrk and Mono
 
 It is a successor to VB6 from .NET framework, and it supports OOP concepts like abstraction, encapsulation, inheritance, polymorphism. This means that everything in the language is an object.
@@ -39,7 +39,7 @@ It is not a case sensitive language, and is used to quickly develop a full objec
 - [JavaTPoint](https://www.javatpoint.com/vb-net)
 - [TutorialsPoint](https://www.tutorialspoint.com/vb.net/index.htm)
 - [Wikipedia](https://en.wikipedia.org/wiki/Visual_Basic_(.NET))
-### Q4.Explain web technologies with examples
+## Q4.Explain web technologies with examples
 Web technology is used to describe all the different things people use to make websites and web-based applications. 
 - This includes software and hardware tools, programming languages, and standards needed to create and run web apps on the internet. 
 - Web technology comprises many areas, including web design, web development, web servers, web browsers, e-commerce, and content management systems.
@@ -62,9 +62,9 @@ We can simplify this into these classifications of Web Technology:
 
 - [GeeksForGeeks](https://www.geeksforgeeks.org/backend-technologies/)
 - [Naukri](https://www.naukri.com/code360/library/complete-introduction-to-web-technology)
-### Q5.Explain the advantages and disadvantages of client side and server-side technologies
+## Q5.Explain the advantages and disadvantages of client side and server-side technologies
 
-#### Pros and Cons of Client-Side Scripting
+## Pros and Cons of Client-Side Scripting
 
 - Pros:
     - Fast response time, as no server communication is needed.
@@ -73,7 +73,7 @@ We can simplify this into these classifications of Web Technology:
     - Security risks, as the code can be seen and altered by users.
     - May behave differently in different browsers.
 
-#### Pros and Cons of Server-Side Scripting
+## Pros and Cons of Server-Side Scripting
 
 - Pros:
     - More secure, as the code is not exposed to clients.
@@ -84,7 +84,7 @@ We can simplify this into these classifications of Web Technology:
     - Places more load on the server.
 
 - [Naukri](https://www.naukri.com/code360/library/difference-between-client-side-scripting-and-server-side-scripting)
-### Q6.Explain C# Tokens with one example for each
+## Q6.Explain C# Tokens with one example for each
 A c# program is basically collection of tokens.
 
 There are five tokens in C#.
@@ -117,7 +117,7 @@ There are five tokens in C#.
 [MSDotnet.co.in](https://www.msdotnet.co.in/2013/06/tokens-in-c.html)
 
 
-### Q8.Define Inheritance and write its types with neat diagram and explain one program
+## Q8.Define Inheritance and write its types with neat diagram and explain one program
 Inheritance is an OOP Concept where we define a class based on another class while bringing over the properties and more from the previous class.
 
 In C#, there are 4 types of inheritance:
@@ -197,7 +197,7 @@ graph TD;
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/c-sharp-inheritance/)
 
-### Q10.List the data types of C# programming
+## Q10.List the data types of C# programming
 | Data Type | Size | Description |
 |--|--|--|
 | int| 4 bytes | Stores whole numbers from -2,147,483,648 to 2,147,483,647|
@@ -209,7 +209,7 @@ graph TD;
 | string | 2 bytes per character | Stores a sequence of characters, surrounded by double quotes|
 
 [Geeks For Geeks](https://www.w3schools.com/cs/cs_data_types.php) 
-### Q12.Explain types of operators with an example of each
+## Q12.Explain types of operators with an example of each
 Operators are tokens we use to perform operations with one, two or more operands. Types of Operators are:
 - Arithmetic Operators
     - Addition: The `+` operator adds two operands. 
@@ -303,8 +303,8 @@ Operators are tokens we use to perform operations with one, two or more operands
     Here, C will take on the value of the larger variable.
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/c-sharp-operators)
-### Q13. What is the Difference between client side and server-side programming?
-#### Server-side Programming :
+## Q13. What is the Difference between client side and server-side programming?
+## Server-side Programming :
 
 It is the program that runs on server dealing with the generation of content of web page.
 1) Querying the database
@@ -314,7 +314,7 @@ It is the program that runs on server dealing with the generation of content of 
 5) Structure web applications.
 6) Process user input. For example if user input is a text in search box, run a search algorithm on data stored on server and send the results.
 
-#### Client-side Programming :
+## Client-side Programming :
 
 It is the program that runs on the client machine (browser) and deals with the user interface/display and any other processing that can happen on client machine like reading/writing cookies.
 
@@ -326,7 +326,7 @@ It is the program that runs on the client machine (browser) and deals with the u
 6) work as an interface between server and user
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/server-side-client-side-programming/)
-### Q14.List the features of C# and explain them
+## Q14.List the features of C# and explain them
 
 Here are some features of C#:
 1) Simple
@@ -351,7 +351,7 @@ Here are some features of C#:
     - The compilation and execution time of C# language is fast.
 
 [JavaTPoint](https://www.javatpoint.com/csharp-features)
-### Q15.List the features of VB.NET and explain them
+## Q15.List the features of VB.NET and explain them
 Visual Basic is a high-level programming language with many features to develop a secure and robust application. 
 
 - Here are some features:
@@ -371,7 +371,7 @@ Visual Basic is a high-level programming language with many features to develop 
     - It is useful to develop web, window, and mobile applications.
 
 [JavaTPoint](https://www.javatpoint.com/vb-net)
-### Q18.Define try and catch block with an example program
+## Q18.Define try and catch block with an example program
 When executing C# code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.
 
 When an error occurs, C# will normally stop and generate an error message which means C# will throw an exception (throw an error).
@@ -417,7 +417,7 @@ Output:
 > Index was outside the bounds of the array. 
 
 [W3Schools](https://www.w3schools.com/cs/cs_exceptions.php)
-### Q19.Explain different types of arrays in c#
+## Q19.Explain different types of arrays in c#
 There are three types of arrays in C#, which are
 - Single-dimensional Array
     - a single-dimensional array is a data structure that stores elements of the same data type in a linear sequence. 
@@ -450,7 +450,7 @@ There are three types of arrays in C#, which are
         ```
 
 [ScholarHat](https://www.scholarhat.com/tutorial/csharp/types-of-array-in-csharp)
-### Q20.Explain Mutable and Immutable strings in c#
+## Q20.Explain Mutable and Immutable strings in c#
 
 > Mutable and immutable are English words that mean "can change" and "cannot change" respectively. 
 
@@ -458,15 +458,15 @@ That means the mutable types are those whose data members can be changed after t
 
 When we change the value of mutable objects, value is changed in same memory. But in immutable type, the new memory is created and the modified value is stored in new memory.
 
-#### String
+## String
 
 Strings are immutable, which means we are creating new memory every time instead of working on existing memory.
 
-#### StringBuilder
+## StringBuilder
 
 StringBuilder is a mutable type, that means we are using the same memory location and keep on appending/modifying the stuff to one instance. It will not create any further instances hence it will not decrease the performance of the application.
 
 [C-SharpCorner](https://www.c-sharpcorner.com/article/mutable-and-immutable-class-in-c-sharp/)
 
-## Source:
+# Source:
 - Questions - given by faculty
