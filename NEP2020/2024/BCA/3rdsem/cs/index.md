@@ -17,7 +17,8 @@ Others:
     - [Part A](PartA.md)
     - [Part B](PartB.md)
 - Assignments
-    - [Assignment 1(Due 04/Nov/2024)](assignments/assignment1.md)
+    - [Assignment 1(Due 04/Nov/2024)](solved/important/important-1.md)
+    - [Assignment 2(Due 04/Dec/2024)](solved/important/ImpIA2.md)
 
 Source:
 [Syllabus for NEP 2020](https://drive.google.com/file/d/1fArLbfdmMvhREDAw85i2_LrAMqCVwdG_/view)
