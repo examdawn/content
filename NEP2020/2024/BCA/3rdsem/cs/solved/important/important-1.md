@@ -1,8 +1,8 @@
 # Important Questions 1 - C# and Dotnet Tools
 
-# Same Questions as Assignment 1
+Same Questions as Assignment 1
 
-21,17,11,9,7,16 are exempted.
+<!--21,17,11,9,7,16 are exempted.-->
 
 ## Q1.List some popular client scripting languages and explain them.
 
@@ -64,7 +64,7 @@ We can simplify this into these classifications of Web Technology:
 - [Naukri](https://www.naukri.com/code360/library/complete-introduction-to-web-technology)
 ## Q5.Explain the advantages and disadvantages of client side and server-side technologies
 
-## Pros and Cons of Client-Side Scripting
+#### Pros and Cons of Client-Side Scripting
 
 - Pros:
     - Fast response time, as no server communication is needed.
@@ -73,7 +73,7 @@ We can simplify this into these classifications of Web Technology:
     - Security risks, as the code can be seen and altered by users.
     - May behave differently in different browsers.
 
-## Pros and Cons of Server-Side Scripting
+#### Pros and Cons of Server-Side Scripting
 
 - Pros:
     - More secure, as the code is not exposed to clients.
@@ -90,10 +90,10 @@ A c# program is basically collection of tokens.
 There are five tokens in C#.
 - Keywords
     - These are reserved words which are saved for existing things by the language.
-    - Example: event, extern, null, etc
+    - Example: `event`, `extern`, `null`, etc
 - Identifiers
     - Identifier is a name that we give to objects, classes, methods, variables, etc to identify them.
-    - Example: hello, a, b, variable1, etc
+    - Example: `hello`, `a`, `b`, `variable1`, etc
 - Literals
     - Literals are how values in a variable are shown. 
     - Types:
@@ -107,15 +107,17 @@ There are five tokens in C#.
         - Example: true is a boolean literal
 - operators
     - Operators are symbols used to describe operations between one or more operands
-    - Example: + for addition
+    - Example: `+` for addition
 - punctuators.
     - These are used to seperate, group and format the code.
     - They help in defining the shape of the program
     - Also Known as Seperators
-    - Example: ; (semicolon)
+    - Example: `;` (semicolon)
 
 [MSDotnet.co.in](https://www.msdotnet.co.in/2013/06/tokens-in-c.html)
 
+## Q7. Explain the OOP Concept in C#
+TODO: Solve
 
 ## Q8.Define Inheritance and write its types with neat diagram and explain one program
 Inheritance is an OOP Concept where we define a class based on another class while bringing over the properties and more from the previous class.
@@ -197,6 +199,10 @@ graph TD;
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/c-sharp-inheritance/)
 
+## Q9. Explain control structures with syntax and flow chart in C#
+TODO: Solve
+
+<!-- if, if else, if else if, switch, etc -->
 ## Q10.List the data types of C# programming
 | Data Type | Size | Description |
 |--|--|--|
@@ -209,6 +215,10 @@ graph TD;
 | string | 2 bytes per character | Stores a sequence of characters, surrounded by double quotes|
 
 [Geeks For Geeks](https://www.w3schools.com/cs/cs_data_types.php) 
+
+## Q11. Explain the different types of lists tags with example program
+TODO: Solve
+
 ## Q12.Explain types of operators with an example of each
 Operators are tokens we use to perform operations with one, two or more operands. Types of Operators are:
 - Arithmetic Operators
@@ -304,7 +314,7 @@ Operators are tokens we use to perform operations with one, two or more operands
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/c-sharp-operators)
 ## Q13. What is the Difference between client side and server-side programming?
-## Server-side Programming :
+#### Server-side Programming :
 
 It is the program that runs on server dealing with the generation of content of web page.
 1) Querying the database
@@ -314,7 +324,7 @@ It is the program that runs on server dealing with the generation of content of 
 5) Structure web applications.
 6) Process user input. For example if user input is a text in search box, run a search algorithm on data stored on server and send the results.
 
-## Client-side Programming :
+#### Client-side Programming :
 
 It is the program that runs on the client machine (browser) and deals with the user interface/display and any other processing that can happen on client machine like reading/writing cookies.
 
@@ -371,6 +381,13 @@ Visual Basic is a high-level programming language with many features to develop 
     - It is useful to develop web, window, and mobile applications.
 
 [JavaTPoint](https://www.javatpoint.com/vb-net)
+
+## Q16. Write a basic structure of an HTML program
+TODO: Solve
+
+## Q17. List the different types of languages supported in .NET Framework
+TODO: Solve
+
 ## Q18.Define try and catch block with an example program
 When executing C# code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.
 
@@ -458,15 +475,17 @@ That means the mutable types are those whose data members can be changed after t
 
 When we change the value of mutable objects, value is changed in same memory. But in immutable type, the new memory is created and the modified value is stored in new memory.
 
-## String
+#### String
 
 Strings are immutable, which means we are creating new memory every time instead of working on existing memory.
 
-## StringBuilder
+#### StringBuilder
 
 StringBuilder is a mutable type, that means we are using the same memory location and keep on appending/modifying the stuff to one instance. It will not create any further instances hence it will not decrease the performance of the application.
 
 [C-SharpCorner](https://www.c-sharpcorner.com/article/mutable-and-immutable-class-in-c-sharp/)
 
+## Q21. Explain about Interfaces 
+TODO: Solve
 # Source:
 - Questions - given by faculty
