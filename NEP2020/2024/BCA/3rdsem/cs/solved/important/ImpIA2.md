@@ -174,7 +174,7 @@ There are 4 types of Loops:
     ```
 ## Q8. Explain Data reader and Data adapter in ADO.NET
 
-## DataReader
+#### DataReader
 `DataReader` is a forward-only, read-only cursor used to retrieve a stream of data from a database. 
 - It is designed for high performance and is ideal for scenarios where you need to read data quickly and efficiently.
 - Key Features:
@@ -188,7 +188,7 @@ There are 4 types of Loops:
     - ***Lightweight***:
         - Since it uses less memory and resources compared to other data retrieval methods, it is faster and more efficient for large datasets.
 ---
-## DataAdapter
+#### DataAdapter
 `DataAdapter` serves as a bridge between a DataSet and a data source. 
 - It is used to fill a DataSet with data and to update the data source with changes made in the DataSet. 
 - It provides a more flexible way to work with data compared to `DataReader`.
@@ -206,7 +206,7 @@ There are 4 types of Loops:
 
 ## Q9. Explain any 4 tools and its properties from toolbox of VB.NET
 
-## 1. TextBox
+#### 1. TextBox
 **Description**: A `TextBox` control allows users to input and edit text. It is commonly used for forms where user input is required.
 
 **Properties**:
@@ -219,7 +219,7 @@ There are 4 types of Loops:
 
 ---
 
-## 2. ComboBox
+#### 2. ComboBox
 **Description**: A `ComboBox` combines a drop-down list with an editable text box, allowing users to either select an item from a list or enter a custom value.
 
 **Properties**:
@@ -232,7 +232,7 @@ There are 4 types of Loops:
 
 ---
 
-## 3. ListBox
+#### 3. ListBox
 **Description**: A `ListBox` displays a list of items from which the user can select one or more items. It is useful for presenting a collection of options.
 
 **Properties**:
@@ -245,7 +245,7 @@ There are 4 types of Loops:
 
 ---
 
-## 4. PictureBox
+#### 4. PictureBox
 **Description**: A `PictureBox` control is used to display images in a Windows Forms application. It can show bitmaps, icons, or other types of images.
 
 **Properties**:
@@ -336,7 +336,7 @@ To create a Visual Basic application project. The project type comes with all th
 - Step 7: Now your application is ready to build and run.
 - Step 8: Select Start to run the application. [It will handle both the building and running by itself.]  [[1](https://learn.microsoft.com/en-us/visualstudio/ide/create-a-visual-basic-winform-in-visual-studio?view=vs-2022)]
 ## Q16. Explain VB.NET Conditional and looping statements with a suitable example
-
+TODO
 
 ## Q17. Explain Exception Handling in C# with example syntax
 An exception is a problem that arises during the execution of a program. A C# exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero. Exceptions provide a way to transfer control from one part of a program to another. C# exception handling is built upon four keywords: try, catch, finally, and throw.
