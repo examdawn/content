@@ -214,11 +214,62 @@ TODO: Solve
 | char | 2 bytes | Stores a single character/letter, surrounded by single quotes|
 | string | 2 bytes per character | Stores a sequence of characters, surrounded by double quotes|
 
-[Geeks For Geeks](https://www.w3schools.com/cs/cs_data_types.php) 
+[GeeksForGeeks](https://www.w3schools.com/cs/cs_data_types.php) 
 
-## Q11. Explain the different types of lists tags with example program
-TODO: Solve
+## Q11. Explain the different types of lists tags with examples
+Lists (`<ul>`, `<ol>`, `<li>`): 
+    - Lists allow you to organize items in bullet points (`<ul>`) or numbered order (`<ol>`). Each item within a list is wrapped in `<li>` tags.
 
+There are three types of lists in HTML
+- Unordered list or Bulleted list (ul)
+    - Here, the list just shows up as bulleted points
+    - Example:
+        ```HTML
+        <ul>
+           <li>Apple</li>
+           <li>Mango</li>
+           <li>Banana</li>
+           <li>Grapes</li>
+           <li>Orange</li>
+        </ul>
+        ```
+- Ordered list or Numbered list (ol)
+    - Here, the list shows up as numbered entries. You can also have roman numerals by using `<ol type="i">` 
+    - Example:
+        ```HTML
+        <ol>
+           <li>Apple</li>
+           <li>Mango</li>
+           <li>Banana</li>
+           <li>Grapes</li>
+           <li>Orange</li>
+        </ol>
+        ```
+- Description list or Definition list (dl)
+    - You can use a description list to display items like a glossary. You will need the following HTML tags to create a description list:
+        - `<dl>` (Definition list) tag 
+            - Start tag of the definition list
+        - `<dt>` (Definition Term) tag 
+            - It specifies a term (name)
+        - `<dd>` tag (Definition Description) 
+            - Specifies the term definition
+        - `</dl>` tag (Definition list)
+            - Closing tag of the definition list
+    - Example:
+        ```HTML
+        <dl>
+           <dt><b>Apple</b></dt>
+           <dd>A red colored fruit</dd>
+           <dt><b>Honda</b></dt>
+           <dd>A brand of a car</dd>
+           <dt><b>Spinach</b></dt>
+           <dd>A green leafy vegetable</dd>
+        </dl>
+        ```
+
+[Shiksha](https://www.shiksha.com/online-courses/articles/html-lists-ordered-unordered-lists-with-examples/)
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/html-course-structure-of-an-html-document/)
 ## Q12.Explain types of operators with an example of each
 Operators are tokens we use to perform operations with one, two or more operands. Types of Operators are:
 - Arithmetic Operators
@@ -383,11 +434,55 @@ Visual Basic is a high-level programming language with many features to develop 
 [JavaTPoint](https://www.javatpoint.com/vb-net)
 
 ## Q16. Write a basic structure of an HTML program
-TODO: Solve
+HTML documents are text files that contains structured code which tells browsers how to display a webpage.
+- These documents are made up of HTML tags which define elements like headers, paragraphs, images, links, and more.
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <title>Structure of HTML Document</title>
+</head>
+
+<body>
+    <!-- Main content of website -->
+    <h1>BCA-Students</h1>
+    <p>A one-stop place for solved questions</p>
+</body>
+
+</html>
+```
+
+As we can see, the document has the following elements:
+- `<!DOCTYPE HTML>`: 
+    - The `<!DOCTYPE html>` declaration is placed at the beginning of the document. 
+    - It tells the browser that the document follows HTML5 standards, ensuring consistent rendering across browsers.
+- `<html>` Tag: 
+    - The `<html>` tag wraps the entire document, serving as the root element of an HTML page. 
+    - It typically includes the lang attribute to specify the language of the content.
+- `<head>` Section: 
+    - The `<head>` section contains metadata, scripts, styles, and other information not displayed directly on the page but essential for functionality and SEO.
+- `<body>` Section: 
+    - The `<body>` section contains all the visible content of the web page, including text, images, videos, links, and more. 
+    - This is where you’ll add the main elements to display on the page.
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/html-course-structure-of-an-html-document/)
 
 ## Q17. List the different types of languages supported in .NET Framework
-TODO: Solve
+Popular .NET Programming Languages are:
+- C#
+    - C# (pronounced "C sharp") is a simple, modern, object-oriented, and type-safe programming language.
+    - Its roots in the C family of languages makes C# immediately familiar to C, C++, Java, and JavaScript programmers.
+- F#
+    - F# (pronounced "F sharp") is a programming language that makes it easy to write brief, robust, and performant code.
+- Visual Basic
+    - Visual Basic is an approachable language with a simple syntax for building type-safe, object-oriented apps.
 
+[Microsoft](https://dotnet.microsoft.com/en-us/languages)
 ## Q18.Define try and catch block with an example program
 When executing C# code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.
 
