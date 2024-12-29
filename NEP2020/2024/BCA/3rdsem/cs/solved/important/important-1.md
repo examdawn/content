@@ -217,9 +217,9 @@ Use the `if` statement to specify a block of C# code to be executed if a conditi
 
 ```mermaid
 graph TD
-    A(([Start])) --> B{Condition}
+    A([Start]) --> B{Condition}
     B -- Yes --> C[Execute Code Block]
-    B -- No --> D((([End])))
+    B -- No --> D([End])
     C --> D
 ```
 
