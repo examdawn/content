@@ -217,9 +217,9 @@ Use the `if` statement to specify a block of C# code to be executed if a conditi
 
 ```mermaid
 graph TD
-    A[Start] --> B{Condition}
+    A(([Start])) --> B{Condition}
     B -- Yes --> C[Execute Code Block]
-    B -- No --> D[End]
+    B -- No --> D((([End])))
     C --> D
 ```
 
@@ -244,10 +244,10 @@ Use the `else` statement to specify a block of code to be executed if the condit
 
 ```mermaid
 graph TD
-    A[Start] --> B{Condition}
+    A([Start]) --> B{Condition}
     B -- Yes --> C[Execute Code Block]
     B -- No --> D[Execute Else Block]
-    C --> E[End]
+    C --> E([End])
     D --> E
 ```
 
@@ -283,12 +283,12 @@ Use the `else if` statement to specify a new condition if the first condition is
 
 ```mermaid
 graph TD
-    A[Start] --> B{Condition 1}
+    A([Start]) --> B{Condition 1}
     B -- Yes --> C[Execute Code Block 1]
     B -- No --> D{Condition 2}
     D -- Yes --> E[Execute Code Block 2]
     D -- No --> F[Execute Else Block]
-    C --> G[End]
+    C --> G([End])
     E --> G
     F --> G
 ```
@@ -329,14 +329,14 @@ Use the `switch` statement to select one of many code blocks to be executed.
 
 ```mermaid
 graph TD
-    A[Start] --> B[Evaluate Expression]
+    A([Start]) --> B[Evaluate Expression]
     B --> C{Case 1}
-    C -- Match --> D[Execute Case 1 Code]
+    C -- Match --> D[Execute Case 1 Block]
     C -- No Match --> E{Case 2}
-    E -- Match --> F[Execute Case 2 Code]
+    E -- Match --> F[Execute Case 2 Block]
     E -- No Match --> G{Default Case}
-    G -- Execute --> H[Execute Default Code]
-    D --> I[End]
+    G -- Execute --> H[Execute Default Block]
+    D --> I([End])
     F --> I
     H --> I
 ```
