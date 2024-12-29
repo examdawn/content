@@ -353,9 +353,9 @@ To create a Visual Basic application project. The project type comes with all th
 - Step 7: Now your application is ready to build and run.
 - Step 8: Select Start to run the application. [It will handle both the building and running by itself.]  [[1](https://learn.microsoft.com/en-us/visualstudio/ide/create-a-visual-basic-winform-in-visual-studio?view=vs-2022)]
 ## Q16. Explain VB.NET Conditional and looping statements with a suitable example
-(Conditional Statements are already answered in Q1.)[#q1-explain-the-if-else-statement-in-vb-net-and-give-one-example]
+[Conditional Statements are already answered in Q1.](#q1-explain-the-if-else-statement-in-vb-net-and-give-one-example)
 
-(Looping Statements are already answered in Q5.)[#q5-explain-looping-statements-in-vb-net]
+[Looping Statements are already answered in Q5.](#q5-explain-looping-statements-in-vb-net)
 
 TODO: Give an example
 
