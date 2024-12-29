@@ -152,7 +152,7 @@ There are 4 types of Loops:
 ## Q7. Explain about combo box control and picture box control with an example
 - **ComboBox control** - is used to display more than one item in a drop-down list. It is a combination of Listbox and Textbox in which the user can input only one item. Furthermore, it also allows a user to select an item from a drop-down list. [[1](https://www.javatpoint.com/vb-net-combobox-control)]
     
-    ```VB.NET
+    ```VB
     Imports System.Windows.Forms
         Public Class Form1
             Private Sub Form1(sender As Object, e As EventArgs) Handles Me.Load
@@ -169,7 +169,7 @@ There are 4 types of Loops:
 
 - **PictureBox control** - is used to display the images on Windows Form. The PictureBox control has an image property that allows the user to set the image at runtime or design time.  [[1](https://www.javatpoint.com/vb-net-picturebox-control)]
     
-    ```VB.NET
+    ```VB
         Public Class Picturebx  
         Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  
             'Dim Str As String = "C:\Users\AMIT YADAV\Desktop\"  
@@ -287,7 +287,7 @@ There are 4 types of Loops:
 [[1](https://www.geeksforgeeks.org/sub-procedure-vs-function-in-vb-net/)]
 
 - Example for Subroutine:
-    ```VB.NET
+    ```VB
     Class Program
         Sub Main()
             DisplayMessage()
@@ -300,7 +300,7 @@ There are 4 types of Loops:
     ```
 
 - Example for Function
-    ```VB.NET
+    ```VB
     Class Program
         Sub Main()
             Dim result As Integer
@@ -343,7 +343,7 @@ To create a Visual Basic application project. The project type comes with all th
     - Select the Button control and then drag it onto the form.
     - In the Properties window, change the text from Button1 to Submit, and then press Enter.
 - Step 6: Now add the code by double clicking the button control.
-    - ```VB.NET
+    - ```VB
         Public Class Form1
             Private Sub Button1(sender As Object, e As EventArgs) Handles Button1.Click
                 label1.Text = "Hello World!"
@@ -352,12 +352,41 @@ To create a Visual Basic application project. The project type comes with all th
       ```
 - Step 7: Now your application is ready to build and run.
 - Step 8: Select Start to run the application. [It will handle both the building and running by itself.]  [[1](https://learn.microsoft.com/en-us/visualstudio/ide/create-a-visual-basic-winform-in-visual-studio?view=vs-2022)]
+
 ## Q16. Explain VB.NET Conditional and looping statements with a suitable example
-[Conditional Statements are already answered in Q1.](#q1-explain-the-if-else-statement-in-vb-net-and-give-one-example)
-
-[Looping Statements are already answered in Q5.](#q5-explain-looping-statements-in-vb-net)
-
-TODO: Give an example
+[Conditional Statements are already answered in Q1.](#q1-explain-the-if-else-statement-in-vbnet-and-give-one-example)
+- Example for Conditional Statement
+    ```VB
+    Class Genshin
+        ' Declaration of variable str
+        Dim str As String = "Impact"
+        Sub Main()
+        ' if str equal to "Impact", below Statement will be executed.
+        If str = "Impact" Then
+            Console.WriteLine("Get Help!")
+        End If
+        Console.WritLine("press any key to TOUCH GRASS?")
+        Console.ReadKey()
+        End Sub
+    End Class
+    ```
+[Looping Statements are already answered in Q5.](#q5-explain-looping-statements-in-vbnet)
+- Example for Looping Statement
+    ```VB  
+    Class Pablo
+        Sub Main()
+            ' 'vbCrLf' is used to jump in the next line just like \n in C.
+            Console.Write(" The number starts from 1 to 10 " & vbCrLf)
+            For i As Integer = 1 To 10 Step 1
+                ' if the condition is true, the following statement will be executed
+                Console.WriteLine(" Number is {0} ", i)
+                ' after completion of each iteration, next will update the variable counter
+            Next
+            Console.WriteLine(" Press any key to BE FREEEE!")
+            Console.ReadKey()
+        End Sub
+    End Class
+    ```
 
 ## Q17. Explain Exception Handling in C# with example syntax
 An exception is a problem that arises during the execution of a program. A C# exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero. Exceptions provide a way to transfer control from one part of a program to another. C# exception handling is built upon four keywords: try, catch, finally, and throw.

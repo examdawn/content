@@ -275,7 +275,7 @@ Indexing enhances database performance by reducing the number of disk visits nee
 [GeeksforGeeks](https://www.geeksforgeeks.org/indexing-in-databases-set-1/)
 
 ## Q15. Draw an ER diagram for Bank Database with 5 entities and 5 attributes for each entity. Specify the cardinality ratio on each of the relationships existing between entities.
-TODO: Solve
+
 ## Q16. Explain different relational algebra operations.
 Relational algebra is a procedural query language, which takes instances of relations as input and yields instances of relations as output. It uses operators to perform queries. 
 
