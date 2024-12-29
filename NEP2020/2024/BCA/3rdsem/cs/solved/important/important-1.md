@@ -200,9 +200,201 @@ graph TD;
 [GeeksForGeeks](https://www.geeksforgeeks.org/c-sharp-inheritance/)
 
 ## Q9. Explain control structures with syntax and flow chart in C#
-TODO: Solve
+C# has the following conditional statements:
 
+- if:
+    - Use `if` to specify a block of code to be executed, if a specified condition is true
+- if else:
+    - Use `else` to specify a block of code to be executed, if the same condition is false
+- else if:
+    - Use `else` if to specify a new condition to test, if the first condition is false
+- switch:
+    - Use `switch` to specify many alternative blocks of code to be executed
+
+#### If statement:
+Use the `if` statement to specify a block of C# code to be executed if a condition is `True`.
+
+
+```mermaid
+graph TD
+    A[Start] --> B{Condition}
+    B -- Yes --> C[Execute Code Block]
+    B -- No --> D[End]
+    C --> D
+```
+
+Syntax:
+```C#
+if (condition) 
+{
+  // block of code to be executed if the condition is True
+}
+```
+Example:
+```C#
+if (20 > 18) 
+{
+  Console.WriteLine("20 is greater than 18");
+}
+```
+
+#### Else Statement:
+
+Use the `else` statement to specify a block of code to be executed if the condition is `False`.
+
+```mermaid
+graph TD
+    A[Start] --> B{Condition}
+    B -- Yes --> C[Execute Code Block]
+    B -- No --> D[Execute Else Block]
+    C --> E[End]
+    D --> E
+```
+
+Syntax:
+```C#
+if (condition)
+{
+  // block of code to be executed if the condition is True
+} 
+else 
+{
+  // block of code to be executed if the condition is False
+}
+```
+
+Example:
+```C#
+if (20 < 18) 
+{
+  Console.WriteLine("20 is less than 18");
+} 
+else 
+{
+  Console.WriteLine("20 is more than 18");
+}
+```
+
+Ternary Operation:
+- The shorthand for if-else is `(condition)?Result1:Result2;`
+#### Else-if Statement:
+
+Use the `else if` statement to specify a new condition if the first condition is `False` and fallback to else if that is also false.
+
+```mermaid
+graph TD
+    A[Start] --> B{Condition 1}
+    B -- Yes --> C[Execute Code Block 1]
+    B -- No --> D{Condition 2}
+    D -- Yes --> E[Execute Code Block 2]
+    D -- No --> F[Execute Else Block]
+    C --> G[End]
+    E --> G
+    F --> G
+```
+
+Syntax:
+```C#
+if (condition1)
+{
+  // block of code to be executed if condition1 is True
+} 
+else if (condition2) 
+{
+  // block of code to be executed if the condition1 is false and condition2 is True
+} 
+else
+{
+  // block of code to be executed if the condition1 is false and condition2 is False
+}
+```
+
+Example:
+```C#
+if (20 < 18) 
+{
+  Console.WriteLine("20 is less than 18");
+} 
+else if(30 < 20)
+{
+    Console.WriteLine("30 is less than 20");
+}
+else 
+{
+  Console.WriteLine("20 is more than 18");
+}
+```
+#### Switch Statement:
+Use the `switch` statement to select one of many code blocks to be executed.
+
+```mermaid
+graph TD
+    A[Start] --> B[Evaluate Expression]
+    B --> C{Case 1}
+    C -- Match --> D[Execute Case 1 Code]
+    C -- No Match --> E{Case 2}
+    E -- Match --> F[Execute Case 2 Code]
+    E -- No Match --> G{Default Case}
+    G -- Execute --> H[Execute Default Code]
+    D --> I[End]
+    F --> I
+    H --> I
+```
+
+Syntax:
+```C#
+switch(expression) 
+{
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+    break;
+}
+```
+
+Example:
+```C#
+int day = 4;
+switch (day) 
+{
+  case 1:
+    Console.WriteLine("Monday");
+    break;
+  case 2:
+    Console.WriteLine("Tuesday");
+    break;
+  case 3:
+    Console.WriteLine("Wednesday");
+    break;
+  case 4:
+    Console.WriteLine("Thursday");
+    break;
+  case 5:
+    Console.WriteLine("Friday");
+    break;
+  case 6:
+    Console.WriteLine("Saturday");
+    break;
+  case 7:
+    Console.WriteLine("Sunday");
+    break;
+}
+```
+
+The break Keyword
+- When C# reaches a `break` keyword, it breaks out of the switch block.
+
+The default Keyword
+- The `default` keyword is optional and specifies some code to run if there is no case match
+    - this can be compared to the else keyword in if-else statements
 <!-- if, if else, if else if, switch, etc -->
+
+[W3Schools](https://www.w3schools.com/cs/cs_conditions.php)
 ## Q10.List the data types of C# programming
 | Data Type | Size | Description |
 |--|--|--|
