@@ -117,8 +117,26 @@ There are five tokens in C#.
 [MSDotnet.co.in](https://www.msdotnet.co.in/2013/06/tokens-in-c.html)
 
 ## Q7. Explain the OOP Concept in C#
-TODO: Solve
+Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.
 
+Object-oriented programming has several advantages over procedural programming:
+- OOP is faster to ship and easier to execute
+- OOP provides a clear structure for the programs
+- OOP helps to keep the C# code `DRY`(Don't Repeat Yourself), and makes the code easier to maintain, modify and debug
+- OOP makes it possible to create full reusable applications with less code and shorter development time
+
+Classes and objects are the two main aspects of object-oriented programming. Look at the following illustration to see the difference between class and objects:
+| Class | Objects |
+| --- | --- |
+| fruit | apple, banana, mango |
+| car | volvo, audi, toyota |
+
+Everything in C# is associated with classes and objects, along with its attributes and methods. 
+- For example: in real life, a car is an object. 
+    - The car has attributes, such as weight and color, and methods, such as drive and brake.
+- A Class is like an object constructor
+    - a "blueprint" for creating objects.
+[W3Schools](https://www.w3schools.com/cs/cs_oop.php)
 ## Q8.Define Inheritance and write its types with neat diagram and explain one program
 Inheritance is an OOP Concept where we define a class based on another class while bringing over the properties and more from the previous class.
 
@@ -773,6 +791,56 @@ StringBuilder is a mutable type, that means we are using the same memory locatio
 [C-SharpCorner](https://www.c-sharpcorner.com/article/mutable-and-immutable-class-in-c-sharp/)
 
 ## Q21. Explain about Interfaces 
-TODO: Solve
+An interface is a completely "abstract class", which can only contain abstract methods and properties (with empty bodies)
+- By default, members of an interface are abstract and public.
+- Note: Interfaces can contain properties and methods, but not fields.
+
+
+
+It is considered good practice to start with the letter "I" at the beginning of an interface, as it makes it easier for yourself and others to remember that it is an interface and not a class.
+
+
+Eg. 
+```C#
+// interface
+interface Animal 
+{
+  void animalSound(); // interface method (does not have a body)
+  void run(); // interface method (does not have a body)
+}
+```
+
+Full Example:
+```C#
+using System;
+
+// Interface
+interface IAnimal 
+{
+  void animalSound(); // interface method (does not have a body)
+}
+
+// Pig "implements" the IAnimal interface
+class Pig : IAnimal 
+{
+  public void animalSound() 
+  {
+    // The body of animalSound() is provided here
+    Console.WriteLine("The pig says: wee wee");
+  }
+}
+
+class Program 
+{
+  static void Main(string[] args) 
+  {
+    Pig myPig = new Pig();  // Create a Pig object
+    myPig.animalSound();
+  }
+}
+```
+
+[W3Schools](https://www.w3schools.com/cs/cs_interface.php)
+
 # Source:
 - Questions - given by faculty
