@@ -170,8 +170,25 @@ There are 4 types of Loops:
 - **PictureBox control** - is used to display the images on Windows Form. The PictureBox control has an image property that allows the user to set the image at runtime or design time.  [[1](https://www.javatpoint.com/vb-net-picturebox-control)]
     
     ```VB.NET
-    TODO
+        Public Class Picturebx  
+        Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  
+            'Dim Str As String = "C:\Users\AMIT YADAV\Desktop\"  
+            PictureBox1.Image = Image.FromFile("C:\Users\AMIT YADAV\Desktop\jtp2.png")  
+            PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage  
+            PictureBox1.Height = 250  
+            PictureBox1.Width = 400  
+            Label1.Visible = False  
+        End Sub  
+        Private Sub Picturebx_Load(sender As Object, e As EventArgs) Handles MyBase.Load  
+            Me.Text = "javaTpoint.com" 'Set the title name for the form  
+            Button1.Text = "Show"  
+            Label1.Text = "Click to display the image"  
+            Label1.ForeColor = ForeColor.Green  
+        End Sub  
+    End Class  
     ```
+    
+[JavaTPoint](https://www.javatpoint.com/vb-net-picturebox-control)
 ## Q8. Explain Data reader and Data adapter in ADO.NET
 
 #### DataReader
@@ -336,7 +353,11 @@ To create a Visual Basic application project. The project type comes with all th
 - Step 7: Now your application is ready to build and run.
 - Step 8: Select Start to run the application. [It will handle both the building and running by itself.]  [[1](https://learn.microsoft.com/en-us/visualstudio/ide/create-a-visual-basic-winform-in-visual-studio?view=vs-2022)]
 ## Q16. Explain VB.NET Conditional and looping statements with a suitable example
-TODO
+(Conditional Statements are already answered in Q1.)[#q1-explain-the-if-else-statement-in-vb-net-and-give-one-example]
+
+(Looping Statements are already answered in Q5.)[#q5-explain-looping-statements-in-vb-net]
+
+TODO: Give an example
 
 ## Q17. Explain Exception Handling in C# with example syntax
 An exception is a problem that arises during the execution of a program. A C# exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero. Exceptions provide a way to transfer control from one part of a program to another. C# exception handling is built upon four keywords: try, catch, finally, and throw.
