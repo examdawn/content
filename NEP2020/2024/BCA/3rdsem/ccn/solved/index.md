@@ -9,5 +9,5 @@ Units:
 - Unit 5: The Transport Layer and Application Layer
 
 Important Qns
-- [Assignment 1](assignment1.md)
-- [Assignment 2](assignment2.md)
+- [Assignment 1](../assignments/assignment1.md)
+- [Assignment 2](../assignments/assignment2.md)
