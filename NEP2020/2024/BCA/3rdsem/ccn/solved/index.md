@@ -7,3 +7,7 @@ Units:
 - Unit 3: The Data Link Layer
 - Unit 4: The Network Layer
 - Unit 5: The Transport Layer and Application Layer
+
+Important Qns
+- [Assignment 1](assignment1.md)
+- [Assignment 2](assignment2.md)
