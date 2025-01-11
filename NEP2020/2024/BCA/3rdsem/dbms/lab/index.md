@@ -9,6 +9,8 @@ Question 9 onwards, we are using Oracle Databases since we need to use PL/SQL. I
 Question 12 was answered on [Oracle's LiveSQL](https://livesql.oracle.com/)
 Version: `Live SQL 24.1.3, running Oracle Database 19c EE Extreme Perf - 19.17.0.0.0`
 
+Program 10 and Program 12 are skipped(PL/SQL cursor and package)
+
 ## Program 1: Execute Single line Query and Group Functions.
 ###	Create a table INVENTORY with the following attributes(Item_No,Item_Name,Price).
 
@@ -707,7 +709,7 @@ END;
 
 - ✅ PL/SQL procedure successfully completed.
 
-## Program 10: Write PL/SQL procedure for an application using a cursor.
+## Program 10: Write PL/SQL procedure for an application using a cursor.(skip)
 ### Create a table BANK with the following attributes(Acno, Name,Balance).
 
 ```PL/SQL
@@ -827,7 +829,7 @@ maximum price=50000
 
 - ✅ PL/SQL procedure successfully completed.
 
-## Program 12: Write a PL/SQL procedure for an application using a package.
+## Program 12: Write a PL/SQL procedure for an application using a package.(skip)
 ### Create a table LIBRARY with the following attributes(Book_id, Book_name, B_price).
 ```PL/SQL
 CREATE TABLE library(Book_Id INT PRIMARY KEY, Book_Name VARCHAR(40), B_Price DECIMAL(20,2));

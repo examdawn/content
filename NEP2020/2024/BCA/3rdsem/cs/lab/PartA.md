@@ -1,5 +1,6 @@
 # Lab Practicals
 ## Part A
+Program 8 is skipped(pascal triangle)
 ### Program 1 - Fibonacci Series
 
 ```C#
@@ -237,7 +238,7 @@ After swapping: num1 = 2 num2 = 45
 
 [Source](https://github.com/sounddrill31/csharp-lab-parta/blob/main/swap/Program.cs)
 
-### Program 8 - Print a Pascal Triangle
+### Program 8 - Print a Pascal Triangle(Skip)
 ```C#
 using System;
 public class pascaltriangle

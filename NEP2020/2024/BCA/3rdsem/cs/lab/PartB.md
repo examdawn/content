@@ -1,5 +1,7 @@
 # Lab Practicals
 ## Part B
+
+Program 4 And Program 8 are skipped(Sum of Positive/negative numbers and MDI forms)
 ### Program 1 - VB.NET Program to count the number of Vowels
 
 ```vbnet
@@ -89,7 +91,7 @@ End Class
 [Source](https://github.com/Jack-Pots/CompoundInterest/blob/main/CI/Form1.vb)
 
 Download Output
-### Program 4 - VB.NET Program to display the sum of negative and sum of positive numbers 
+### Program 4 - VB.NET Program to display the sum of negative and sum of positive numbers(Skip)
 ```vbnet
 Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -159,7 +161,7 @@ End Class
 [Download Output](https://github.com/sounddrill31/Concat2Strings_WinForms/releases/download/12115871070/Concat2Strings-windows-latest-12115871070.zip)
 ### Program 6 - VB.NET Program to change the styles and fonts of Text
 ### Program 7 - VB.NET Program to generate student enrollment details
-### Program 8 - VB.NET Program to demonstrate MDI parent forms
+### Program 8 - VB.NET Program to demonstrate MDI parent forms(skip)
 ```vbnet
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
