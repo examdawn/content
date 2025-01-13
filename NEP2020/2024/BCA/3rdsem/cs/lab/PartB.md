@@ -160,6 +160,41 @@ End Class
 
 [Download Output](https://github.com/sounddrill31/Concat2Strings_WinForms/releases/download/12115871070/Concat2Strings-windows-latest-12115871070.zip)
 ### Program 6 - VB.NET Program to change the styles and fonts of Text
+```vb
+Public Class Form1
+    Public Sub setStyle()
+        Dim style = FontStyle.Regular
+        If CheckBox1.Checked Then
+            style = style Or FontStyle.Bold
+        End If
+        If CheckBox2.Checked Then
+            style = style Or FontStyle.Italic
+        End If
+        If CheckBox3.Checked Then
+            style = style Or FontStyle.Underline
+        End If
+        TextBox1.Font = New Drawing.Font(TextBox1.Font, style)
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        setStyle()
+    End Sub
+
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+        setStyle()
+    End Sub
+
+    Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
+        setStyle()
+    End Sub
+End Class
+```
+
+![Screenshot](screenshots/fonts.png)
+
+[Source](https://github.com/sounddrill31/Fonts_winforms/blob/main/Font/Form1.vb)
+
+[Download Output](https://github.com/sounddrill31/Fonts_Winforms/releases/download/12742687451/Font-windows-latest-12742687451.zip)
 ### Program 7 - VB.NET Program to generate student enrollment details
 ```vb
 Public Class Form1
