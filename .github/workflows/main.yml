@@ -19,7 +19,8 @@ jobs:
             cat sidebar.xml
       - name: Test MD File generation 
         run: bash helper-scripts/gen-md.sh
-      - uses: actions4gh/setup-gh@v1
+      - name: Setup gh
+        run: sudo apt update; sudo apt install gh -y
       - name: Trigger Site Rebuild
         run: |
           git clone https://github.com/bca-students/bca-students.github.io
