@@ -19,3 +19,11 @@ jobs:
             cat sidebar.xml
       - name: Test MD File generation 
         run: bash helper-scripts/gen-md.sh
+      - uses: actions4gh/setup-gh@v1
+      - name: Trigger Site Rebuild
+        run: |
+          git clone https://github.com/bca-students/bca-students.github.io
+          cd bca-students.github.io
+          gh workflow run deploy.yml
+        env:
+          GH_TOKEN: ${{ secrets.PAT }}
