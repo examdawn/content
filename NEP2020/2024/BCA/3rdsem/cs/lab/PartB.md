@@ -161,6 +161,36 @@ End Class
 [Download Output](https://github.com/sounddrill31/Concat2Strings_WinForms/releases/download/12115871070/Concat2Strings-windows-latest-12115871070.zip)
 ### Program 6 - VB.NET Program to change the styles and fonts of Text
 ### Program 7 - VB.NET Program to generate student enrollment details
+```vb
+Public Class Form1
+    Private Sub ClrBtn_Click(sender As Object, e As EventArgs) Handles ClrBtn.Click
+        NameBox.ResetText()
+        CourseBox.ResetText()
+        SemBox.ResetText()
+        MarksBox.ResetText()
+    End Sub
+
+    Private Sub Result_Click(sender As Object, e As EventArgs) Handles Result.Click
+        MsgBox("Details " + vbCrLf +
+               "Name: " + vbCrLf + NameBox.Text +
+               "Course: " + vbCrLf + CourseBox.Text +
+               "Semester: " + vbCrLf + SemBox.Text +
+               "Marks: " + MarksBox.Text)
+    End Sub
+
+    Private Sub ExitBtn_Click(sender As Object, e As EventArgs) Handles ExitBtn.Click
+        Close()
+    End Sub
+End Class
+```
+
+![Screenshot](screenshots/studentenroll.png)
+![Screenshot](screenshots/studentenroll-popup.png)
+
+
+[Source](https://github.com/sounddrill31/StudentEnroll_Winforms/blob/main/StudentEnroll/Form1.vb)
+
+[Download Output](https://github.com/sounddrill31/StudentEnroll_Winforms/releases/download/12742373594/StudentEnroll-windows-latest-12742373594.zip)
 ### Program 8 - VB.NET Program to demonstrate MDI parent forms(skip)
 ```vb
 Public Class Form1
