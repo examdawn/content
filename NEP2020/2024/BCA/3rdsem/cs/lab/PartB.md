@@ -4,7 +4,7 @@
 Program 4 And Program 8 are skipped(Sum of Positive/negative numbers and MDI forms)
 ### Program 1 - VB.NET Program to count the number of Vowels
 
-```vbnet
+```vb
 Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim str1, str2
@@ -33,7 +33,7 @@ End Class
 
 [Download Output](https://github.com/sounddrill31/VowelCountApp/releases/download/12115653768/VowelCountApp-windows-latest-12115653768.zip)
 ### Program 2 - VB.NET Program to check if number is Odd or Even
-```vbnet
+```vb
 Public Class Form1
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles Value.TextChanged
         If Value.Text = Nothing Then
@@ -64,7 +64,7 @@ End Class
 
 [Download Output](https://github.com/sounddrill31/OddEvenApp_Winforms/releases/download/12116520828/OddEvenApp_Winforms-windows-latest-12116520828.zip)
 ### Program 3 - VB.NET Program to calculate compound interest
-```vbnet
+```vb
 Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim P, N As Integer
@@ -92,7 +92,7 @@ End Class
 
 Download Output
 ### Program 4 - VB.NET Program to display the sum of negative and sum of positive numbers(Skip)
-```vbnet
+```vb
 Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
@@ -136,7 +136,7 @@ End Class
 
 [Download Output](https://github.com/sounddrill31/SumNum_Winforms/releases/download/11983858383/SumNum-windows-latest-11983858383.zip)
 ### Program 5 - VB.NET Program to concat 2 strings
-```vbnet
+```vb
 Public Class Form1
     Private Sub Result_Click(sender As Object, e As EventArgs) Handles Result.Click
         ResultBox.Text = FirstNameBox.Text & " " & LastNameBox.Text
@@ -162,7 +162,7 @@ End Class
 ### Program 6 - VB.NET Program to change the styles and fonts of Text
 ### Program 7 - VB.NET Program to generate student enrollment details
 ### Program 8 - VB.NET Program to demonstrate MDI parent forms(skip)
-```vbnet
+```vb
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Form1.IsMdiContainer = True

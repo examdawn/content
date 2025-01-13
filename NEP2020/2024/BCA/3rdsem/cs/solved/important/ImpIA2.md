@@ -5,7 +5,7 @@ If-Else, also known as If-Then-Else statements are used for basic conditional lo
 - It conditionally executes a group of statements, depending on the value of an expression.
 
 Syntax:
-```vbnet
+```vb
 If condition Then
     statements
 ElseIf condition2 Then
@@ -17,7 +17,7 @@ End If
 Just like if statement, it is always followed by "End If" to show that the if-else block is over.
 
 Example: 
-```vbnet
+```vb
 Dim n As Integer = 5
 
 If n Mod 2 = 0 Then
@@ -67,13 +67,13 @@ There are 4 types of Loops:
     - **Exit While** is functionally equivalent to break keyword from other languages and is used to exit the loop
     - **Continue While** is functionally equivalent to continue keyword and is used to skip the iteration and move to next iteration of the loop
     - Syntax:
-        ```vbnet
+        ```vb
         While condition
             statements
         End While
         ```
     - Example:
-        ```vbnet
+        ```vb
         While index <= 10
             Console.WriteLine(index.ToString)
             index += 1
@@ -86,13 +86,13 @@ There are 4 types of Loops:
     - Continue Do is functionally equivalent to continue keyword and is used to skip the iteration and move to next iteration of the loop
     - Exit Do is functionally equivalent to break keyword from other languages and is used to exit the loop
     - Syntax:
-        ```vbnet
+        ```vb
         Do { While | Until } condition
             statements
         Loop
         ```
     - Example:
-        ```vbnet
+        ```vb
         Do While index <= 10
             Console.WriteLine(index.ToString)
             index += 1
@@ -103,13 +103,13 @@ There are 4 types of Loops:
     - **Exit For** is functionally equivalent to break keyword from other languages and is used to exit the loop
     - **Continue For** is functionally equivalent to continue keyword and is used to skip the iteration and move to next iteration of the loop
     - Syntax:
-        ```vbnet
+        ```vb
         For counter = start To End 
             statements
         Next
         ```
     - Example: 
-        ```vbnet
+        ```vb
         For index As Integer = 1 To 5
             Console.WriteLine(index.ToString)
         Next
@@ -120,13 +120,13 @@ There are 4 types of Loops:
     - **Exit For** is functionally equivalent to break keyword from other languages and is used to exit the loop
     - **Continue For** is functionally equivalent to continue keyword and is used to skip the iteration and move to next iteration of the loop
     - Syntax:
-        ```vbnet
+        ```vb
         For Each element In group
             statements
         Next
         ```
     - Example: 
-        ```vbnet
+        ```vb
         Dim arr() As Integer = {1, 2, 3, 4, 5}
         For Each item As Integer In arr
             Console.WriteLine(item)
