@@ -180,7 +180,7 @@ Sum of Digits is: 5
 using System;
 public class revnum
 {
-    public static void Main(String[] args)
+    public static void Main(string[] args)
     {
         int num, reverse = 0;
         Console.WriteLine("Enter a number: ");
@@ -210,7 +210,7 @@ Reverse of the number is 23435
 using System;
 public class swap
 {
-    public static void Main(String[] args)
+    public static void Main(string[] args)
     {
         int num1, num2, temp;
         Console.WriteLine("Enter the first number: ");
@@ -243,7 +243,7 @@ After swapping: num1 = 2 num2 = 45
 using System;
 public class pascaltriangle
 {
-    public static void Main(String[] args)
+    public static void Main(string[] args)
     {
         int i, j, k, n;
         Console.WriteLine("Enter the number of rows: ");
@@ -277,32 +277,21 @@ Enter the number of rows:
 1 4 6 4 1 
 ```
 
-[Source](https://github.com/sounddrill31/csharp-lab-parta/blob/main/pascaltriangle/Program.cs)
+[Source](https://github.com/sounddrill31/csharp-lab-parta/blob/main/pascaltriangle/Program.cs
 
 ### Program 9 - Demonstrate Multithreaded Programming
 ```C#
 using System;
-public class pascaltriangle
+using System.Threading;
+public class multithread
 {
-    public static void Main(String[] args)
+    public static void Main(string[] args)
     {
-        int i, j, k, n;
-        Console.WriteLine("Enter the number of rows: ");
-        n = int.Parse(Console.ReadLine());
-        for (i = 0; i < n; i++)
-        {
-            for (j = 0; j < n - i - 1; j++)
-            {
-                Console.Write(" ");
-            }
-            int number = 1;
-            for (k = 0; k <= i; k++)
-            {
-                Console.Write(number + " ");
-                number = number * (i - k) / (k + 1);
-            }
-            Console.WriteLine();
-        }
+        Thread t = Thread.CurrentThread;
+        t.Name = "Main Thread";
+        Console.Write("Current Executing Thread Name: " + t.Name);
+        Console.Write("Current Executing Thread Name: " + Thread.CurrentThread.Name);
+        Console.Read();
     }
 }
 ```
@@ -324,7 +313,7 @@ class SubSquare
     {
         return num * num;
     }
-    public static void Main(String[] args)
+    public static void Main(string[] args)
     {
         int number, result;
         Console.WriteLine("Enter a number: ");
