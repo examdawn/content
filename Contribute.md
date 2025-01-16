@@ -14,6 +14,7 @@ features:
     title: Discussions and Comments
     link: https://github.com/bca-students/content/discussions
 ---
+<br>
 
 # Contributing
 
@@ -22,7 +23,7 @@ We welcome contributions with open arms! Please feel free to solve some question
 
 We also welcome any positive informative criticism or suggestions if you have any - Please submit them in the [issues tab](https://github.com/bca-students/content/issues)
 
-> [!NOTE]
+> [!IMPORTANT]
 > Contributing requires you to have an active github account.
 > If you are against this in favor if a different git service or similiar, please don't hesitate to contact us and discuss a bridge or a better solution
 
