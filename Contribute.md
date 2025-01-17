@@ -30,7 +30,7 @@ We also welcome any positive informative criticism or suggestions if you have an
 ## Contributors
 ### Website Maintainers
 #### Website Maintainer(s)
-- [Jack-Pots](jack-pots.github.io/)
+- [Jack-Pots](https://jack-pots.github.io/)
   - [Primary Git Profile](https://github.com/Jack-Pots)
   - [LinkedIn](https://www.linkedin.com/in/jack-pots/)
 #### Content Maintainer(s)
