@@ -4,17 +4,17 @@
 
 Tested on 10.6.18-MariaDB-0ubuntu0.22.04.1 except Question 4 which will be written with MySQL 8.0.37 in mind
 
-Question 9 onwards, we are using Oracle Databases since we need to use PL/SQL. I know,  I feel the same way😿
-
+Question 8 onwards, we are using Oracle Databases since we need to use PL/SQL. I know, I feel the same way😿
 Question 12 was answered on [Oracle's LiveSQL](https://livesql.oracle.com/)
 Version: `Live SQL 24.1.3, running Oracle Database 19c EE Extreme Perf - 19.17.0.0.0`
 
 Program 10 is skipped(PL/SQL cursor)
 
+
 ## Program 1: Execute Single line Query and Group Functions.
 ###	Create a table INVENTORY with the following attributes(Item_No,Item_Name,Price).
 
-```MySQL
+```SQL
 CREATE TABLE inventory(item_no varchar(10) PRIMARY KEY, item_name varchar(20), price decimal(10,2));
 ```
 
@@ -23,7 +23,7 @@ CREATE TABLE inventory(item_no varchar(10) PRIMARY KEY, item_name varchar(20), p
 ###	Insert five tuples in the table INVENTORY. 
 (Doing only 2, same concept)
 
-```MySQL
+```SQL
 INSERT INTO inventory VALUES('L101', 'Laptop', 50000);
 ```
 
@@ -37,7 +37,7 @@ INSERT INTO inventory VALUES('L102', 'Computer', 100000);
 
 ###	Display all the tuples from the INVENTORY Table.
 
-```MySQL
+```SQL
 SELECT * FROM inventory;
 ```
 
@@ -45,7 +45,7 @@ SELECT * FROM inventory;
 
 ###	Perform single line query operations using group functions.
 
-```MySQL
+```SQL
 SELECT COUNT(*) number_of_items from inventory;
 ```
 
@@ -55,7 +55,7 @@ SELECT COUNT(*) number_of_items from inventory;
 
 - ✅ Your SQL query has been executed successfully.
 
-```MySQL
+```SQL
 SELECT MAX(price) maximum_price FROM inventory;
 ```
 
@@ -65,7 +65,7 @@ SELECT MAX(price) maximum_price FROM inventory;
 
 - ✅ Showing rows 0 - 0 (1 total, Query took 0.0002 seconds.)
 
-```MySQL
+```SQL
 SELECT MIN(price) minimum_price FROM inventory;
 ```
 
@@ -75,7 +75,7 @@ SELECT MIN(price) minimum_price FROM inventory;
 
 - ✅ Showing rows 0 - 0 (1 total, Query took 0.0002 seconds.)
 
-```MySQL
+```SQL
 SELECT AVG(price) avg_amount FROM inventory;
 ```
 
@@ -85,7 +85,7 @@ SELECT AVG(price) avg_amount FROM inventory;
 
 - ✅ Showing rows 0 - 0 (1 total, Query took 0.0001 seconds.)
 
-```MySQL
+```SQL
 SELECT SUM(price) total_amount FROM inventory;
 ```
 
@@ -99,13 +99,13 @@ SELECT SUM(price) total_amount FROM inventory;
 ## Program 2: Execute DDL Commands.
 ### Create table STUDENT with the following attributes(Register_no, Name, Mark_1,Mark_2,Mark_3).
 
-```MySQL
+```SQL
 CREATE TABLE student(register_no varchar(10) PRIMARY KEY, name varchar(20), mark_1 int, mark_2 int, mark_3 int);
 ```
 
 - ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0003 seconds.)
 
-```MySQL
+```SQL
 DESC student;
 ```
 
@@ -121,13 +121,13 @@ DESC student;
 
 ### Add new columns(Total, Average) to the table STUDENT.
 
-```MySQL
+```SQL
 ALTER TABLE student add(total int, average decimal(7,2));
 ```
 
 - ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0003 seconds.)
 
-```MySQL
+```SQL
 desc student;
 ```
 
@@ -145,7 +145,7 @@ desc student;
 
 ### Rename the table STUDENT to  STUDENT_T1.
 
-```MySQL
+```SQL
 RENAME TABLE student to student_t1;
 ```
 
@@ -153,7 +153,7 @@ RENAME TABLE student to student_t1;
 
 ### Truncate the table STUDENT_T1.
 
-```MySQL
+```SQL
 TRUNCATE TABLE student_t1;
 ```
 
@@ -161,7 +161,7 @@ TRUNCATE TABLE student_t1;
 
 ### Drop the table STUDENT_T1.
 
-```MySQL
+```SQL
 DROP TABLE student_t1;
 ```
 
@@ -171,13 +171,13 @@ DROP TABLE student_t1;
 ## Program 3: Execute DML Commands.
 ### Create table STUDENT with the following attributes(Register_No, Name, Mark_1, Mark_2, Mark_3,Total,Average).
 
-```MySQL
+```SQL
 CREATE TABLE student002(register_no varchar(10) PRIMARY KEY, name varchar(20), mark_1 int, mark_2 int, mark_3 int, total int, average decimal(7,2));
 ```
 
 - ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0004 seconds.)
 
-```MySQL
+```SQL
 DESC student002;
 ```
 
@@ -196,20 +196,28 @@ DESC student002;
 ### Insert five tuples in the table STUDENT.(Make sure average and total fields are NULL).
 (Doing only 2, same concept)
 
-```MySQL
+```SQL
 INSERT INTO student002 VALUES('S101', 'charles', 99, 100, 95, null, null);
 ```
-- ✅ 1 row inserted. (Query took 0.0008 seconds.)
-
-```MySQL
-INSERT INTO student002 VALUES('S102', 'abdul', 100, 99, 100, null, null);
+(If the above code doesn't work, try this:)
+```SQL
+INSERT INTO student002 VALUES('S101', 'charles', 99, 100, 95);
 ```
 
+- ✅ 1 row inserted. (Query took 0.0008 seconds.)
+
+```SQL
+INSERT INTO student002 VALUES('S102', 'abdul', 100, 99, 100, null, null);
+```
+(If the above code doesn't work, try this:)
+```SQL
+INSERT INTO student002 VALUES('S102', 'abdul', 100, 99, 100, null, null);
+```
 - ✅ 1 row inserted. (Query took 0.0001 seconds.)
 
 ### Display all the tuples from the table STUDENT.
 
-```MySQL
+```SQL
 SELECT * FROM student002;
 ```
 
@@ -224,13 +232,13 @@ SELECT * FROM student002;
 - Total=(Mark_1 + Mark_2 + Mark_3)
 - Average=(Mark_1+Mark_2+Mark_3)/3.
 
-```MySQL
+```SQL
 UPDATE student002 SET total=(mark_1+mark_2+mark_3),average=(mark_1+mark_2+mark_3)/3;
 ```
 
 - ✅ 2 rows affected. (Query took 0.0003 seconds.)
 
-```MySQL
+```SQL
 SELECT * FROM student002;
 ```
 
@@ -243,13 +251,13 @@ SELECT * FROM student002;
 
 ### Delete a tuple from the table STUDENT.
 
-```MySQL
+```SQL
 DELETE FROM student002 WHERE register_no='S101';
 ```
 
 - ✅ 1 row deleted. (Query took 0.0003 seconds.)
 
-```MySQL
+```SQL
 SELECT * FROM student002;
 ```
 - ✅ Showing rows 0 - 0 (1 total, Query took 0.0002 seconds.)
@@ -262,7 +270,7 @@ SELECT * FROM student002;
 ## Program 4: Execute DCL and TCL Commands.
 ### Connect the database using the command line window.
 
-```MySQL
+```SQL
 USE souhrud_practical;
 ```
 
@@ -270,20 +278,20 @@ USE souhrud_practical;
 
 ### Create a table PURCHASE with the following attributes (Item_No, Item_Name,Price).
 
-```MySQL
+```SQL
 CREATE TABLE purchase(item_no varchar(4), item_name varchar(20), price decimal(10,2));
 ```
 - ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0085 seconds.)
 
 ### Insert two tuples in the PURCHASE.
 
-```MySQL
+```SQL
 INSERT INTO purchase VALUES("L101", "laptop", 50000);
 ```
 
 - ✅ 1 row inserted. (Query took 0.0011 seconds.)
 
-```MySQL
+```SQL
 INSERT INTO purchase VALUES("L102", "desktop", 100000);
 ```
 
@@ -291,15 +299,19 @@ INSERT INTO purchase VALUES("L102", "desktop", 100000);
 
 ### Create a user with (User name: customer,Password:sales).
 
-```MySQL
+```SQL
 CREATE USER 'customer'@'localhost' IDENTIFIED BY 'sales';
+```
+(If the above code doesn't work, try this:)
+```SQL
+CREATE USER 'customer' IDENTIFIED BY 'sales';
 ```
 
 - ✅ Query OK, 0 rows affected (0.16 sec)
 
 ### Perform DCL command operations using the table PURCHASE.
 
-```MySQL
+```SQL
 GRANT ALL ON souhrud_practical.* TO 'customer'@'localhost';
 ```
 
@@ -309,7 +321,7 @@ GRANT ALL ON souhrud_practical.* TO 'customer'@'localhost';
 ## Program 5: Implement the Nested Queries.
 ### Create a table TEACHER with the following attributes(Tid,Tanme,Deptid).
 
-```MySQL
+```SQL
 CREATE TABLE teacher(tid int(4) PRIMARY KEY, tname varchar(20), deptid varchar(3));
 ```
 
@@ -317,20 +329,20 @@ CREATE TABLE teacher(tid int(4) PRIMARY KEY, tname varchar(20), deptid varchar(3
 
 ### Insert two tuples in the table TEACHER.
 
-```MySQL
+```SQL
 INSERT INTO teacher VALUES(1001, 'charles', 'D11');
 ```
 
 - ✅ Query OK, 1 row affected (0.01 sec)
 
-```MySQL
+```SQL
 INSERT INTO teacher VALUES(1002, 'abdul', 'D12');
 ```
 
 - ✅ Query OK, 1 row affected (0.01 sec)
 
 Now, output it
-```MySQL
+```SQL
 select * from teacher;
 ```
 
@@ -343,14 +355,14 @@ select * from teacher;
 
 ### Create a table DEPARTMENT with the following attributes(Deptid,Dname).
 
-```MySQL
+```SQL
 CREATE TABLE department(deptid varchar(10), dname varchar(20));
 ```
 
 - ✅ Query OK, 0 rows affected (0.28 sec)
 
 Check the attributes
-```MySQL
+```SQL
 DESC department;
 ```
 
@@ -358,7 +370,7 @@ DESC department;
 
 ### Insert three tuples into the DEPARTMENT Table.
 
-```MySQL
+```SQL
 INSERT INTO department VALUES('D11','computer science'),('D15','physics'),('D13', 'maths');
 ```
 
@@ -366,7 +378,7 @@ INSERT INTO department VALUES('D11','computer science'),('D15','physics'),('D13'
   Records: 3  Duplicates: 0  Warnings: 0
 
 Now, check the output:
-```MySQL
+```SQL
 SELECT * FROM department;
 ```
 
@@ -380,7 +392,7 @@ SELECT * FROM department;
 
 ### Perform nested queries using the table TEACHER and DEPARTMENT.
 
-```MySQL
+```SQL
 SELECT * FROM teacher WHERE deptid IN(SELECT deptid FROM department WHERE teacher.deptid=department.deptid);
 ```
 
@@ -394,7 +406,7 @@ SELECT * FROM teacher WHERE deptid IN(SELECT deptid FROM department WHERE teache
 ## Program 6: Implement Join Operations in SQL.
 ### Create a table EMPLOYEE with the following attributes(Emp_id, Emp_name,Edept_id).
 
-```MySQL
+```SQL
 CREATE TABLE employee(emp_id int PRIMARY KEY, emp_name varchar(20), edept_id int);
 ```
 
@@ -402,7 +414,7 @@ CREATE TABLE employee(emp_id int PRIMARY KEY, emp_name varchar(20), edept_id int
 
 ### Insert three tuples in the table EMPLOYEE.
 
-```MySQL
+```SQL
 INSERT INTO employee VALUES(1001, 'charles', 10), (1002, 'abdul', 30), (1003, 'rohan', 30);
 ```
 
@@ -411,7 +423,7 @@ Records: 3  Duplicates: 0  Warnings: 0
 
 ### Create a table DEPARTMENT with the following attributes(Dept_id,Dept_name).
 
-```MySQL
+```SQL
 CREATE TABLE department(dept_id int PRIMARY KEY, dept_name varchar(20));
 ```
 
@@ -419,7 +431,7 @@ CREATE TABLE department(dept_id int PRIMARY KEY, dept_name varchar(20));
 
 ### Enter Four tuples in the table DEPARTMENT.
 
-```MySQL
+```SQL
 INSERT INTO department VALUES(10, 'accounts'), (20, 'design'), (40, 'testing'), (50, 'purchase');
 ```
 
@@ -429,7 +441,7 @@ Records: 4  Duplicates: 0  Warnings: 0
 ### Perform join Operations using the table EMPLOYEE and DEPARTMENT.
 
 #### Inner Join:
-```MySQL
+```SQL
 SELECT emp_id, emp_name, edept_id, dept_name FROM employee INNER JOIN department ON employee.edept_id=department.dept_id;
 ```
 
@@ -440,7 +452,7 @@ SELECT emp_id, emp_name, edept_id, dept_name FROM employee INNER JOIN department
 |   1001 | charles  |       10 | accounts  |
 
 #### Left Outer Join: 
-```MySQL
+```SQL
 SELECT emp_id, emp_name, edept_id, dept_name FROM employee LEFT JOIN department ON employee.edept_id=department.dept_id;
 ```
 
@@ -453,7 +465,7 @@ SELECT emp_id, emp_name, edept_id, dept_name FROM employee LEFT JOIN department 
 |   1003 | rohan    |       30 | NULL      |
 
 #### Right Outer Join:
-```MySQL
+```SQL
 SELECT emp_id, emp_name, edept_id, dept_name FROM employee RIGHT JOIN department ON employee.edept_id=department.dept_id;
 ```
 
@@ -467,7 +479,7 @@ SELECT emp_id, emp_name, edept_id, dept_name FROM employee RIGHT JOIN department
 |   NULL | NULL     |     NULL | purchase  |
 
 #### Full Join: 
-```MySQL
+```SQL
 SELECT emp_id, emp_name, edept_id, dept_name FROM employee LEFT JOIN department ON employee.edept_id=department.dept_id UNION SELECT emp_id, emp_name, edept_id, dept_name FROM employee RIGHT JOIN department ON employee.edept_id=department.dept_id;
 ```
 
@@ -485,14 +497,14 @@ SELECT emp_id, emp_name, edept_id, dept_name FROM employee LEFT JOIN department 
 
 ## Program 7: Create a view for a particular table.
 ### Create a table TRAIN (Train_no,Train_Nmae,Source,Destination).
-```MySQL
+```SQL
 CREATE TABLE train(train_no int PRIMARY KEY, train_name varchar(20), source varchar(20), destination varchar(20)); 
 ```
 
 - ✅ Query OK, 0 rows affected (0.16 sec)
 
 ### Insert three tuples in the table TRAIN.
-```MySQL
+```SQL
 INSERT INTO train VALUES (50001, 'malgudi exp', 'bengaluru', 'mysuru'), (50002,'karnataka exp','bengaluru','new delhi'), (50003,'shatabdi exp','bengaluru','chennai'); 
 ```
 
@@ -500,7 +512,7 @@ INSERT INTO train VALUES (50001, 'malgudi exp', 'bengaluru', 'mysuru'), (50002,'
 Records: 3  Duplicates: 0  Warnings: 0
 
 ### Display all the tuples from the table TRAIN.
-```MySQL
+```SQL
 SELECT * FROM train; 
 ```
 
@@ -513,14 +525,14 @@ SELECT * FROM train;
 |    50003 | shatabdi exp    | bengaluru | chennai     |
 
 ### Perform view operations using the table TRAIN.
-```MySQL
+```SQL
 CREATE VIEW display_view AS SELECT * FROM train; 
 ```
 
 - ✅ Query OK, 0 rows affected (0.06 sec)
 
 Display Train View
-```MySQL
+```SQL
  SELECT * FROM display_view;
 ```
 
@@ -532,14 +544,14 @@ Display Train View
 |    50002 | karnataka exp   | bengaluru | new delhi   |
 |    50003 | shatabdi exp    | bengaluru | chennai     |
 
-```MySQL
+```SQL
 INSERT INTO display_view VALUES(50004,'kochuveli exp', NULL, NULL); 
 ```
 
 - ✅ Query OK, 1 row affected (0.05 sec)
 
 Display Train View after Operation
-```MySQL
+```SQL
 SELECT * FROM display_view; 
 ```
 
@@ -553,7 +565,7 @@ SELECT * FROM display_view;
 |    50004 | kochuveli exp   | NULL      | NULL        |
 
 Add data to 50004 train
-```MySQL
+```SQL
 UPDATE train set source='bengaluru', destination='kochuveli' WHERE train_no=50004; 
 ```
 
@@ -561,7 +573,7 @@ UPDATE train set source='bengaluru', destination='kochuveli' WHERE train_no=5000
 Rows matched: 1  Changed: 1  Warnings: 0
 
 Output the result
-```MySQL
+```SQL
 SELECT * FROM display_view;
 ``` 
 
@@ -578,7 +590,7 @@ SELECT * FROM display_view;
 ## Program 8: Implement Locks for a particular table.
 ### Connect the database using the command line window.
 
-```SQLPLUS
+```SQL
 CONNECT system;
 ```
 
@@ -586,15 +598,15 @@ CONNECT system;
 
 ### Create table CAR with the following attributes(Model_No, Brand,Price).
 
-```SQLPLUS
-CREATE TABLE car(Model_No VARCHAR(5) PRIMARY KEY, Brand VARHCAR(20), Price DECIMAL(10,2));
+```SQL
+CREATE TABLE car(Model_No VARCHAR(5) PRIMARY KEY, Brand VARCHAR(20), Price DECIMAL(10,2));
 ```
 
 - ✅ Table created.
 
 ### Insert five tuples in the table CAR.
 
-```SQLPLUS
+```SQL
 INSERT INTO car VALUES('H1001','Hyundai', 1000000);
 INSERT INTO car VALUES('H1002','Maruti', 800000);
 INSERT INTO car VALUES('H1003','Tata', 700000);
@@ -606,37 +618,37 @@ INSERT INTO car VALUES('H1005','Mahindra', 500000);
 
 ### Create a user with (User name: Owner, Password:car) and grant the select, update permission.
 
-```SQLPLUS
+```SQL
 CREATE USER owner IDENTIFIED BY car;
 ```
 
 - ✅ User created.
 
-```SQLPLUS
+```SQL
 GRANT CONNECT TO owner;
 ```
 
 - ✅ Grant succeeded.
 
-```SQLPLUS
+```SQL
 GRANT SELECT ON car TO owner;
 ```
 
 - ✅ Grant succeeded.
 
-```SQLPLUS
+```SQL
 GRANT UPDATE ON car TO owner;
 ```
 
 - ✅ Grant succeeded.
 
-```SQLPLUS
+```SQL
 UPDATE car SET Price=1000000 WHERE Model_No='H1001';
 ```
 
 - ✅ 1 row updated.
 
-```SQLPLUS
+```SQL
 commit;
 ```
 
@@ -644,7 +656,7 @@ commit;
 
 ### Implement the Locks using the table CAR.
 
-```SQLPLUS
+```SQL
 LOCK TABLE car IN EXCLUSIVE MODE;
 ```
 
@@ -653,20 +665,20 @@ LOCK TABLE car IN EXCLUSIVE MODE;
 ## Program 9: Write PL/SQL Procedure for an application using exception handling.
 ### Create a table BANK with the following attributes(Acno, Name,Balance).
 
-```PL/SQL
+```SQL
 CREATE TABLE bank(acno int primary key, name varchar(20), balance decimal(10,2));
 ```
 
 ### Insert two tuples in the table BANK.
 
-```PL/SQL
+```SQL
 INSERT INTO bank VALUES(0001, 'Souhrud', 20);
 INSERT INTO bank VALUES(0002, 'Joel', 30);
 ```
 
 ### Display all the tables from the table BANK.
 
-```PL/SQL
+```SQL
 SELECT * FROM bank;
 ```
 
@@ -677,11 +689,11 @@ ACNO | NAME     | BALANCE |
 
 ### Perform exception handling using the table BANK.
 
-```PL/SQL
+```SQL
 SET SERVEROUTPUT ON;
 ```
 
-```PL/SQL
+```SQL
 DECLARE
   cacno bank.acno%TYPE;
   cname bank.name%TYPE;
@@ -712,19 +724,19 @@ END;
 ## Program 10: Write PL/SQL procedure for an application using a cursor.(skip)
 ### Create a table BANK with the following attributes(Acno, Name,Balance).
 
-```PL/SQL
+```SQL
 CREATE TABLE bank(acno int primary key, name varchar(20), balance decimal(10,2));
 ```
 ### Insert two tuples in the table BANK.
 
-```PL/SQL
+```SQL
 INSERT INTO bank VALUES(0001, 'Souhrud', 20);
 INSERT INTO bank VALUES(0002, 'Joel', 30);
 ```
 
 ### Display all the tuples from the table BANK.
 
-```PL/SQL
+```SQL
 SELECT * FROM bank;
 ```
 
@@ -735,11 +747,11 @@ ACNO | NAME     | BALANCE |
 
 ### Display all the tuples from the table BANK using cursor.
 
-```PL/SQL
+```SQL
 SET SERVEROUTPUT ON;
 ```
 
-```PL/SQL
+```SQL
 DECLARE
 cacno bank.acno%type;
 cname bank.name%type;
@@ -774,17 +786,17 @@ Account no.   Name    Balance
 
 ## Program 11: Write a PL/SQL procedure for an application using functions.
 ### Create a table LAPTOP with the following attributes(Model_No,Company_Name, Price).
-```PL/SQL
+```SQL
 CREATE TABLE laptop(model_no varchar(5), company_name varchar(20), price decimal(10,2));
 ```
 ### Insert two tuples in the table LAPTOP.
-```PL/SQL
+```SQL
 INSERT INTO laptop VALUES('L1001', 'dell', 50000); 
 INSERT INTO laptop VALUES('L1002', 'hp', 40000);
 ```
 
 ### Display all the tuples in the table LAPTOP.
-```PL/SQL
+```SQL
 SELECT * FROM laptop;
 ```
 
@@ -795,11 +807,11 @@ L1002 | hp            | 40000 |
 
 ### Find the maximum price in the table LAPTOP using the function.
 
-```PL/SQL
+```SQL
 SET SERVEROUTPUT ON;
 ```
 
-```PL/SQL
+```SQL
 create or replace function maximum
 return decimal IS
 maxprice number(10,2):=0;
@@ -812,7 +824,7 @@ end;
 
 - ✅ Function created.
 
-```PL/SQL
+```SQL
 declare 
 n number(10,2);
 begin
@@ -831,14 +843,14 @@ maximum price=50000
 
 ## Program 12: Write a PL/SQL procedure for an application using a package.
 ### Create a table LIBRARY with the following attributes(Book_id, Book_name, B_price).
-```PL/SQL
+```SQL
 CREATE TABLE library(Book_Id INT PRIMARY KEY, Book_Name VARCHAR(40), B_Price DECIMAL(20,2));
 ```
 
 - ✅ Table created.
 
 ### Insert three tuples in the table LIBRARY.
-```PL/SQL
+```SQL
 INSERT INTO library VALUES (1001,'C# and Dotnet',200);
 INSERT INTO library VALUES (1002,'Computer Communication and Networks',250);
 INSERT INTO library VALUES (1003,'Database Management System',250);
@@ -848,7 +860,7 @@ INSERT INTO library VALUES (1003,'Database Management System',250);
 
 
 ### Display all the tuples from the table LIBRARY.
-```PL/SQL
+```SQL
 SELECT * FROM library;
 ```
 
@@ -859,7 +871,7 @@ SELECT * FROM library;
 | 1003  | Database Management System | 250 |
 
 ### Create a package using the table LIBRARY.
-```PL/SQL
+```SQL
 CREATE OR REPLACE PACKAGE library_package IS
 PROCEDURE ADD_NEW (B_Id VARCHAR,B_Name VARCHAR2,B_Price NUMBER);
 FUNCTION DISPLAY RETURN VARCHAR2;
@@ -869,7 +881,7 @@ END library_package;
 
 - ✅ Package created.
 
-```PL/SQL
+```SQL
 CREATE OR REPLACE PACKAGE BODY library_package IS
 PROCEDURE ADD_NEW (B_Id VARCHAR,B_Name VARCHAR2,B_Price NUMBER) IS
 BEGIN
@@ -885,7 +897,7 @@ END library_package;
 
 - ✅ Package body created.
 
-```PL/SQL
+```SQL
 BEGIN
 library_package.ADD_NEW('1004','OPP With JAVA',500);
 dbms_output.PUT_LINE(library_package.display);
@@ -896,7 +908,7 @@ END;
       PL/SQL procedure successfully completed.
 
 Now, Output it:
-```SQLPLUS
+```SQL
 SELECT * FROM library;
 ```
 
