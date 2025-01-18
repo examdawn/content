@@ -8,8 +8,11 @@ Question 8 onwards, we are using Oracle Databases since we need to use PL/SQL. I
 Question 12 was answered on [Oracle's LiveSQL](https://livesql.oracle.com/)
 Version: `Live SQL 24.1.3, running Oracle Database 19c EE Extreme Perf - 19.17.0.0.0`
 
-Program 10 is skipped(PL/SQL cursor)
+> [IMPORTANT]
+> Question 1 to 7 is done using **MySQL 8.0 Command Line Client**. [Tested and reviewed]
+> Question 8 to 12 is done using **Run SQL Command Line**. [Tested and reviewed]
 
+Program 10 is skipped(PL/SQL cursor)
 
 ## Program 1: Execute Single line Query and Group Functions.
 ###	Create a table INVENTORY with the following attributes(Item_No,Item_Name,Price).
