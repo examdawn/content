@@ -214,7 +214,7 @@ INSERT INTO student002 VALUES('S102', 'abdul', 100, 99, 100, null, null);
 ```
 (If the above code doesn't work, try this:)
 ```SQL
-INSERT INTO student002 VALUES('S102', 'abdul', 100, 99, 100, null, null);
+INSERT INTO student002 VALUES('S102', 'abdul', 100, 99, 100);
 ```
 - ✅ 1 row inserted. (Query took 0.0001 seconds.)
 
