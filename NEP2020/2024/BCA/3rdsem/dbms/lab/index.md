@@ -32,7 +32,7 @@ INSERT INTO inventory VALUES('L101', 'Laptop', 50000);
 
 - ✅  1 row inserted. (Query took 0.0003 seconds.)
 
-``` MySQL
+```SQL
 INSERT INTO inventory VALUES('L102', 'Computer', 100000);
 ```
 
