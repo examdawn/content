@@ -274,7 +274,7 @@ SELECT * FROM student002;
 ### Connect the database using the command line window.
 
 ```SQL
-USE souhrud_practical;
+CONNECT souhrud_practical;
 ```
 
 - ✅ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0001 seconds.)
