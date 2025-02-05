@@ -2,6 +2,10 @@
 
 ## A simple Website for students to host study materials and useful reference content
 
+> "Why 'Exam Dawn'?"
+
+The main use for this website is for referring to notes and solutions at the last minute before exams. This usually happens during night time or early morning for most students - our old website (titled bca-students) was a placeholder till we could come up with a better name.
+
 Content available for:
 - BCA
     - [3rd Semester](NEP2020/2024/BCA/3rdsem/index.md)
