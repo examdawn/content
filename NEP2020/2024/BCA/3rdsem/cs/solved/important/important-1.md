@@ -660,7 +660,7 @@ HTML documents are text files that contains structured code which tells browsers
 
 <body>
     <!-- Main content of website -->
-    <h1>BCA-Students</h1>
+    <h1>examdawn</h1>
     <p>A one-stop place for solved questions</p>
 </body>
 

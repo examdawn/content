@@ -23,8 +23,8 @@ jobs:
         run: sudo apt update; sudo apt install gh -y
       - name: Trigger Site Rebuild
         run: |
-          git clone https://github.com/bca-students/bca-students.github.io
-          cd bca-students.github.io
+          git clone https://github.com/examdawn/examdawn.github.io
+          cd examdawn.github.io
           gh workflow run deploy.yml
         env:
           GH_TOKEN: ${{ secrets.PAT }}

@@ -1,4 +1,4 @@
-# BCA Students
+# Exam Dawn
 
 ## A simple Website for students to host study materials and useful reference content
 
@@ -51,7 +51,7 @@ bash ../../../../helper-scripts/gen-solved.sh
 ```
 
 ## Contribution Guidelines
-[Follow these guidelines while contributing!](https://github.com/bca-students/content/blob/main/.github/CONTRIBUTING.md)
+[Follow these guidelines while contributing!](https://github.com/examdawn/content/blob/main/.github/CONTRIBUTING.md)
 
 ## Copyright and More
 For initiating takedowns, please read [the takedown page](takedown.md)
