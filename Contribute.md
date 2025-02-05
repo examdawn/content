@@ -25,7 +25,7 @@ We also welcome any positive informative criticism or suggestions if you have an
 
 ## Rules and Instructions
 - [Instructions on adding new Subjects or Courses](/contents/Readme)
-- [Contribution Guidelines and Instructions](https://github.com/examdawn/content/blob/main/.github/CONTRIBUTING.md)
+- [Contribution Guidelines and Instructions](https://github.com/examdawn/content/blob/contents/.github/CONTRIBUTING.md)
 
 ## Contributors
 ### Website Maintainers
