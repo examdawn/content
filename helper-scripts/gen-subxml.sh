@@ -41,11 +41,13 @@ for folder in */; do
             if [[ -d "$subject_folder" ]]; then  # Check if it's a directory
                 # Check if index.md exists in the subject folder
                 if [[ -f "$subject_folder/index.md" ]]; then
-                    # Read the first line of index.md
-                    subject_name=$(head -n 1 "$subject_folder/index.md" | sed 's/^# //;s/\r//g')  # Remove "# " and any carriage return
+                    # Read the first line of index.md for subject name
+                    subject_name=$(head -n 1 "$subject_folder/index.md" | sed 's/^# //;s/\r//g')
+                    # Get the relative path to index.md
+                    subject_path=$(basename "$subject_folder")/index.md
                     
-                    # Add subject name as a sub-object
-                    xml_output+="        <subject>$subject_name</subject>\n"
+                    # Add subject with name attribute and path as content
+                    xml_output+="        <subject name=\"$subject_name\">$subject_path</subject>\n"
                 fi
             fi
         done
@@ -69,5 +71,4 @@ xml_output+="</sidebar>"
 
 # Save the XML output to sidebar.xml in the initial working directory
 echo -e "$xml_output" > "$initial_pwd/sidebar.xml"
-
 echo "XML file sidebar.xml has been created successfully in $initial_pwd."
