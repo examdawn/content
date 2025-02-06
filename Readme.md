@@ -2,28 +2,27 @@
 
 ## A simple Website for students to host study materials and useful reference content
 
-> "Why 'Exam Dawn'?"
+### We welcome contributions.
+
+>[!IMPORTANT]
+> We are preparing this website for users to easily add more content through this Repository. If you have any doubts or issues, please file an issue in the issues tab or create a new post in the discussion window.  
+
+## "Why 'Exam Dawn'?"
 
 The main use for this website is for referring to notes and solutions at the last minute before exams. This usually happens during night time or early morning for most students - our old website (titled bca-students) was a placeholder till we could come up with a better name.
 
-Content available for:
+Content currently available for:
 - BCA
     - [3rd Semester](NEP2020/2024/BCA/3rdsem/index.md)
-        - [Database Management System](NEP2020/2024/BCA/3rdsem/dbms/index.md)
-        - [Computer Communications and Networks](NEP2020/2024/BCA/3rdsem/ccn/index.md)
-        - [Additional English](NEP2020/2024/BCA/3rdsem/addEng/index.md)
-        - [Indian Constitution](NEP2020/2024/BCA/3rdsem/ic/index.md)
-        - [C# and DotNet Tools](NEP2020/2024/BCA/3rdsem/cs/index.md)
-        - [Social Media Marketing](NEP2020/2024/BCA/3rdsem/smm/index.md)
 
 ## Expected Folder structure and format example
 - NEP2020 - this is your syllabus scheme
-    - 2024 - this is the semester year
+    - 2024 - this is the semester year(for now, put everything in this folder)
         - BCA - this is your course
-            - 3rdsem - this is your semester folder
+            - 2rdsem - this is your semester folder
 
 ## Expected Subfolder structure and format example
-- cs - this is your subject folder name, use shorthand
+- java - this is your subject folder name, use shorthand
     - assignments
         - index.md
     - lab
